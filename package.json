@@ -1,22 +1,40 @@
 {
-  "name": "donateindiaproject",
-  "version": "1.0.0",
-  "description": "Nowadays, people do not have enough time to evaluate and pick the ideal charity for their donation because of their quickly changing lifestyles and rigid work schedules. Web technology advancements can be leveraged to solve this problem. This project intends to remove the constraints and create an all-in-one solution for donations to various groups without having to worry about their legitimacy. We think that the influence of donations fuels the success of a cause, not the objective. And today's contributors want a donating experience that immerses them in a cause they care about. The system will include facilites where a donor can contribute items such as books, clothing, and blood, and restaurants can donate waste/leftover foodstuffs to nonprofits of their choice without wasting time exploring the internet.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tanujdey7/donateindia.git"
-  },
-  "bugs": {
-    "url": "https://github.com/tanujdey7/donateindia/issues"
-  },
-  "homepage": "https://github.com/tanujdey7/donateindia#readme",
+  "name": "donate-india-org",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "bootstrap": "^5.0.1"
+    "@material-ui/core": "^4.11.4",
+    "@testing-library/jest-dom": "^5.13.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "bootstrap": "^5.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
