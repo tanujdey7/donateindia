@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/tanujdey7/donateindia/issues"
   },
-  "homepage": "https://github.com/tanujdey7/donateindia#readme"
+  "homepage": "https://github.com/tanujdey7/donateindia#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.1"
+  }
 }
