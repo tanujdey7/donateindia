@@ -1,13 +1,11 @@
 {
-  "name": "donate-india-org",
+  "name": "donateindia",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^4.11.4",
     "@testing-library/jest-dom": "^5.13.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
-    "bootstrap": "^5.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -36,18 +34,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "description": "Nowadays, people do not have enough time to evaluate and pick the ideal charity for their donation because of their quickly changing lifestyles and rigid work schedules. Web technology advancements can be leveraged to solve this problem. This project intends to remove the constraints and create an all-in-one solution for donations to various groups without having to worry about their legitimacy. We think that the influence of donations fuels the success of a cause, not the objective. And today's contributors want a donating experience that immerses them in a cause they care about. The system will include facilites where a donor can contribute items such as books, clothing, and blood, and restaurants can donate waste/leftover foodstuffs to nonprofits of their choice without wasting time exploring the internet.\r ## Available Scripts",
-  "main": "index.js",
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tanujdey7/donateindia.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tanujdey7/donateindia/issues"
-  },
-  "homepage": "https://github.com/tanujdey7/donateindia#readme"
+  }
 }
