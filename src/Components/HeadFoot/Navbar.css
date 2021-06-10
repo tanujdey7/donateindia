@@ -1,7 +1,11 @@
 .navbar {
     width: 100%;
     height: 80px;
-    background-color: #691A47 ;
+    /* background-color: #5CDB95 ; */
+    /* background-color: #1F2833; */
+    /* background-color: #4056A1; */
+    background-color: #C5CBE3;
+    /* background-color: #116466;  */
     margin-top: -7px;
 }
 
@@ -16,7 +20,7 @@
 }
 
 .logo-div>h2 {
-    color: #ffffff;
+    color: #000000;
 }
 
 .contact-div {
@@ -30,7 +34,7 @@
     font-size: 14px;
     font-weight:medium;
     margin-left: 30px;
-    color: #ffffff;
+    color: #000000;
 }
 
 .login-div {
