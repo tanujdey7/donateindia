@@ -1,0 +1,52 @@
+.home-wrapper{
+    background-color: #F8F1F3;
+}
+.hero-sec-card{
+    background:transparent;
+    border: none;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    justify-content: center;
+    padding: 0px;
+    color: rgb(29, 28, 28);
+    text-align: left;
+}
+.hero-sec-card-head{
+    background: transparent;
+    border: none;
+}
+.hero-sec-card-body{
+    background: transparent;
+    border: none;
+}
+.hero-sec-card-foot{
+    background: transparent;
+    border: none;
+}
+
+.hero-sec-img-card{
+    background:transparent;
+    border: none;
+    width: 50%;
+    margin-left: 10%;
+    
+    margin-top: 7%;
+    
+    
+}
+
+.get-start-btn{
+    background-color: #9C3353;
+    color: white;
+}
+
+.hero-img-card-body{
+    background: transparent;
+    /* border: 1px solid black; */
+}
+.hero-img-card-foot{
+    background: transparent;
+    border: 1px solid black;
+}
