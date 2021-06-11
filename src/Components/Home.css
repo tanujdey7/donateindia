@@ -1,52 +1,166 @@
-.home-wrapper{
-    background-color: #F8F1F3;
+.home-wrapper {
+  font-family: "Raleway", sans-serif;
 }
-.hero-sec-card{
-    background:transparent;
-    border: none;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%;
-    justify-content: center;
-    padding: 0px;
-    color: rgb(29, 28, 28);
-    text-align: left;
+.hero-section {
+  background-color: #f8f1f3;
 }
-.hero-sec-card-head{
-    background: transparent;
-    border: none;
+.hero-section-row{
+  width: 100%;
 }
-.hero-sec-card-body{
-    background: transparent;
-    border: none;
+.hero-sec-card {
+  background: transparent;
+  border: none;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  color: rgb(29, 28, 28);
+  text-align: left;
 }
-.hero-sec-card-foot{
-    background: transparent;
-    border: none;
+.hero-sec-card-head {
+  background: transparent;
+  border: none;
 }
 
-.hero-sec-img-card{
-    background:transparent;
-    border: none;
-    width: 50%;
-    margin-left: 10%;
-    
-    margin-top: 7%;
-    
-    
+.hero-sec-card-head > h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+}
+.hero-sec-card-body {
+  background: transparent;
+  border: none;
+}
+.hero-sec-card-foot {
+  background: transparent;
+  border: none;
 }
 
-.get-start-btn{
-    background-color: #9C3353;
-    color: white;
+.hero-sec-img-card {
+  background: transparent;
+  border: none;
+  width: 100%;
+  margin-left: 10%;
+  margin-top: 4%;
 }
 
-.hero-img-card-body{
-    background: transparent;
-    /* border: 1px solid black; */
+.get-start-btn {
+  margin-top: -10px;
+  border-radius: 20px;
+  background-color: #8d183b;
+  color: white;
 }
-.hero-img-card-foot{
-    background: transparent;
-    border: 1px solid black;
+
+.hero-img-card-body {
+  background: transparent;
+  /* border: 1px solid black; */
+}
+.hero-img-card-foot {
+  background: transparent;
+  border: 1px solid black;
+}
+
+.hero-sec-img {
+  width: 500px;
+}
+
+.hero-sec-card-body > h5 {
+  margin-top: -15px;
+  color: #353535;
+}
+
+.hero-sec-card-body > h6 {
+  margin-top: 30px;
+}
+
+/* total donation sec */
+
+.total-donate-sec {
+  background-color: #e63946;
+  width: 100%;
+}
+
+.total-donate-sec-row {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+.total-donate-sec-col {
+  /* background-color: #9c3353; */
+  padding: 10px 60px 10px 10px;
+}
+.total-donate-sec-card {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  border-radius: 30px;
+  padding: 0px;
+  background-color: #ffffff;
+  height: auto;
+}
+
+.total-donate-sec-card > .card-body >h4{
+  padding-top: 10px;
+  color: #8d183b;
+  padding-bottom: -20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+}
+
+.total-donate-sec-card > .card-footer {
+  font-family: "Poppins", sans-serif;
+  margin-top: -10px;
+  border: none;
+}
+
+
+/* bars sec */
+.bars-sec-row{
+  width: 80%;
+  margin-top: 2%;
+  /* background-color: red; */
+  margin-left: auto;
+  margin-right: auto;
+}
+.no-fee-div{
+  display: flex;
+  width: 80%;
+  /* border: 2px solid #8d183b; */
+  border-radius: 20px;
+  background-color: #fddfdf;
+  margin-left: auto;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  margin-right: auto;
+  height: 70px;
+  
+}
+
+/* .no-fee-icon>GrAnnounce{
+  color: #ffffff;
+} */
+
+.no-fee-div-wrap>h3{
+  text-align: left;
+  /* margin-left: 10%; */
+  color: #8d183b;
+}
+
+.no-fee-div-wrap>h5{
+  margin-left: 7%;
+  margin-top: 18px;
+  justify-content: center;
+  color: #8d183b;
+}
+.donate-hrt-icon{
+  margin-left:8%;
+  margin-top: 7px;
+  opacity: 100%;
+  color: #8d183b;
+}
+
+.no-fee-div-wrap{
+  /* background-color: red; */
+  width: 60%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
