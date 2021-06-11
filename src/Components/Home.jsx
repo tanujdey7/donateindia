@@ -1,12 +1,10 @@
 import React from "react";
-import Poverty from "../Images/poverty.jpg";
+import Donate from "../Images/donate2.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FaUser } from "react-icons/fa";
 import { BiDish } from "react-icons/bi";
 import { GiClothes } from "react-icons/gi";
 import { ImBooks } from "react-icons/im";
-import { AiFillSound } from "react-icons/ai";
-import { BiDonateHeart} from "react-icons/bi";
 import "./Home.css";
 
 const Home = () => {
@@ -32,9 +30,9 @@ const Home = () => {
           </div>
           <div className="hero-section-col col">
             <div className="img-col-wrapper">
-              <div className="hero-sec-img-card card w-50">
+              <div className="hero-sec-img-card card">
                 <div className="hero-img-card-body card-body">
-                  <img src={Poverty} className="hero-sec-img" />
+                  <img src={Donate} className="hero-sec-img" />
                 </div>
               </div>
             </div>
@@ -58,7 +56,7 @@ const Home = () => {
           <div className="total-donate-sec-col col">
             <div className="total-donate-sec-card card">
               <div className="card-body">
-                <h4><BiDish size={30} /> 2345</h4>
+                <h4><BiDish size={30} /> 2345+</h4>
 
               </div>
               <div className="card-footer">
@@ -68,7 +66,7 @@ const Home = () => {
           <div className="total-donate-sec-col col">
             <div className="total-donate-sec-card card">
               <div className="card-body">
-                <h4><GiClothes size={28} /> 4000</h4>
+                <h4><GiClothes size={28} /> 4000+</h4>
               </div>
               <div className="card-footer">
                 <p>Clothes Donated</p>
@@ -77,7 +75,7 @@ const Home = () => {
           <div className="total-donate-sec-col col">
             <div className="total-donate-sec-card card">
               <div className="card-body">
-                <h4><ImBooks size={28} /> 3200</h4>
+                <h4><ImBooks size={28} /> 3200+</h4>
               </div>
               <div className="card-footer">
                 <p>Books donated</p>
@@ -88,7 +86,7 @@ const Home = () => {
 
       {/* new sec */}
 
-      <div className="bars-section">
+      {/* <div className="bars-section">
         <div className="bars-sec-row row">
           <div className="bars-sec-col col">
             <div className="no-fee-div">
@@ -100,7 +98,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
