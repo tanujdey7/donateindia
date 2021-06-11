@@ -19,7 +19,7 @@ const Home = () => {
                   <h6>Get help to find blood banks and food banks</h6>
                 </div>
                 <div className="hero-sec-card-foot card-footer">
-                  <button className="btn btn-lg get-start-btn">Get Started</button>
+                  <button className="btn btn-lg get-start-btn">Start Donation - it's free</button>
                 </div>
               </div>
             </div>
