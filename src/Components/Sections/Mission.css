@@ -1,0 +1,170 @@
+.mission-section {
+  background-color: #391a99;
+  margin-top: 4%;
+  width: 100%;
+  padding: 2px;
+  height: auto;
+}
+
+.mission-row {
+  width: 90%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: red; */
+}
+
+.mission-col {
+  margin-top: 10%;
+  margin-bottom: 7%;
+  /* background-color: #fff; */
+  height: 100%;
+}
+
+.mission-col-one {
+  padding: 0px;
+  width: 20%;
+}
+
+.cloud-icon-col-one {
+  margin-top: 36%;
+  height: 100%;
+  color: white;
+  opacity: 100%; 
+}
+
+.cloud-icon-col-two {
+  padding: 0px;
+  margin-top: 5%;
+  color: white;
+}
+.mission-card {
+  margin-top: 10%;
+  border: none;
+  background: transparent;
+  background-repeat: no-repeat;
+}
+.mission-card-head {
+  border: none;
+  background-color: #391a99;
+}
+
+.mission-card-head > button {
+  margin-left: 15px;
+  float: left;
+  padding: 8px 20px 8px 20px;
+  background-color: #42299e;
+  border-radius: 20px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.mission-card-body {
+  padding-top: 5%;
+  background-color: #391b99;
+  color: #ffffff;
+  text-align: left;
+}
+.mission-text {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.mission-card-body > h6 {
+  margin-top: 5%;
+  font-family: "Poppins", sans-serif;
+  font: 16px;
+}
+
+.mission-card-footer {
+  background: transparent;
+  border: none;
+}
+
+.donate-now-btn {
+  padding: 15px;
+  float: left;
+  border-radius: 6px;
+  background-color: #fdd900;
+  color: #000100;
+  font-size: 20px;
+  font-weight: 500;
+}
+.donate-now-btn:hover {
+  
+  background-color: #e4c202;}
+
+/* mission box */
+.mission-box-one {
+    cursor: pointer;
+  border-radius: 10px;
+  background-color: #42299e;
+  color: #ffffff;
+  width: 220px;
+  height: 260px;
+}
+
+.mission-box-two {
+    cursor: pointer;
+  border-radius: 10px;
+  background-color: #42299e;
+  color: #ffffff;
+  width: 220px;
+  height: 260px;
+}
+.mission-box-three {
+    cursor: pointer;
+  border-radius: 10px;
+  background-color: #42299e;
+  color: #ffffff;
+  width: 220px;
+  height: 260px;
+}
+.mission-box-four {
+    cursor: pointer;
+  border-radius: 10px;
+  background-color: #42299e;
+  color: #ffffff;
+  width: 220px;
+  height: 260px;
+}
+
+.mission-box-wrap {
+  padding: 0px;
+  margin: 0px;
+  /* background: #000; */
+  /* padding-top: 20px; */
+}
+
+.mission-box-row {
+  margin: 6px;
+  padding: 0px;
+}
+
+.mission-box-row-two {
+  margin-top: 4%;
+  margin-left: 5%;
+}
+
+.mission-box-col {
+  padding: 0px;
+  margin: 0px;
+}
+
+.mission-box-img>img{
+    margin-top: 10%;
+    fill: #ffffff;
+}
+
+.mission-box-footer{
+    border-radius: 10px;
+    text-align: left;
+    padding-left: 12%;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    background-color: #42299e;
+}
+
+.mission-box-footer>h6{
+    color: #fdd900;
+}

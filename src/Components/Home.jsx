@@ -1,10 +1,7 @@
 import React from "react";
-import Donate from "../Images/AI.png";
+import Donate from "./Images/AI.png";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { FaUser } from "react-icons/fa";
-import { BiDish } from "react-icons/bi";
-import { GiClothes } from "react-icons/gi";
-import { ImBooks } from "react-icons/im";
+import Mission from "./Sections/Mission";
 import "./Home.css";
 
 const Home = () => {
@@ -36,55 +33,18 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
-      {/* new section */}
-
-      <div class="scroll-down"></div>
-      {/* <div className="total-donate-sec">
-        <div className="total-donate-sec-row row">
-          <div className="total-donate-sec-col col">
-            <div className="total-donate-sec-card card">
-              <div className="card-body">
-                <h4><FaUser size={23} />  1400+</h4>
-              </div>
-              <div className="card-footer">
-                <p>Blood Donor Registered</p>
-              </div>
+        <div className="scroll-row row w-25">
+          <div className="col">
+            <div class="scroll-container">
+              <div class="scroller"></div>
             </div>
           </div>
-          <div className="total-donate-sec-col col">
-            <div className="total-donate-sec-card card">
-              <div className="card-body">
-                <h4><BiDish size={30} /> 2345+</h4>
-
-              </div>
-              <div className="card-footer">
-                <p>Packets of food donated</p>
-              </div>
-            </div></div>
-          <div className="total-donate-sec-col col">
-            <div className="total-donate-sec-card card">
-              <div className="card-body">
-                <h4><GiClothes size={28} /> 4000+</h4>
-              </div>
-              <div className="card-footer">
-                <p>Clothes Donated</p>
-              </div>
-            </div></div>
-          <div className="total-donate-sec-col col">
-            <div className="total-donate-sec-card card">
-              <div className="card-body">
-                <h4><ImBooks size={28} /> 3200+</h4>
-              </div>
-              <div className="card-footer">
-                <p>Books donated</p>
-              </div>
-            </div></div>
         </div>
-      </div> */}
-
-      {/* new sec */}
-
+      </div>
+      {/* mission section */}
+      <div className="mission-section">
+        <Mission />
+      </div>
     </div>
   );
 };

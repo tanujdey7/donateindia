@@ -90,130 +90,49 @@
 }
 
 /* total donation sec */
-
-.total-donate-sec {
-  background-color: #e63946;
-  width: 100%;
-}
-
-.total-donate-sec-row {
-  padding-top: 1%;
-  padding-bottom: 1%;
+.scroll-row{
+  /* background-color: red; */
   margin-left: auto;
   margin-right: auto;
-  width: 75%;
 }
-.total-donate-sec-col {
-  padding: 10px 60px 10px 10px;
-}
-.total-donate-sec-card {
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-  border-radius: 30px;
-  padding: 0px;
-  background-color: #ffffff;
-  height: auto;
-}
-
-.total-donate-sec-card > .card-body > h4 {
-  padding-top: 10px;
-  color: #8d183b;
-  padding-bottom: -20px;
-  font-family: "Poppins", sans-serif;
-  font-size: 22px;
-}
-
-.total-donate-sec-card > .card-footer {
-  background: transparent;
-  font-family: "Poppins", sans-serif;
-  margin-top: -10px;
-  border: none;
-}
-
-.scroll-down {
-  border: 2px solid rgb(3, 3, 3);
-  border-radius: 20px;
-  bottom: 60px;
-  height: 50px;
-  left: 0;
-  margin: 0 auto;
-  position: absolute;
-  right: 0;
+.scroll-container{
+  margin-left: auto;
+  margin-right: auto;
   width: 30px;
+  height: 60px;
+  border: 2px solid #131313;
+  border-radius: 15px;
+  position: relative;
 }
-.scroll-down::before {
-  animation: scrollDownAnimation 2s infinite;
-  background-color: rgb(12, 11, 11);
-  border-radius: 100%;
-  content: '';
-  height: 6px;
-  left: 0;
-  margin: 0 auto;
+
+.scroller{
+  width: 12px;
+  border-radius: 8px;
+  background-color: #131313;
   position: absolute;
-  right: 0;
-  top: 10px;
-  width: 6px;
+  top: 4px;
+  left: 7px;
+  bottom: 34px;
+  animation: scroller 1500ms ease-out infinite;
 }
-@-moz-keyframes scrollDownAnimation {
-  0% {
-    opacity: 0;
-    transform: translate(0, 0);
+
+@keyframes scroller{
+  0%{
+    bottom: 34px;
   }
-  40% {
-    opacity: 1;
+  5%{
+    top: 4px;
   }
-  80% {
-    opacity: 0;
-    transform: translate(0, 20px);
+  32%{    
+    bottom: 4px;
   }
-  100% {
-    opacity: 0;
+  66%{
+    top: 34px;
+    bottom: 4px;
   }
-}
-@-webkit-keyframes scrollDownAnimation {
-  0% {
-    opacity: 0;
-    transform: translate(0, 0);
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0;
-    transform: translate(0, 20px);
-  }
-  100% {
-    opacity: 0;
+  100%{
+    top: 4px;
+    bottom: 34px;
   }
 }
-@-o-keyframes scrollDownAnimation {
-  0% {
-    opacity: 0;
-    transform: translate(0, 0);
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0;
-    transform: translate(0, 20px);
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes scrollDownAnimation {
-  0% {
-    opacity: 0;
-    transform: translate(0, 0);
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0;
-    transform: translate(0, 20px);
-  }
-  100% {
-    opacity: 0;
-  }
-}
+/* mission section */
