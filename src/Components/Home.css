@@ -1,35 +1,40 @@
+/* 391A99 */
 .home-wrapper {
   font-family: "Raleway", sans-serif;
 }
 .hero-section {
   background-color: #ffffff;
 }
-.hero-section-row{
-  width: 100%;
-  padding-bottom: 2%;
+.hero-section-row {
+  width: 90%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-sec-card {
   background: transparent;
   border: none;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 90%;
   margin-top: 10%;
+  margin-left: 5%;
   color: rgb(29, 28, 28);
   text-align: left;
 }
-.hero-sec-card-head {
-  background: transparent;
+
+.hero-sec-card-body {
   border: none;
 }
 
-.hero-sec-card-head > h2 {
-  font-family: "Raleway", sans-serif;
-  font-size: 2.5rem;
+.hero-sec-card-body > h1 {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
 }
-.hero-sec-card-body {
-  background: transparent;
-  border: none;
+
+.hero-sec-card-body > h4 {
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
 }
 .hero-sec-card-foot {
   background: transparent;
@@ -45,12 +50,24 @@
 }
 
 .get-start-btn {
-  margin-top: -10px;
-  border-radius: 20px;
-  background-color: #8d183b;
-  color: white;
+  /* margin-top: -10px; */
+  padding: 15px;
+  border-radius: 3px;
+  background-color: #fdd900;
+  color: #000100;
+  font-size: 20px;
+  font-weight: 500;
 }
-
+.learn-btn {
+  /* margin-top: -10px; */
+  margin-left: 20px;
+  padding: 15px;
+  border-radius: 3px;
+  background-color: #ececec;
+  color: #000100;
+  font-size: 20px;
+  font-weight: 500;
+}
 .hero-img-card-body {
   width: 100%;
 }
@@ -60,7 +77,7 @@
 }
 
 .hero-sec-img {
-  width: 80%;
+  width: 98%;
 }
 
 .hero-sec-card-body > h5 {
@@ -97,7 +114,7 @@
   height: auto;
 }
 
-.total-donate-sec-card > .card-body >h4{
+.total-donate-sec-card > .card-body > h4 {
   padding-top: 10px;
   color: #8d183b;
   padding-bottom: -20px;
@@ -112,4 +129,91 @@
   border: none;
 }
 
-
+.scroll-down {
+  border: 2px solid rgb(3, 3, 3);
+  border-radius: 20px;
+  bottom: 60px;
+  height: 50px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: 30px;
+}
+.scroll-down::before {
+  animation: scrollDownAnimation 2s infinite;
+  background-color: rgb(12, 11, 11);
+  border-radius: 100%;
+  content: '';
+  height: 6px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 6px;
+}
+@-moz-keyframes scrollDownAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+    transform: translate(0, 20px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes scrollDownAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+    transform: translate(0, 20px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-o-keyframes scrollDownAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+    transform: translate(0, 20px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes scrollDownAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+    transform: translate(0, 20px);
+  }
+  100% {
+    opacity: 0;
+  }
+}

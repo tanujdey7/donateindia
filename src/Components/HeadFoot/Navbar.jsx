@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className="navbar">
             <div className="navbar-wrapper row">
                 <div className="logo-div col-4">
-                    <h2 className="">Logo</h2>
+                    <h1 className="">Logo</h1>
                 </div>
                 <div className="contact-div col-4">
                     <h6 className="">+919574547152</h6>

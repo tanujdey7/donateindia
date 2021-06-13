@@ -1,5 +1,5 @@
 import React from "react";
-import Donate from "../Images/donate2.png";
+import Donate from "../Images/AI.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FaUser } from "react-icons/fa";
 import { BiDish } from "react-icons/bi";
@@ -13,22 +13,6 @@ const Home = () => {
       <div className="hero-section">
         <div className="hero-section-row row">
           <div className="hero-section-col col">
-            <div className="wrapper">
-              <div className="hero-sec-card card">
-                <div className="hero-sec-card-head card-header">
-                  <h2>DonateIndia</h2>
-                </div>
-                <div className="hero-sec-card-body card-body">
-                  <h5>Free Donations for India</h5>
-                  <h6>Get help to find blood banks and food banks</h6>
-                </div>
-                <div className="hero-sec-card-foot card-footer">
-                  <button className="btn btn-lg get-start-btn">Start Donation - it's free</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="hero-section-col col">
             <div className="img-col-wrapper">
               <div className="hero-sec-img-card card">
                 <div className="hero-img-card-body card-body">
@@ -37,11 +21,26 @@ const Home = () => {
               </div>
             </div>
           </div>
+          <div className="hero-section-col col">
+            <div className="wrapper">
+              <div className="hero-sec-card card">
+                <div className="hero-sec-card-body card-body">
+                  <h1>Help the poor Make big changes and help the World</h1>
+                  <h4>Get help to find blood banks and food banks sdbhsd sdhbvhjas svjasgvdasd  hasvjds asbuash sahakbs sajkbdkjbdas abhksbkjbsd</h4>
+                </div>
+                <div className="hero-sec-card-foot card-footer">
+                  <button className="btn btn-lg get-start-btn">Donate Now</button>
+                  <button className="btn btn-lg learn-btn">Learn More</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       {/* new section */}
 
-      <div className="total-donate-sec">
+      <div class="scroll-down"></div>
+      {/* <div className="total-donate-sec">
         <div className="total-donate-sec-row row">
           <div className="total-donate-sec-col col">
             <div className="total-donate-sec-card card">
@@ -82,23 +81,10 @@ const Home = () => {
               </div>
             </div></div>
         </div>
-      </div>
+      </div> */}
 
       {/* new sec */}
 
-      {/* <div className="bars-section">
-        <div className="bars-sec-row row">
-          <div className="bars-sec-col col">
-            <div className="no-fee-div">
-            <div className="no-fee-div-wrap">
-              <h3 className="no-fee-icon"><AiFillSound className="mt-1" size={60} /></h3>
-              <h5>Our donation platform charges NO fees</h5>
-              <BiDonateHeart className="donate-hrt-icon" size={50} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };

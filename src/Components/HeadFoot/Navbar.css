@@ -1,13 +1,9 @@
 .navbar {
+    font-family: "Raleway", sans-serif;
     width: 100%;
     height: 80px;
-    /* background-color: #5CDB95 ; */
-    background-color: #1F2833;
-    /* background-color: #4056A1; */
-    /* background-color: #C5CBE3; */
-    /* background-color: #457b9d; */
-    /* background-color: #116466;  */
-    margin-top: -7px;
+    background-color: #ffffff ;
+    margin-top: 0px;
 }
 
 .navbar-wrapper {
@@ -20,8 +16,8 @@
     width: 30%;
 }
 
-.logo-div>h2 {
-    color: #fff;
+.logo-div>h1 {
+    color: #000100;
 }
 
 .contact-div {
@@ -34,8 +30,8 @@
 .contact-div>h6 {
     font-size: 14px;
     font-weight:medium;
-    margin-left: 30px;
-    color: #fff;
+    margin-left: 50px;
+    color: #000100;
 }
 
 .login-div {
