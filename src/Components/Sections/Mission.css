@@ -30,7 +30,7 @@
   margin-top: 36%;
   height: 100%;
   color: white;
-  opacity: 100%; 
+  opacity: 100%;
 }
 
 .cloud-icon-col-two {
@@ -91,12 +91,12 @@
   font-weight: 500;
 }
 .donate-now-btn:hover {
-  
-  background-color: #e4c202;}
+  background-color: #e4c202;
+}
 
 /* mission box */
 .mission-box-one {
-    cursor: pointer;
+  cursor: pointer;
   border-radius: 10px;
   background-color: #42299e;
   color: #ffffff;
@@ -105,7 +105,7 @@
 }
 
 .mission-box-two {
-    cursor: pointer;
+  cursor: pointer;
   border-radius: 10px;
   background-color: #42299e;
   color: #ffffff;
@@ -113,7 +113,7 @@
   height: 260px;
 }
 .mission-box-three {
-    cursor: pointer;
+  cursor: pointer;
   border-radius: 10px;
   background-color: #42299e;
   color: #ffffff;
@@ -121,7 +121,7 @@
   height: 260px;
 }
 .mission-box-four {
-    cursor: pointer;
+  cursor: pointer;
   border-radius: 10px;
   background-color: #42299e;
   color: #ffffff;
@@ -151,20 +151,15 @@
   margin: 0px;
 }
 
-.mission-box-img>img{
-    margin-top: 10%;
-    fill: #ffffff;
+.mission-box-footer {
+  border-radius: 10px;
+  text-align: left;
+  padding-left: 12%;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  background-color: #42299e;
 }
 
-.mission-box-footer{
-    border-radius: 10px;
-    text-align: left;
-    padding-left: 12%;
-    border: none;
-    font-family: "Poppins", sans-serif;
-    background-color: #42299e;
-}
-
-.mission-box-footer>h6{
-    color: #fdd900;
+.mission-box-footer > h6 {
+  color: #fdd900;
 }
