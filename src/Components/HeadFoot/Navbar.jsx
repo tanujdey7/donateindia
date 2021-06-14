@@ -14,8 +14,8 @@ const Navbar = () => {
                     <h6 className="">raghav26897@gmail.com</h6>
                 </div>
                 <div className="login-div col-4">
-                    <button className="donateus-btn btn btn-md btn-primary">Donate Us</button>
-                    <button className="login-btn btn btn-md btn-danger">Login</button>
+                    <button className="donateus-btn btn btn-md">Donate Us</button>
+                    <button className="login-btn btn btn-md">Login</button>
                 </div>
             </div>
         </div>
