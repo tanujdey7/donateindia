@@ -7,7 +7,7 @@ import Support from "../Images/icons/support.svg";
 import Imgone from "../Images/icons/fathdaught.jpg";
 import Imgtwo from "../Images/icons/girlreading.jpg";
 import Imgthree from "../Images/icons/books.jpg";
-import ProgressBar from "react-bootstrap";
+import {ProgressBar} from "react-bootstrap";
 // import Imgfour from "../Images/icons/man.png";
 
 const Fundraise = () => {
@@ -89,7 +89,7 @@ const Fundraise = () => {
                             </div>
                             <div className="fundraise-card-body card-body">
                                 <h5>Money</h5>
-                                <ProgressBar bardata={now} label={`${bardata}%`} />;
+                                {/* <ProgressBar bardata={now} label={`${bardata}%`} />; */}
                                 <h5>Money</h5>
                             </div>
                             <div className="card-footer">
