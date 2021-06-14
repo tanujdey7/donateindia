@@ -39,10 +39,15 @@
 }
 
 .donateus-btn{
+    background-color: #391a99;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
     float: left;
 }
 .login-btn {
+    background-color: #fdd900;
     margin-left: 20px;
+    font-family: "Poppins", sans-serif;
 }
 
 
