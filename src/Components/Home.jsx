@@ -2,6 +2,7 @@ import React from "react";
 import Donate from "./Images/AI.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Mission from "./Sections/Mission";
+import Fundraise from "./Sections/Fundraise";
 import "./Home.css";
 
 const Home = () => {
@@ -45,6 +46,12 @@ const Home = () => {
       <div className="mission-section">
         <Mission />
       </div>
+      {/* mission section end */}
+      {/* Fundraise section */}
+      <div className="fundraise-section">
+        <Fundraise />
+      </div>
+      {/* Funde raise end */}
     </div>
   );
 };
