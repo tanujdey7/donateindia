@@ -1,5 +1,6 @@
 import React from "react";
 import Donate from "./Images/AI.png";
+import Logo from "./Images/logo.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Mission from "./Sections/Mission";
 import "./Home.css";
@@ -23,10 +24,15 @@ const Home = () => {
               <div className="hero-sec-card card">
                 <div className="hero-sec-card-body card-body">
                   <h1>Help the poor Make big changes and help the World</h1>
-                  <h4>Get help to find blood banks and food banks sdbhsd sdhbvhjas svjasgvdasd  hasvjds asbuash sahakbs sajkbdkjbdas abhksbkjbsd</h4>
+                  <h4>
+                    Get help to find blood banks and food banks sdbhsd sdhbvhjas
+                    svjasgvdasd hasvjds asbuash sahakbs sajkbdkjbdas abhksbkjbsd
+                  </h4>
                 </div>
                 <div className="hero-sec-card-foot card-footer">
-                  <button className="btn btn-lg get-start-btn">Donate Now</button>
+                  <button className="btn btn-lg get-start-btn">
+                    Donate Now
+                  </button>
                   <button className="btn btn-lg learn-btn">Learn More</button>
                 </div>
               </div>
