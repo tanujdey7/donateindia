@@ -40,15 +40,14 @@
 
 /* fundraise title */
 .fundraise-title-row {
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 4%;
+  margin-bottom: 4%;
   width: 100%;
 }
 
 .fundraise-title {
   margin-left: auto;
   margin-right: auto;
-  /* background-color: red; */
   width: 40%;
 }
 
@@ -61,30 +60,53 @@
 /* new */
 
 .fundraise-card-row {
+    margin-bottom: 10%;
   width: 100%;
 }
 
 .fundraise-card-wrap {
   width: 75%;
-  background-color: red;
   margin-left: auto;
   margin-right: auto;
   display: flex;
 }
 
 .fundraise-card {
+  border: none;
+  box-shadow: 4px 8px 6px 0px rgb(192, 192, 192);
   margin-left: 15px;
 }
 
 .fundraise-btn {
-  padding: 5px 10px 5px 10px;
+  padding: 10px 15px;
   border-radius: 3px;
   background-color: #fdd900;
+  font-family: "Poppins", sans-serif;
   color: #000100;
   font-size: 16px;
   font-weight: 500;
 }
 
-.progress-bar{
-    width: 50%;
+.progress-bar {
+  width: 50%;
+}
+.fundraise-card-body {
+  border: none;
+  padding-left: 20px;
+}
+
+.fundraise-card-header {
+  padding: 0px;
+  border: none;
+}
+.fundraise-card-body > h6 {
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.fundraise-card-footer{
+    background: transparent;
+    border: none;
 }

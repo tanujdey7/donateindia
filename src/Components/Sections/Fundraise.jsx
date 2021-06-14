@@ -8,13 +8,15 @@ import Imgone from "../Images/icons/fathdaught.jpg";
 import Imgtwo from "../Images/icons/girlreading.jpg";
 import Imgthree from "../Images/icons/books.jpg";
 // import Imgfour from "../Images/icons/man.png";
-
+import { ProgressBar } from 'react-bootstrap';
+import { FaRupeeSign} from "react-icons/fa";
 const Fundraise = () => {
-
-    const bardata=60;
+    const raised=50000;
+    const received=37000;
+    const percent=37000/50000*100;
+    const now = percent;
     return (
         <div className="fundraise-wrapper">
-
             <div className="fundraise-row row">
                 <div className="fundraise-row-one-wrapper">
                     <div className="fundraise-col col">
@@ -42,56 +44,56 @@ const Fundraise = () => {
                 <div className="fundraise-card-wrap">
                     <div className="col-3">
                         <div className="fundraise-card card">
-                            <div className="card-header">
+                            <div className="fundraise-card-header card-header">
                                 <img src={Imgone} className="card-img-top" width="100" />
                             </div>
-                            <div className="card-body">
-                                <h5>Money</h5>
-                                <h5>Money</h5>
-                                <h5>Money</h5>
+                            <div className="fundraise-card-body card-body">
+                                <h6><FaRupeeSign size={16} />{received} of {raised} raised</h6>
+                                <ProgressBar className="mt-3" variant="warning" now={now} label={`${now}%`} srOnly />
+                                <h6 className="mt-3">Emergency response and school</h6>
                             </div>
-                            <div className="card-footer">
+                            <div className="fundraise-card-footer card-footer">
                                 <button className="btn btn-md fundraise-btn">Donate now</button>
                             </div>
                         </div>
                     </div>
                     <div className="col-3"><div className="fundraise-card card">
-                        <div className="card-header">
+                        <div className="fundraise-card-headercard-header">
                             <img src={Imgtwo} className="card-img-top" width="100" />
                         </div>
-                        <div className="card-body">
-                            <h5>Money</h5>
-                            <h5>Money</h5>
-                            <h5>Money</h5>
+                        <div className="fundraise-card-body card-body">
+                            <h6><FaRupeeSign size={16} />{received} of {raised} raised</h6>
+                            <ProgressBar className="mt-3" variant="warning" now={now} label={`${now}%`} srOnly />
+                            <h6 className="mt-3">Emergency response and school</h6>
                         </div>
-                        <div className="card-footer">
+                        <div className="fundraise-card-footer card-footer">
                             <button className="btn btn-md fundraise-btn">Donate now</button>
                         </div>
                     </div></div>
                     <div className="col-3"><div className="fundraise-card card">
-                        <div className="card-header">
+                        <div className="fundraise-card-headercard-header">
                             <img src={Imgthree} className="card-img-top" width="100" />
                         </div>
-                        <div className="card-body">
-                            <h5>Money</h5>
-                            <h5>Money</h5>
-                            <h5>Money</h5>
+                        <div className="fundraise-card-body card-body">
+                            <h6><FaRupeeSign size={16} />{received} of {raised} raised</h6>
+                            <ProgressBar className="mt-3" variant="warning" now={now} label={`${now}%`} srOnly />
+                            <h6 className="mt-3">Emergency response and school</h6>
                         </div>
-                        <div className="card-footer">
+                        <div className="fundraise-card-footer card-footer">
                             <button className="btn btn-md fundraise-btn">Donate now</button>
                         </div>
                     </div></div>
                     <div className="col-3">
                         <div className="fundraise-card card">
-                            <div className="card-header">
+                            <div className="fundraise-card-header card-header">
                                 <img src={Imgtwo} className="card-img-top" width="100" />
                             </div>
                             <div className="fundraise-card-body card-body">
-                                <h5>Money</h5>
-                                <ProgressBar bardata={now} label={`${bardata}%`} />;
-                                <h5>Money</h5>
+                                <h6><FaRupeeSign size={16} />{received} of {raised} raised</h6>
+                                <ProgressBar className="mt-3" variant="warning" now={now} label={`${now}%`} srOnly />
+                                <h6 className="mt-3">Emergency response and school</h6>
                             </div>
-                            <div className="card-footer">
+                            <div className="fundraise-card-footer card-footer">
                                 <button className="btn btn-md fundraise-btn">Donate now</button>
                             </div>
                         </div></div>
