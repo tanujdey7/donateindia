@@ -6,6 +6,7 @@ import Mission from "./Sections/Mission";
 import Fundraise from "./Sections/Fundraise";
 import Supportus from "./Sections/Supportus";
 import Joinmission from "./Sections/Joinmission";
+import Donationcount from "./Sections/Donationcount";
 import "./Home.css";
 
 const Home = () => {
@@ -64,6 +65,12 @@ const Home = () => {
       <div className="supportus-section">
         <Supportus />
         <Joinmission />
+      </div>
+
+      {/* Total count */}
+
+      <div className="Donationcount-section">
+        <Donationcount />
       </div>
     </div>
   );

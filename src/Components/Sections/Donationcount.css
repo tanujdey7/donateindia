@@ -1,0 +1,92 @@
+.donationcount-wrapper {
+  background-color: #391a99;
+}
+
+.donation-count-row {
+  width: 100%;
+}
+
+.donation-count-row-wrap {
+  width: 90%;
+  margin-top: 13%;
+  margin-bottom: 7.5%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: red; */
+}
+
+.donation-count-col-one {
+  width: 100%;
+  /* background: red; */
+}
+
+.donation-count-col-two {
+  width: 100%;
+  /* background-color: yellow; */
+}
+.donation-count-col-two-wrap{
+    width: 100%;
+    /* background-color: green; */
+}
+
+.donation-count-col-three {
+  width: 100%;
+  /* background-color: purple; */
+}
+
+.donation-count-card{
+    width: 28%;
+    height: 160px;
+    margin-left: 2%;
+    background-color: #42299e;
+    border-radius: 10px;
+}
+
+.donation-count-card>h1{
+    color: #ffffff;
+    margin-top: 12%;
+    font-size: 3.5rem;
+}
+.donation-count-card>h6{
+    color: #ffffff;
+    text-align: left;
+    margin-left: 24%;
+    /* margin-top: 15%; */
+    /* font-size: 3.5rem; */
+}
+
+.donation-count-card{
+    font-family: "Poppins", sans-serif;
+}
+
+.donation-count-col-two-rowone{
+    width: 100%;
+    padding-left: 2%;
+
+}
+
+.donation-count-col-two-rowone>h1{
+    width: 100%;
+    font-size: 2.8rem;
+    text-align: left;
+    line-height: 42px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    /* background-color: red; */
+}
+
+.donation-count-col-two-rowtwo{
+    margin-top: 2%;
+    width: 90%;
+    padding-left: 2%;
+}
+.donation-count-col-two-rowtwo>h6{
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    text-align: left;
+}
+
+.donation-count-col-two-rowthree{
+    margin-top: 4%;
+}
