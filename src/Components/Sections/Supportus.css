@@ -1,0 +1,83 @@
+.supportus-wrapper {
+  padding-top: 5%;
+  padding-bottom: 4%;
+  background-color: #e2f6f5;
+}
+.supportus-title-div {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: red; */
+}
+.supportus-title-row {
+  width: 100%;
+}
+.supportus-row-two {
+  margin-top: 3%;
+  width: 100%;
+}
+
+.supportus-icons-div {
+  display: flex;
+}
+
+.supportus-icons-div {
+  width: 75%;
+  /* background-color: green; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.supportus-title-text > h1 {
+  font-weight: 500;
+  font-size: 2.8rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.supportus-title-text > h6 {
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.supportus-icons-heart {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 100px;
+  color: #000100;
+  border-radius: 20px;
+  background-color: #6ce9e3;
+}
+
+.supportus-icons-hands {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 100px;
+  color: #000100;
+  border-radius: 20px;
+  background-color: #fdd900;
+}
+
+.supportus-icons-ribbon {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 100px;
+  color: #ffffff;
+  border-radius: 20px;
+  background-color: #42299e;
+}
+
+.supportus-icons-card {
+  border: none;
+  background: transparent;
+}
+
+.supportus-icons-header {
+  border: none;
+  background: transparent;
+}

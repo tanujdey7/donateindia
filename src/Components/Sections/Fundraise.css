@@ -60,7 +60,7 @@
 /* new */
 
 .fundraise-card-row {
-    margin-bottom: 10%;
+  margin-bottom: 3%;
   width: 100%;
 }
 
@@ -74,7 +74,7 @@
 .fundraise-card {
   border: none;
   box-shadow: 4px 8px 6px 0px rgb(192, 192, 192);
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 .fundraise-btn {
@@ -91,8 +91,10 @@
   width: 50%;
 }
 .fundraise-card-body {
+  background: transparent;
   border: none;
-  padding-left: 20px;
+  text-align: left;
+  padding: 20px 20px 0px 20px;
 }
 
 .fundraise-card-header {
@@ -103,10 +105,10 @@
   text-align: left;
   font-family: "Poppins", sans-serif;
   font-size: 15px;
-  margin-top: 5px;
+  margin-top: 5%;
 }
 
-.fundraise-card-footer{
-    background: transparent;
-    border: none;
+.fundraise-card-footer {
+  /* background: red; */
+  border: none;
 }

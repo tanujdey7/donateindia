@@ -4,6 +4,8 @@ import Logo from "./Images/logo.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Mission from "./Sections/Mission";
 import Fundraise from "./Sections/Fundraise";
+import Supportus from "./Sections/Supportus";
+import Joinmission from "./Sections/Joinmission";
 import "./Home.css";
 
 const Home = () => {
@@ -58,6 +60,11 @@ const Home = () => {
         <Fundraise />
       </div>
       {/* Funde raise end */}
+      {/* Support us */}
+      <div className="supportus-section">
+        <Supportus />
+        <Joinmission />
+      </div>
     </div>
   );
 };
