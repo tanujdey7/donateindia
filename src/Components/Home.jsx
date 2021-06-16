@@ -1,6 +1,5 @@
 import React from "react";
 import Donate from "./Images/AI.png";
-import Logo from "./Images/logo.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 // Pages import
 import Mission from "./Sections/Mission";
@@ -76,7 +75,7 @@ const Home = () => {
         <Donationcount />
       </div>
       <div className="Volunteers-section">
-          <Volunteers />
+        <Volunteers />
       </div>
     </div>
   );
