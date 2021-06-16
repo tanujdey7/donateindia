@@ -2,12 +2,15 @@ import React from "react";
 import Donate from "./Images/AI.png";
 import Logo from "./Images/logo.png";
 import "bootstrap/dist/css/bootstrap.min.css";
+// Pages import
 import Mission from "./Sections/Mission";
 import Fundraise from "./Sections/Fundraise";
 import Supportus from "./Sections/Supportus";
 import Joinmission from "./Sections/Joinmission";
 import Donationcount from "./Sections/Donationcount";
+import Volunteers from "./Sections/Volunteers";
 import "./Home.css";
+// import Volunteers from "./Sections/Volunteers";
 
 const Home = () => {
   return (
@@ -71,6 +74,9 @@ const Home = () => {
 
       <div className="Donationcount-section">
         <Donationcount />
+      </div>
+      <div className="Volunteers-section">
+          <Volunteers />
       </div>
     </div>
   );

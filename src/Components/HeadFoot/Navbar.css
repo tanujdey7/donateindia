@@ -1,77 +1,98 @@
 .navbar {
-    font-family: "Raleway", sans-serif;
-    width: 100%;
-    height: 80px;
-    background-color: #ffffff ;
-    margin-top: 0px;
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  height: 80px;
+  /* background-color: #e2f6f5; */
+  /* background-color: #ffffff ; */
+  margin-top: 0px;
 }
 
 .navbar-wrapper {
-    width: 100%;
-    height: auto;
-    margin-top: 0.5%;
+  width: 100%;
+  height: auto;
+  margin-top: 0.5%;
 }
 
 .logo-div {
-    width: 30%;
+  width: 30%;
 }
-
-.logo-div>h1 {
-    color: #000100;
+.logo-div > img {
+  background-color: #e2f6f5;
 }
 
 .contact-div {
-    padding-top: 10px;
-    padding-left: 10%;
-    display: flex;
-    width: 40%;
+  padding-top: 1%;
+  padding-left: 1%;
+  display: flex;
+  /* background-color: red; */
+  width: 40%;
 }
 
-.contact-div>h6 {
-    font-size: 14px;
-    font-weight:medium;
-    margin-left: 50px;
-    color: #000100;
+.contact-div > button {
+  width: auto;
+  height: 40px;
+  border: 1px solid #391a99;
+  /* background-color: #391a99; */
+  margin-left: 5%;
+}
+.contact-div > button > h5 {
+  /* font-size: 14px; */
+  font-weight: medium;
+  margin-left: 0px;
+  color: #391a99;
 }
 
 .login-div {
-    width: 30%;
+  padding-top: 1%;
+  width: 30%;
 }
 
-.donateus-btn{
-    background-color: #391a99;
-    color: #ffffff;
-    font-family: "Poppins", sans-serif;
-    float: left;
+.donateus-btn {
+  background-color: #391a99;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  float: left;
+  margin-left: 5%;
+}
+
+
+.donateus-btn:hover {
+  background-color: #e2f6f5;
+  color: #000100;
 }
 .login-btn {
-    background-color: #fdd900;
-    margin-left: 20px;
-    font-family: "Poppins", sans-serif;
+  background-color: #fdd900;
+  margin-left: 20px;
+  font-family: "Poppins", sans-serif;
 }
 
+.login-btn:hover {
+  background-color: #fad81a;
+  margin-left: 20px;
+  font-family: "Poppins", sans-serif;
+}
 
 @media only screen and (max-width: 600px) {
-    .navbar {
-        width: 100%;
-        height: 80px;
-        background-color: rgb(37, 37, 34);
-        margin-top: -8px;
-    }
-    .navbar-wrapper {
-        width: 100%;
-        display: flex;
-    }
-    .logo-div {
-        width: 50%;
-    }
-    .contact-div {
-        display: none;
-    }
-    .login-div {
-        width: 50%;
-    }
-    .login-div>button {
-        margin-left: 50px;
-    }
+  .navbar {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(37, 37, 34);
+    margin-top: -8px;
+  }
+  .navbar-wrapper {
+    width: 100%;
+    display: flex;
+  }
+  .logo-div {
+    width: 50%;
+  }
+  .contact-div {
+    display: none;
+  }
+  .login-div {
+    width: 50%;
+  }
+  .login-div > button {
+    margin-left: 50px;
+  }
 }
