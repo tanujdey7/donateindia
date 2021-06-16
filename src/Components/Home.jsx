@@ -67,7 +67,7 @@ const Home = () => {
       {/* Support us */}
       <div className="supportus-section">
         <Supportus />
-        <Joinmission />
+        
       </div>
 
       {/* Total count */}
@@ -76,6 +76,7 @@ const Home = () => {
         <Donationcount />
       </div>
       <div className="Volunteers-section">
+        <Joinmission />
           <Volunteers />
       </div>
     </div>

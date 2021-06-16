@@ -31,9 +31,13 @@
 .contact-div > button {
   width: auto;
   height: 40px;
-  border: 1px solid #391a99;
+  /* border: 1px solid #391a99; */
   /* background-color: #391a99; */
   margin-left: 5%;
+}
+
+.contact-div > button:hover{
+    border-bottom: 3px solid #391a99;
 }
 .contact-div > button > h5 {
   /* font-size: 14px; */
