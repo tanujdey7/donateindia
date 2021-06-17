@@ -1,15 +1,15 @@
 .navbar {
   font-family: "Raleway", sans-serif;
-  width: 100%;
+  width: 90%;
+  display: flex;
   height: 80px;
-  /* background-color: #e2f6f5; */
-  /* background-color: #ffffff ; */
   margin-top: 0px;
 }
 
 .navbar-wrapper {
   width: 96%;
   height: auto;
+  display: flex;
   margin-top: 0.5%;
 }
 
@@ -80,15 +80,16 @@
 
 
 .hamburger-icon{
-  text-align: right;
+  /* background-color: red; */
   float: right;
+  margin-left: -100px;
   cursor: pointer;
-  position: sticky;
 }
 
 .ham-menu-div{
   width: 60%;
   display: flex;
+  /* background-color: red; */
 }
 
 

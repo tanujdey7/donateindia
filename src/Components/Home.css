@@ -98,7 +98,7 @@
 .scroll-container{
   margin-left: auto;
   margin-right: auto;
-  width: 30px;
+  width: 25px;
   height: 60px;
   border: 2px solid #131313;
   border-radius: 15px;
@@ -106,13 +106,13 @@
 }
 
 .scroller{
-  width: 12px;
+  width: 8px;
   border-radius: 8px;
   background-color: #131313;
   position: absolute;
   top: 4px;
-  left: 7px;
-  bottom: 34px;
+  left: 6px;
+  bottom: 25px;
   animation: scroller 1500ms ease-out infinite;
 }
 
