@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navbar.css";
-// import "./Navbar";
 import Logo from "../Images/logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdCloseCircle } from "react-icons/io";

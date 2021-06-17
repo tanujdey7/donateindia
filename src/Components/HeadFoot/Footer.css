@@ -26,17 +26,28 @@
   color: #ffffff;
 }
 
-.footer-line {
+/* .footer-line {
   width: 70%;
   margin-top:3%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3%;
-  /* cursor: pointer; */
   height: 2px;
   background-color: #ffffff;
-}
+} */
 
+
+.footer-line{
+  width: 70%; 
+  height:100px;  
+  margin-top:3%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3%;
+  border:solid 5px rgb(255, 255, 255);
+  border-color:rgb(255, 255, 255) transparent transparent transparent;
+  border-radius: 50%/100px 100px 0 0;
+}
 /* two */
 
 .footer-row-col-three > h6 {
