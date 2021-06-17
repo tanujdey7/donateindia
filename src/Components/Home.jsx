@@ -67,7 +67,6 @@ const Home = () => {
       {/* Support us */}
       <div className="supportus-section">
         <Supportus />
-
       </div>
 
       {/* Total count */}
