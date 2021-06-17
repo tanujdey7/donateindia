@@ -8,6 +8,7 @@ import Supportus from "./Sections/Supportus";
 import Joinmission from "./Sections/Joinmission";
 import Donationcount from "./Sections/Donationcount";
 import Volunteers from "./Sections/Volunteers";
+import Newsletter from "./Sections/Newsletter";
 import "./Home.css";
 // import Volunteers from "./Sections/Volunteers";
 
@@ -74,8 +75,13 @@ const Home = () => {
         <Donationcount />
       </div>
       <div className="Volunteers-section">
-        <Joinmission />
         <Volunteers />
+      </div>
+      <div className="Joinmission-section">
+        <Joinmission />
+      </div>
+      <div className="Newsletter-section">
+        <Newsletter />
       </div>
     </div>
   );
