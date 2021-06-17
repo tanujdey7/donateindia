@@ -10,13 +10,21 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar-wrapper row">
-        <div className="logo-div col-4">
+        <div className="logo-div col ">
           <img src={Logo} width="250px" alt="" srcset="" />
         </div>
+        <div className="show-btn-div col">{show==false ? (<GiHamburgerMenu
+          className="hamburger-icon"
+          onClick={() => setShow(true)}
+          size={40}
+        />
+        ) : null}
+        </div>
+      </div>
 
-        {show ? (
-          <div className="ham-menu-div ">
-            <div className="contact-div col mt-3">
+      {show ? (
+        <div className="ham-menu-div">
+          {/* <div className="contact-div col mt-3">
               <button className="btn btn-md">
                 <h5 className="">Home</h5>
               </button>
@@ -26,31 +34,20 @@ const Navbar = () => {
               <button className="btn btn-md">
                 <h5 className="">How it Works</h5>
               </button>
-            </div>
+            </div> */}
 
-            <div className="login-div col mt-3">
+          {/* <div className="login-div col mt-3">
               <button className="donateus-btn btn btn-md ">Donate</button>
               <button className="donateus-btn btn btn-md ">Volunteer</button>
               <button className="login-btn btn btn-md">Login</button>
-            </div>
-          </div>
-        ) : null}
-      </div>
-      <div>
-        {show ? (
+            </div> */}
           <IoMdCloseCircle
             className="close-icon"
             onClick={() => setShow(false)}
             size={40}
           />
-        ) : (
-          <GiHamburgerMenu
-            className="hamburger-icon"
-            onClick={() => setShow(true)}
-            size={40}
-          />
-        )}
-      </div>
+        </div>
+      ) : null}
     </div>
   );
 };
