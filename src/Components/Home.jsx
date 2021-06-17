@@ -51,6 +51,7 @@ const Home = () => {
             <div class="scroll-container">
               <div class="scroller"></div>
             </div>
+            <h6 className="mt-3 font-weight-bold">Scroll Down</h6>
           </div>
         </div>
       </div>
@@ -71,14 +72,15 @@ const Home = () => {
 
       {/* Total count */}
 
-      <div className="Donationcount-section">
-        <Donationcount />
-      </div>
+
       <div className="Volunteers-section">
         <Volunteers />
       </div>
       <div className="Joinmission-section">
         <Joinmission />
+      </div>
+      <div className="Donationcount-section">
+        <Donationcount />
       </div>
       <div className="Newsletter-section">
         <Newsletter />
