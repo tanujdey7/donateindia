@@ -8,7 +8,7 @@
 }
 
 .navbar-wrapper {
-  width: 100%;
+  width: 96%;
   height: auto;
   margin-top: 0.5%;
 }
@@ -76,6 +76,25 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* hamburger menu */
+
+
+.hamburger-icon{
+  text-align: right;
+  float: right;
+  cursor: pointer;
+  position: sticky;
+}
+
+.ham-menu-div{
+  width: 60%;
+  display: flex;
+}
+
+
+.close-icon{
+  cursor: pointer;
+}
 @media only screen and (max-width: 600px) {
   .navbar {
     width: 100%;
@@ -100,3 +119,6 @@
     margin-left: 50px;
   }
 }
+
+
+
