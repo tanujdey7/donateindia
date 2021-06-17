@@ -36,8 +36,8 @@
   margin-left: 5%;
 }
 
-.contact-div > button:hover{
-    border-bottom: 3px solid #391a99;
+.contact-div > button:hover {
+  border-bottom: 3px solid #391a99;
 }
 .contact-div > button > h5 {
   /* font-size: 14px; */
@@ -59,7 +59,6 @@
   margin-left: 5%;
 }
 
-
 .donateus-btn:hover {
   background-color: #e2f6f5;
   color: #000100;
@@ -78,21 +77,19 @@
 
 /* hamburger menu */
 
-
-.hamburger-icon{
+.hamburger-icon {
   text-align: right;
   float: right;
   cursor: pointer;
   position: sticky;
 }
 
-.ham-menu-div{
+.ham-menu-div {
   width: 60%;
   display: flex;
 }
 
-
-.close-icon{
+.close-icon {
   cursor: pointer;
 }
 @media only screen and (max-width: 600px) {
@@ -119,6 +116,3 @@
     margin-left: 50px;
   }
 }
-
-
-
