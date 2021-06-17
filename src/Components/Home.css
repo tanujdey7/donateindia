@@ -8,7 +8,7 @@
 .hero-section-row {
   width: 90%;
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -98,7 +98,7 @@
 .scroll-container{
   margin-left: auto;
   margin-right: auto;
-  width: 25px;
+  width: 33px;
   height: 60px;
   border: 2px solid #131313;
   border-radius: 15px;
@@ -106,12 +106,12 @@
 }
 
 .scroller{
-  width: 8px;
+  width: 6px;
   border-radius: 8px;
   background-color: #131313;
   position: absolute;
   top: 4px;
-  left: 6px;
+  left: 11px;
   bottom: 25px;
   animation: scroller 1500ms ease-out infinite;
 }

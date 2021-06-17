@@ -26,19 +26,8 @@
   color: #ffffff;
 }
 
-/* .footer-line {
-  width: 70%;
-  margin-top:3%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 3%;
-  height: 2px;
-  background-color: #ffffff;
-} */
-
-
 .footer-line{
-  width: 80%; 
+  width: 100%; 
   height:100px;  
   margin-top:3%;
   margin-left: auto;
