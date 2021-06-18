@@ -1,14 +1,15 @@
 /* 391A99 */
 .home-wrapper {
   font-family: "Raleway", sans-serif;
+  /* background-color: red; */
 }
 .hero-section {
   background-color: #ffffff;
 }
 .hero-section-row {
   width: 90%;
-  margin-top: 5%;
-  margin-bottom: 3%;
+  padding-top: 5%;
+  padding-bottom: 3%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -50,7 +51,6 @@
 }
 
 .get-start-btn {
-  /* margin-top: -10px; */
   padding: 15px;
   border-radius: 3px;
   background-color: #fdd900;
@@ -59,7 +59,6 @@
   font-weight: 500;
 }
 .learn-btn {
-  /* margin-top: -10px; */
   margin-left: 20px;
   padding: 15px;
   border-radius: 3px;
@@ -91,7 +90,6 @@
 
 /* total donation sec */
 .scroll-row{
-  /* background-color: red; */
   margin-left: auto;
   margin-right: auto;
 }

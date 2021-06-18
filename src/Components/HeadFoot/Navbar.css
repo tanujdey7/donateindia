@@ -10,7 +10,6 @@
   width: 95%;
   height: auto;
   display: flex;
-  /* margin-top: 0.5%; */
 }
 
 .logo-div {
@@ -26,9 +25,7 @@
   margin-top: 25%;
   padding-top: 1%;
   padding-left: 1%;
-  /* margin-right: 100px; */
   display: flex;
-  /* background-color: red; */
   width: 100%;
 }
 
@@ -39,7 +36,6 @@
 }
 
 .login-div {
-  /* padding-top: 1%; */
   margin-right: 70px;
   margin-top: 5%;
   float: right;
@@ -119,7 +115,6 @@
   width: 1000px;
   height: 90%;
   float: right;
-  /* background-color: green; */
 }
 
 .close-icon {

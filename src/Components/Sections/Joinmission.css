@@ -11,18 +11,16 @@
   margin-right: auto;
   background-color: #fdd900;
 }
-.joinmission-text{
-    width: 70%;
-    
-    /* background-color: red; */
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 6%;
-    padding-bottom: 6%;
+.joinmission-text {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6%;
+  padding-bottom: 6%;
 }
 
-.joinmission-text>h1{
-    font-size: 2.5rem;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
+.joinmission-text > h1 {
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
