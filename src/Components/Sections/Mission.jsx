@@ -40,7 +40,7 @@ function Mission() {
             <div className="mission-box-col col-6">
               <div className="mission-box-one card">
                 <div className="mission-box-img card-body">
-                  <img src={Blooddrop} width="120" />
+                  <img src={Blooddrop} alt="Blooddrop" width="120" />
                 </div>
                 <div className="mission-box-footer card-footer">
                   <h5>Blood Donation</h5>
@@ -51,7 +51,7 @@ function Mission() {
             <div className="mission-box-col col-6">
               <div className="mission-box-two card">
                 <div className="mission-box-img card-body">
-                  <img src={Food} width="120" />
+                  <img src={Food} alt="Food" width="120" />
                 </div>
                 <div className="mission-box-footer card-footer">
                   <h5>Food Donation</h5>
@@ -64,7 +64,7 @@ function Mission() {
             <div className="mission-box-col col-6">
               <div className="mission-box-three card">
                 <div className="mission-box-img card-body">
-                  <img className="svg-color" src={Clothes} width="120" />
+                  <img className="svg-color" src={Clothes} alt="Clothes" width="120" />
                 </div>
                 <div className="mission-box-footer card-footer">
                   <h5>Clothes Donation</h5>
@@ -75,7 +75,7 @@ function Mission() {
             <div className="mission-box-col  col-6">
               <div className="mission-box-four card">
                 <div className="mission-box-img card-body">
-                  <img src={Books} width="110" />
+                  <img src={Books} alt="Books" width="110" />
                 </div>
                 <div className="mission-box-footer card-footer">
                   <h5>Books Donation</h5>

@@ -21,7 +21,7 @@ const Home = () => {
             <div className="img-col-wrapper">
               <div className="hero-sec-img-card card">
                 <div className="hero-img-card-body card-body">
-                  <img src={Donate} className="hero-sec-img" />
+                  <img src={Donate} alt="Donate" className="hero-sec-img" />
                 </div>
               </div>
             </div>

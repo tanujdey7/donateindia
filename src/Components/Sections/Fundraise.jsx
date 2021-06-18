@@ -24,17 +24,17 @@ const Fundraise = () => {
                 <div className="fundraise-row-one-wrapper">
                     <div className="fundraise-col col">
                         <div className="fundraise-div fundraise-div-one">
-                            <img src={Bird} /><h4 className="fundraise-div-text">Inspiration</h4>
+                            <img src={Bird} alt="Bird" /><h4 className="fundraise-div-text">Inspiration</h4>
                         </div>
                     </div>
                     <div className="fundraise-col col"><div className="fundraise-div fundraise-divtwo">
-                        <img src={Volunteer} /><h4 className="fundraise-div-text">Volunteering</h4>
+                        <img src={Volunteer} alt="Volunteers" /><h4 className="fundraise-div-text">Volunteering</h4>
                     </div></div>
                     <div className="fundraise-col col"><div className="fundraise-div fundraise-divthree">
-                        <img src={Heart} /> <h4 className="fundraise-div-text">Donations</h4>
+                        <img src={Heart} alt="Heart" /> <h4 className="fundraise-div-text">Donations</h4>
                     </div></div>
                     <div className="fundraise-col col"><div className="fundraise-div fundraise-divfour">
-                        <img src={Support} /> <h4 className="fundraise-div-text">Support</h4>
+                        <img src={Support} alt="Support" /> <h4 className="fundraise-div-text">Support</h4>
                     </div></div>
                 </div>
             </div>
@@ -48,7 +48,7 @@ const Fundraise = () => {
                     <div className="col-3">
                         <div className="fundraise-card card">
                             <div className="fundraise-card-header card-header">
-                                <img src={Imgone} className="card-img-top" width="100" />
+                                <img src={Imgone} alt="Imgone" className="card-img-top" width="100" />
                             </div>
                             <div className="fundraise-card-body card-body">
                                 <h6><FaRupeeSign />{received} of {raised}</h6>
@@ -62,7 +62,7 @@ const Fundraise = () => {
                     </div>
                     <div className="col-3"><div className="fundraise-card card">
                         <div className="fundraise-card-header card-header">
-                            <img src={Imgtwo} className="card-img-top" width="100" />
+                            <img src={Imgtwo} alt="Imgtwo" className="card-img-top" width="100" />
                         </div>
                         <div className="fundraise-card-body card-body">
                             <h6><FaRupeeSign />{received} of {raised}</h6>
@@ -75,7 +75,7 @@ const Fundraise = () => {
                     </div></div>
                     <div className="col-3"><div className="fundraise-card card">
                         <div className="fundraise-card-header card-header">
-                            <img src={Imgthree} className="card-img-top" width="100" />
+                            <img src={Imgthree} alt="Imgthree" className="card-img-top" width="100" />
                         </div>
                         <div className="fundraise-card-body card-body">
                             <h6><FaRupeeSign />{received} of {raised}</h6>
@@ -89,7 +89,7 @@ const Fundraise = () => {
                     <div className="col-3">
                         <div className="fundraise-card card">
                             <div className="fundraise-card-header card-header">
-                                <img src={Imgtwo} className="card-img-top" width="100" />
+                                <img src={Imgtwo} alt="Imgtwo" className="card-img-top" width="100" />
                             </div>
                             <div className="fundraise-card-body card-body">
                                 <h6><FaRupeeSign />{received} of {raised}</h6>

@@ -3,7 +3,7 @@ import "./Donationcount.css";
 import Happygirl from "../Images/icons/happygirl.png";
 import { FiCloud } from "react-icons/fi";
 import { FaRupeeSign } from "react-icons/fa";
-import { HiPlusSm } from "react-icons/hi";
+// import { HiPlusSm } from "react-icons/hi";
 
 const Donationcount = () => {
     return (
@@ -33,7 +33,7 @@ const Donationcount = () => {
                     </div>
                     <div className="donation-count-col-three col-3">
                         <div className="donation-count-girl">
-                            <img src={Happygirl} width="370" />
+                            <img src={Happygirl} alt="Happygirl" width="370" />
                         </div>
                     </div>
 
