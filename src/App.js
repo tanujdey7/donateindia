@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import Navbar from "./Components/HeadFoot/Navbar";
 import Home from "./Components/Home";
-import Login from "./Pages/Login/Login";
+import Login from "./Pages/Loginpages/Login";
 import Footer from "./Components/HeadFoot/Footer";
 function App() {
   return (

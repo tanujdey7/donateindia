@@ -1,0 +1,28 @@
+.login-wrapper{
+    padding: 10px;
+}
+
+.login-section{
+    width: 100%;
+    background-color: #1e555c;
+}
+
+.login-wrapper-row{
+    background-color: yellow;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.login-form-wrapper-row{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.login-col-wrap{
+    display: flex;
+    width: 100%;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
