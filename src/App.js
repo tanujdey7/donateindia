@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Navbar from "./Components/HeadFoot/Navbar";
 import Home from "./Components/Home";
+import Login from "./Pages/Login/Login";
 import Footer from "./Components/HeadFoot/Footer";
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/Login" component={Login} />
         </Switch>
         <Footer />
       </Router>

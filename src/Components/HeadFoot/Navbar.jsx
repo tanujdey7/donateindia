@@ -14,7 +14,7 @@ const Navbar = () => {
           <img src={Logo} width="250px" alt="" srcset="" />
         </div>
         <div className="show-btn-div col">{show === false ? (<GiHamburgerMenu
-          className="hamburger-icon mt-2"
+          className="hamburger-icon mt-4"
           onClick={() => setShow(true)}
           size={40}
         />
@@ -33,7 +33,7 @@ const Navbar = () => {
             <div className="contact-div">
               <ul className="nav-menu-ul">
                 <li className="nav-menu-li">
-                  <a href="#"><h1 className="nav-menu-h1">Home</h1></a>
+                  <a href="/"><h1 className="nav-menu-h1">Home</h1></a>
                 </li>
                 <li className="nav-menu-li">
                   <a href="#"><h1 className="nav-menu-h1">About Us</h1></a>
@@ -53,7 +53,7 @@ const Navbar = () => {
                   <button className="btn btn-lg navbar-btns">Volunteer</button>
                 </li>
                 <li className="login-div-li">
-                  <button className="btn btn-lg navbar-btns">Login</button>
+                  <a href="/Login"><button className="btn btn-lg navbar-btns">Login</button></a>
                 </li>
               </ul>
             </div>
