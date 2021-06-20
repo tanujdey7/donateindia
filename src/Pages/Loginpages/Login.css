@@ -1,28 +1,114 @@
-.login-wrapper{
+.login-wrapper {
     padding: 10px;
 }
 
-.login-section{
+.login-section {
     width: 100%;
-    background-color: #1e555c;
+    height: 700px;
+    background-color: #e5e5e5;
 }
 
-.login-wrapper-row{
-    background-color: yellow;
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-}
-
-.login-form-wrapper-row{
+.login-wrapper-row {
+    background-color: rgb(255, 255, 255);
     width: 100%;
     margin: 0px;
     padding: 0px;
 }
 
-.login-col-wrap{
+.login-title-wrap {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* login form */
+
+.login-form-wrapper-row {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.login-col-wrap {
     display: flex;
+    padding-top: 2%;
     width: 100%;
     /* margin-left: auto;
     margin-right: auto; */
+}
+
+.login-switch-btns {
+    width: 70%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid red; */
+}
+
+.login-form-div {
+    width: 50%;
+    padding: 10px;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.donor-login-form {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.receiver-login-form {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-switch-donor-btn {
+    width: 48%;
+    color: #ffffff;
+    border-radius: 0px;
+    background-color: rgb(26, 24, 24);
+}
+
+.login-switch-receiver-btn {
+    width: 50%;
+    border-radius: 0px;
+    background-color: rgb(3, 10, 70);
+    color: #ffffff;
+}
+
+.submit-donor {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0px;
+    background-color: rgb(3, 10, 70);
+    color: #ffffff;
+}
+
+.social-login-btn-google {
+    width: 70%;
+    color: #131313;
+    border: 2px solid rgb(163, 163, 163);
+    border-radius: 30px;
+    height: 38px;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    /* border-radius: 0px; */
+    background-color: #ffffff;
+}
+
+.social-login-btn-facebook {
+    width: 70%;
+    margin-top: 10px;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    border: none;
+    border-radius: 30px;
+    height: 38px;
+    /* border-radius: 0px; */
+    background-color: #4267B2;
 }
