@@ -95,10 +95,6 @@ const Blooddonation = () => {
                                     <td>{anydata.Services}</td>
                                     <td>{anydata.Type}</td></tr>
                             })}
-
-
-
-
                         </tbody>
                     </table>
                 </div>
