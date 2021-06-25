@@ -1,0 +1,66 @@
+.blood-container{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+.wrapper{
+    margin: 0px;
+    padding: 0px;
+    background-color: #391a99;
+}
+.box-one {
+  width: 250px;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+  background-color: #4e34af;
+}
+.box-two {
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  height: 250px;
+  color: #ffffff;
+  background-color: #4e34af;
+}
+
+.box-three {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 250px;
+  color: #ffffff;
+  background-color: #4e34af;
+}
+
+
+.blood-donate-row{
+    width: 100%;
+}
+.box-four {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 250px;
+  color: #ffffff;
+  background-color: #4e34af;
+}
+
+.box-row-one {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+.box-row-two {
+  display: flex;
+  margin: 0px;
+  margin-top: 7%;
+  padding: 0px;
+}
+
+.box-col-main {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}

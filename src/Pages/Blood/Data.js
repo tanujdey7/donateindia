@@ -83,51 +83,21 @@ const Bloodbankdetails = [
         Srno: "9",
         Name: "GENERAL HOSPITAL (ESIC) AHMEDABAD",
         Address: "Model Hospital Blood Bank,(ESIS), Blood Bank, Bapunagar, Ahmedabad, Dist. Ahmedabad",
-        Phone: "9574547152",
-        Email: "Raghav26897@gmail.com",
-        Category: "Private",
+        Phone: "7567091673, 079-22745770/ 22743935",
+        Email: "ms-bapunagar.gj@esic.in",
+        Category: "Govt",
         Services: "Camp Stock",
-        Type: "BSU"
+        Type: "Blood Bank"
     },
     {
         Srno: "10",
-        Name: "CHC, Bagodara (BSU)	",
-        Address: "Bagodara , Bagodara , Dist. Ahmedabad",
-        Phone: "9574547152",
-        Email: "Raghav26897@gmail.com",
-        Category: "Private",
+        Name: "GUJARAT CANCER MEDICAL COLLEGE",
+        Address: "Blood Bank, Gujarat Cancer Society Medical College Hospital & Research Centre, Opp. D.R.M. office, Swadesi Mill compound, Near Chamunda Bridge, Ahmedabad, Dist. Ahmedabad",
+        Phone: "9925001523, 079-6648138",
+        Email: "gcsbloodbank@yahoo.in",
+        Category: "Charitable",
         Services: "Camp Stock",
-        Type: "BSU"
-    },
-    {
-        Srno: "6",
-        Name: "CHC, Bagodara (BSU)	",
-        Address: "Bagodara , Bagodara , Dist. Ahmedabad",
-        Phone: "9574547152",
-        Email: "Raghav26897@gmail.com",
-        Category: "Private",
-        Services: "Camp Stock",
-        Type: "BSU"
-    },
-    {
-        Srno: "6",
-        Name: "CHC, Bagodara (BSU)	",
-        Address: "Bagodara , Bagodara , Dist. Ahmedabad",
-        Phone: "9574547152",
-        Email: "Raghav26897@gmail.com",
-        Category: "Private",
-        Services: "Camp Stock",
-        Type: "BSU"
-    },
-    {
-        Srno: "6",
-        Name: "CHC, Bagodara (BSU)	",
-        Address: "Bagodara , Bagodara , Dist. Ahmedabad",
-        Phone: "9574547152",
-        Email: "Raghav26897@gmail.com",
-        Category: "Private",
-        Services: "Camp Stock",
-        Type: "BSU"
+        Type: "Blood Bank"
     },
 ];
 
