@@ -38,15 +38,17 @@ function Mission() {
         <div className="mission-box-wrap">
           <div className="mission-box-row row">
             <div className="mission-box-col col-6">
-              <div className="mission-box-one card">
-                <div className="mission-box-img card-body">
-                  <img src={Blooddrop} alt="Blooddrop" width="120" />
+              <a href="/blooddonate">
+                <div className="mission-box-one card">
+                  <div className="mission-box-img card-body">
+                    <img src={Blooddrop} alt="Blooddrop" width="120" />
+                  </div>
+                  <div className="mission-box-footer card-footer">
+                    <h5>Blood Donation</h5>
+                    <h6>Learn More</h6>
+                  </div>
                 </div>
-                <div className="mission-box-footer card-footer">
-                  <h5>Blood Donation</h5>
-                  <h6>Learn More</h6>
-                </div>
-              </div>
+              </a>
             </div>
             <div className="mission-box-col col-6">
               <div className="mission-box-two card">

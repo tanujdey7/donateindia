@@ -148,7 +148,7 @@ const Login = () => {
                             className="form-controls mt-3"
                             placeholder="Enter pass"
                           />
-                          <button type="submit" class="btn btn-primary mt-2">
+                          <button type="submit submit-btn" class="btn btn-primary mt-2">
                             Submit Receiver
                           </button>
                         </form>
