@@ -75,7 +75,7 @@ const Bloodbankdetails = [
         Address: "Blood Bank, Dr. Jivraj Mehta Smarak Health Foundation, Bakeri Medical Research Centre, Ratubhai Adani Arogya Dham, Dr. Jivraj Mehta Marg, Ahmedabad, Dist. Ahmedabad",
         Phone: "9428600668, 9825015184, 9638704180",
         Email: "info@jivrajhealthcare.org",
-        Category: "Private",
+        Category: "Charitable",
         Services: "Camp Stock",
         Type: "BSU"
     },
