@@ -1,61 +1,82 @@
-.blood-container{
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
+.blood-container {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
 }
-.wrapper{
-    margin: 0px;
-    padding: 0px;
-    background-color: #391a99;
+.wrapper {
+  margin: 0px;
+  padding: 0px;
+  background-color: #391a99;
+}
+
+.icon-div-one{
+  margin-top: 60%;
+}
+.icon-h1 {
+  margin-top: 10%;
+  color: #f7d200;
 }
 .box-one {
   width: 250px;
-  height: 250px;
+  border-radius: 10px;
+  height: 230px;
   margin-left: auto;
   margin-right: auto;
   color: #ffffff;
   background-color: #4e34af;
 }
+
 .box-two {
-  margin-left: auto;
+  margin-left: 0px;
   margin-right: auto;
+  border-radius: 10px;
   width: 250px;
-  height: 250px;
+  height: 230px;
   color: #ffffff;
   background-color: #4e34af;
 }
 
 .box-three {
+  margin-top: 0px;
+  border-radius: 10px;
   width: 250px;
   margin-left: auto;
   margin-right: auto;
-  height: 250px;
+  height: 230px;
   color: #ffffff;
   background-color: #4e34af;
 }
 
-
-.blood-donate-row{
-    width: 100%;
+.blood-donate-row {
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 7%;
 }
 .box-four {
-  width: 250px;
-  margin-left: auto;
+  margin-left: 0px;
+  border-radius: 10px;
   margin-right: auto;
-  height: 250px;
+  width: 250px;
+  height: 230px;
   color: #ffffff;
   background-color: #4e34af;
+}
+
+.drop-div{
+  display: flex;
 }
 
 .box-row-one {
   display: flex;
+  /* background-color: red; */
   margin: 0px;
   padding: 0px;
 }
 .box-row-two {
   display: flex;
+  /* background-color: green; */
   margin: 0px;
-  margin-top: 7%;
+  margin-top: 3.5%;
   padding: 0px;
 }
 
@@ -63,4 +84,49 @@
   margin: 0px;
   padding: 0px;
   width: 100%;
+}
+
+/* dropdown */
+.blood-wrapper-two{
+  height: 800px;
+}
+.dropbtn {
+  width: 200px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
 }

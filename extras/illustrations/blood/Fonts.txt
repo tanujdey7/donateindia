@@ -1,0 +1,5 @@
+Fonts used in this design:
+
+Font: Public Sans
+Author: U.S. Web Design System
+Url: https://www.fontsquirrel.com/fonts/public-sans
