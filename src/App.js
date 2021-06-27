@@ -10,6 +10,7 @@ import Home from "./Components/Home";
 import Login from "./Pages/Loginpages/Login";
 import Footer from "./Components/HeadFoot/Footer";
 import Blooddonate from "./Pages/Blood/BloodDonate";
+import Iamdonor from "./Pages/Blood/Donor";
 function App() {
   return (
     <div className="App">
@@ -19,7 +20,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/Login" component={Login} />
           <Route exact path="/blooddonate" component={Blooddonate} />
-
+          <Route exact path="/iamdonor" component={Iamdonor} />
         </Switch>
         <Footer />
       </Router>

@@ -20,7 +20,7 @@ const Footer=()=> {
             </div>
             <div className="footer-row-two row">
                 <div className="footer-row-col-three col-8">
-                    <h6><FaGgCircle size={40} />  Privacy polic - Modern Day Statement - Social Impact Statement</h6>
+                    <h6><FaGgCircle size={40} />  Privacy policy - Modern Day Statement - Social Impact Statement</h6>
                 </div>
                 <div className="footer-row-col-four col-4">
                     <div className="footer-icons-div">

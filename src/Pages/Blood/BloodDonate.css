@@ -1,9 +1,10 @@
 .blood-container {
   margin: 0px;
   padding: 0px;
+  height: 100%;
   width: 100%;
 }
-.wrapper {
+.blood-main-wrapper {
   margin: 0px;
   padding: 0px;
   background-color: #391a99;
@@ -52,6 +53,22 @@
   padding-top: 5%;
   padding-bottom: 7%;
 }
+
+.blood-wrapper-row-three{
+  width: 85%;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blood-bank-col{
+  /* width: 50%; */
+  margin: 0px;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: red; */
+}
 .box-four {
   margin-left: 0px;
   border-radius: 10px;
@@ -62,10 +79,17 @@
   background-color: #4e34af;
 }
 
-.drop-div{
+.dropdown-wrapper{
   display: flex;
+  /* background-color: red; */
+  width: 40%;
+  margin-top: 5%;
 }
 
+.drop-div{
+  width: 30%;
+  margin-left: 2%;
+}
 .box-row-one {
   display: flex;
   /* background-color: red; */
@@ -86,47 +110,24 @@
   width: 100%;
 }
 
+.bank-search-btn{
+  width: 150px;
+  height: 43px;
+  background-color: #003566;
+}
+
 /* dropdown */
 .blood-wrapper-two{
-  height: 800px;
-}
-.dropbtn {
-  width: 200px;
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+  width: 100%;
+  padding-top: 2%;
+  padding-bottom: 5%;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
+
+.blood-bank-data-table{
+  border: 2px solid black;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+.blood-bank-data-table>tbody>tr>td{
+  border: 1px solid #003566;
 }

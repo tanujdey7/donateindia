@@ -1,21 +1,61 @@
 import React from 'react';
 import "./BloodDonate.css";
 import "bootstrap/js/dist/dropdown";
+import Bloodbankdetails from "./Data";
 import { AiOutlineCloud, AiFillBank } from "react-icons/ai";
-import { BiShapeCircle } from "react-icons/bi";
+// import { BiShapeCircle } from "react-icons/bi";
 import { BsCommand } from "react-icons/bs";
 import { BiDonateBlood } from "react-icons/bi";
 import { GiCampingTent, GiReceiveMoney } from "react-icons/gi";
-import DonorOne from "../Images/blooddonateiconone.png";
-import DonorTwo from "../Images/blooddonationtwo.png";
+// import DonorOne from "../Images/blooddonateiconone.png";
+// import DonorTwo from "../Images/blooddonationtwo.png";
 
-import Statedata from "./Statedata";
-import Citydata from "./CityData";
+// import Statedata from "./Statedata";
+// import Citydata from "./CityData";
+
+import Dropdown from 'react-dropdown';
+import 'react-dropdown/style.css';
+
+const options = [
+    { value: 'one', label: 'One' },
+    { value: 'two', label: 'Two', className: 'myOptionClassName' },
+    {
+        type: 'group', name: 'group1', items: [
+            { value: 'three', label: 'Three', className: 'myOptionClassName' },
+            { value: 'four', label: 'Four' }
+        ]
+    },
+    {
+        type: 'group', name: 'group2', items: [
+            { value: 'five', label: 'Five' },
+            { value: 'six', label: 'Six' }
+        ]
+    }
+];
+const optionstwo = [
+    { value: 'one', label: 'One' },
+    { value: 'two', label: 'Two', className: 'myOptionClassName' },
+    {
+        type: 'group', name: 'group1', items: [
+            { value: 'three', label: 'Three', className: 'myOptionClassName' },
+            { value: 'four', label: 'Four' }
+        ]
+    },
+    {
+        type: 'group', name: 'group2', items: [
+            { value: 'five', label: 'Five' },
+            { value: 'six', label: 'Six' }
+        ]
+    }
+];
+
+const defaultOption = options[0];
+const twoOption = optionstwo[0];
 
 const BloodDonate = () => {
     return (
         <div className="blood-container container-fluid">
-            <div className="wrapper w-100">
+            <div className="blood-main-wrapper w-100">
                 <div className="blood-donate-row row">
                     <div className="col-4">
                         <div className="icon-div-one">
@@ -25,7 +65,7 @@ const BloodDonate = () => {
                     <div className="box-col-main col-4">
                         <div className="box-row-one row w-100">
                             <div className="col">
-                                <a href="#">
+                                <a href="/iamdonor">
                                     <div className="box-one">
                                         <h1 className="icon-h1 pt-4">
                                             <BiDonateBlood size={100} />
@@ -76,7 +116,7 @@ const BloodDonate = () => {
                     </div>
                 </div>
             </div>
-            <div className="blood-wrapper-two pt-5">
+            <div className="blood-wrapper-two pt-5 mb-5">
                 <div className="blood-wrapper-row-one row w-100">
                     <div className="col">
                         <div className="display-4">
@@ -86,26 +126,53 @@ const BloodDonate = () => {
                 </div>
                 <div className="blood-wrapper-row-two row w-100">
                     <div className="col">
-                        <div className="drop-div ml-auto mr-auto w-50 bg-dark">
-                            <div class="dropdown">
-                                <button class="dropbtn">State</button>
-                                <div class="dropdown-content">
-                                    {Statedata.map((sdata) => (
-                                        <a href="#">{sdata.Name}</a>
-                                    ))}
-                                </div>
+                        <div className="dropdown-wrapper ml-auto mr-auto">
+                            <div className="drop-div">
+                                <Dropdown options={options} onChange={this._onSelect} value={defaultOption} placeholder="Select an option" />
                             </div>
-                            <div class="dropdown ml-3">
-                                <button class="dropbtn">State</button>
-                                <div class="dropdown-content">
-                                    {Citydata.map((cdata) => (
-                                        <a href="#">{cdata.CityName}</a>
-                                    ))}
-                                </div>
+                            <div className="drop-div">
+                                <Dropdown options={optionstwo} onChange={this._onSelect} value={twoOption} placeholder="Select an option" />
+                            </div>
+                            <div className="drop-div">
+                                <button className="btn bank-search-btn text-white">Search</button>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="blood-wrapper-row-three row">
+                    <div className="blood-bank-col col-11">
+                    <table class="table blood-bank-data-table">
+                        <thead className="thead-dark">
+                            <tr>
+                                <th>Sr</th>
+                                <th>Name</th>
+                                <th>Address</th>
+                                <th>Phone</th>
+                                <th>Email</th>
+                                <th>Category</th>
+                                <th>Services</th>
+                                <th>Type</th>
 
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            {Bloodbankdetails.map(anydata => {
+                                return <tr>
+
+                                    <td>{anydata.Srno}</td>
+                                    <td>{anydata.Name}</td>
+                                    <td>{anydata.Address}</td>
+                                    <td>{anydata.Phone}</td>
+                                    <td>{anydata.Email}</td>
+                                    <td>{anydata.Category}</td>
+                                    <td>{anydata.Services}</td>
+                                    <td>{anydata.Type}</td></tr>
+                            })}
+                        </tbody>
+
+                    </table>
+                    </div>
                 </div>
             </div>
 
