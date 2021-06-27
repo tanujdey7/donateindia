@@ -1,5 +1,5 @@
 .Donor-container {
-  background-color: #eeeeee;
+  background-color: #391a99;
 }
 .Donor-wrapper {
   width: 75%;
@@ -8,17 +8,20 @@
 }
 .Donor-row {
   width: 100%;
-  background-color: #d8d8d8;
+  background: transparent;
   padding-top: 5%;
   padding-bottom: 5%;
 }
 
 .Donor-reg-form {
-  border: 2px solid grey;
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 500;
   margin: 30px;
+  background-color: #4c31ad;
   border-radius: 10px;
   padding: 20px;
-  /* display: flex; */
 }
 
 .Donor-form-half-div {
@@ -36,9 +39,34 @@
   width: 32%;
 }
 
-
-.Donor-reg-btn{
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
+.Donor-reg-btn {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Poppins", sans-serif;
+  /* width: 200px;
+  
+  height: 60px; */
+  padding: 12px 30px;
+  color: black;
+  font-size: 20px;
+  background-color: #fdd900;
 }
+
+.Donor-desc-wrap {
+  margin: 30px;
+  border-radius: 10px;
+  background-color: #4c31ad;
+  padding: 20px;
+}
+
+.form-inputs {
+  width: 100%;
+  border: none;
+  color: #202020;
+  font-size: 16px;
+  padding-left: 10px;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  height: 38px;
+}
+
