@@ -75,7 +75,7 @@ const BloodDonate = () => {
                                 </a>
                             </div>
                             <div className="col">
-                                <a href="#">
+                                <a href="/receiver">
                                     <div className="box-two">
                                         <h1 className="icon-h1 pt-4">
                                             <GiReceiveMoney size={100} />
@@ -97,7 +97,7 @@ const BloodDonate = () => {
                                 </a>
                             </div>
                             <div className="col">
-                                <a href="#">
+                                <a href="/bloodcamp">
                                     <div className="box-four">
                                         <h1 className="icon-h1 pt-4">
                                             <GiCampingTent size={100} />
@@ -110,7 +110,7 @@ const BloodDonate = () => {
                     </div>
                     <div className="col-4">
                         <div className="bg-transparent">
-                            {/* <img src={DonorTwo} alt="Donor" width="400" /> */}
+                            
                             <h1 className="text-light"><BsCommand size={180} /></h1>
                         </div>
                     </div>
