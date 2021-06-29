@@ -4,17 +4,15 @@ import "./Bloodcamp.css";
 import "./Receiver.css";
 import "bootstrap/js/dist/dropdown";
 import Bloodbankdetails from "./Data";
-import { AiOutlineCloud, AiFillBank } from "react-icons/ai";
+import { AiFillBank } from "react-icons/ai";
 import { BsCommand } from "react-icons/bs";
 import { BiDonateBlood } from "react-icons/bi";
 import { GiCampingTent, GiReceiveMoney } from "react-icons/gi";
 import "./Donor.css";
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
-import Bloodcampimg from "../Images/bloodcamp.png";
 // import 'react-dropdown/style.css';
 import Rdata from "./Rdata";
-import Blooddonor from "../Images/Blooddonor.png";
 
 
 const options = [
@@ -270,12 +268,12 @@ const BloodDonate = () => {
                         </div>
                         <div className="col-4">
                             <div className="Donor-desc-wrap">
-                                <ul class="list-group">
-                                    <li class="list-group-item">An item</li>
-                                    <li class="list-group-item">A second item</li>
-                                    <li class="list-group-item">A third item</li>
-                                    <li class="list-group-item">A fourth item</li>
-                                    <li class="list-group-item">And a fifth one</li>
+                                <ul class="list-group text-left">
+                                    <li class="list-group-item bg-transparent border-0">“A life may depend on a gesture from you, a bottle of Blood.”</li>
+                                    <li class="list-group-item bg-transparent border-0">“Tears of a mother cannot save her Child. But your Blood can.”</li>
+                                    <li class="list-group-item bg-transparent border-0">“The Blood Donor of today may be recipient of tomorrow.”</li>
+                                    <li class="list-group-item bg-transparent border-0">“It feels good, It makes me Proud, I am a blood donor.”</li>
+                                    <li class="list-group-item bg-transparent border-0">“Your blood donation is the best social help!”</li>
                                 </ul>
                             </div></div>
                     </div>
@@ -294,13 +292,13 @@ const BloodDonate = () => {
                         <div className="col">
                             <div className="dropdown-wrapper ml-auto mr-auto">
                                 <div className="drop-div">
-                                    {/* <Dropdown options={options} onChange={this._onSelect} value={defaultOption} placeholder="Select an option" /> */}
+                                    <Dropdown options={options} onChange={this._onSelect} value={defaultOption} placeholder="Select an option" />
                                 </div>
                                 <div className="drop-div">
-                                    {/* <Dropdown options={optionstwo} onChange={this._onSelect} value={twoOption} placeholder="Select an option" /> */}
+                                    <Dropdown options={optionstwo} onChange={this._onSelect} value={twoOption} placeholder="Select an option" />
                                 </div>
                                 <div className="drop-div">
-                                    {/* <Dropdown options={optionstwo} onChange={this._onSelect} value={twoOption} placeholder="Select an option" /> */}
+                                    <Dropdown options={optionstwo} onChange={this._onSelect} value={twoOption} placeholder="Select an option" />
                                 </div>
                                 <div className="drop-div">
                                     <button className="btn bank-search-btn text-white">Search</button>
@@ -362,10 +360,10 @@ const BloodDonate = () => {
                     <div className="col">
                         <div className="dropdown-wrapper ml-auto mr-auto">
                             <div className="drop-div">
-                                {/* <Dropdown options={options} onChange={this._onSelect} value={defaultOption} placeholder="Select an option" /> */}
+                                <Dropdown options={options} onChange={this._onSelect} value={defaultOption} placeholder="Select an option" />
                             </div>
                             <div className="drop-div">
-                                {/* <Dropdown options={optionstwo} onChange={this._onSelect} value={twoOption} placeholder="Select an option" /> */}
+                                <Dropdown options={optionstwo} onChange={this._onSelect} value={twoOption} placeholder="Select an option" />
                             </div>
                             <div className="drop-div">
                                 <button className="btn bank-search-btn text-white">Search</button>
