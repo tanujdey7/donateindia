@@ -7,43 +7,6 @@ import 'react-dropdown/style.css';
 import Rdata from "./Rdata";
 import Blooddonor from "../Images/Blooddonor.png";
 
-
-const options = [
-    { value: 'one', label: 'One' },
-    { value: 'two', label: 'Two', className: 'myOptionClassName' },
-    {
-        type: 'group', name: 'group1', items: [
-            { value: 'three', label: 'Three', className: 'myOptionClassName' },
-            { value: 'four', label: 'Four' }
-        ]
-    },
-    {
-        type: 'group', name: 'group2', items: [
-            { value: 'five', label: 'Five' },
-            { value: 'six', label: 'Six' }
-        ]
-    }
-];
-const optionstwo = [
-    { value: 'one', label: 'One' },
-    { value: 'two', label: 'Two', className: 'myOptionClassName' },
-    {
-        type: 'group', name: 'group1', items: [
-            { value: 'three', label: 'Three', className: 'myOptionClassName' },
-            { value: 'four', label: 'Four' }
-        ]
-    },
-    {
-        type: 'group', name: 'group2', items: [
-            { value: 'five', label: 'Five' },
-            { value: 'six', label: 'Six' }
-        ]
-    }
-];
-
-const defaultOption = options[0];
-const twoOption = optionstwo[0];
-
 const Receiver = () => {
     return (
         <div className="blood-container container-fluid">
@@ -66,13 +29,13 @@ const Receiver = () => {
                     <div className="col">
                         <div className="dropdown-wrapper ml-auto mr-auto">
                             <div className="drop-div">
-                                <Dropdown options={options} onChange={this._onSelect} value={defaultOption} placeholder="Select an option" />
+                                {/* <Dropdown options={options} onChange={this._onSelect} value={defaultOption} placeholder="Select an option" /> */}
                             </div>
                             <div className="drop-div">
-                                <Dropdown options={optionstwo} onChange={this._onSelect} value={twoOption} placeholder="Select an option" />
+                                {/* <Dropdown options={optionstwo} onChange={this._onSelect} value={twoOption} placeholder="Select an option" /> */}
                             </div>
                             <div className="drop-div">
-                                <Dropdown options={optionstwo} onChange={this._onSelect} value={twoOption} placeholder="Select an option" />
+                                {/* <Dropdown options={optionstwo} onChange={this._onSelect} value={twoOption} placeholder="Select an option" /> */}
                             </div>
                             <div className="drop-div">
                                 <button className="btn bank-search-btn text-white">Search</button>

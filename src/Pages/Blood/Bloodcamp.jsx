@@ -58,7 +58,7 @@ const Bloodcamp = () => {
                 <div className="Bloodcamp-row-two row">
                     <div className="col">
                         <div className="Bloodcamp-title-div">
-                            <h1>Find Blood Donors Near you</h1>
+                            <h1>This is Blood camps</h1>
                         </div>
                     </div>
                 </div>
