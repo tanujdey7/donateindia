@@ -1,13 +1,9 @@
 import React from 'react';
 import "./Receiver.css";
 import "bootstrap/js/dist/dropdown";
-<<<<<<< Updated upstream
 // import ReceiverData from "./Receiver";
 // import Dropdown from 'react-dropdown';
 // import 'react-dropdown/style.css';
-=======
-import 'react-dropdown/style.css';
->>>>>>> Stashed changes
 import Rdata from "./Rdata";
 import Blooddonor from "../Images/Blooddonor.png";
 

@@ -1,49 +1,92 @@
 .container-fluid {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .Food-menu-row {
-    background: #ffffff;
-    width: 100%;
-    margin: 0px;
-    padding-top: 5%;
-    padding-bottom: 5%;
+  background: #ffffff;
+  width: 100%;
+  margin: 0px;
+  padding-top:6%;
+  padding-bottom: 6%;
 }
 
 .Food-menu-col {
-    border-left: 2px solid #000;
+  border-left: 2px solid #09a05c;
 }
 
 /* btn */
 
-.food-menu-btn-one {
-    width: 200px;
-    height: 200px;
-    float: right;
+.Food-menu-btn-one {
+  width: 220px;
+  border-radius: 5px;
+  background-color: #edf6f9;
+  font-family: "Poppins", sans-serif;
+  height: 220px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  float: right;
+  padding-top: 7%;
+  color: #140101;
+}
+
+.Food-menu-btn-one>a{
+  text-decoration: none;
+  list-style-type: none;
+  color: #131313;
+}
+.Food-menu-btn-one:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .food-menu-btn-two {
-    width: 200px;
-    height: 200px;
-    float: left;
+  width: 220px;
+  background-color: #edf6f9;
+  height: 220px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  float: left;
+  color: #010101;
+}
+
+.food-menu-btn-two:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    color: #010101;
 }
 
 .food-menu-btn-three {
-    width: 200px;
-    height: 200px;
-    float: right;
+  width: 220px;
+  background-color: #edf6f9;
+  height: 220px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  float: right;
+  color: #010101;
+}
+
+.food-menu-btn-three:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    color: #010101;
 }
 
 .food-menu-btn-four {
-    width: 200px;
-    height: 200px;
-    float: left;
+  width: 220px;
+  background-color: #edf6f9;
+  height: 220px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  float: left;
+  color: #010101;
 }
-.Food-Menu-Wrap-row{
-    margin-top: 10%;
+.food-menu-btn-four:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    color: #010101;
 }
 
-.Food-Menu-Wrap-row-two{
-    margin-top: 3%;
+.Food-Menu-Wrap-row {
+  margin-top: 10%;
+}
+
+.Food-Menu-Wrap-row-two {
+  margin-top: 3%;
 }

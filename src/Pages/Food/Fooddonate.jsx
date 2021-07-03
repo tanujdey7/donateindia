@@ -1,5 +1,9 @@
 import React from "react";
 import Foodimg from "../Images/food.png";
+import Foodimgone from "../Images/dish.png";
+import Foodimgtwo from "../Images/fastfood.png";
+import Foodimgthree from "../Images/tray.png";
+import Foodimgfour from "../Images/volunteer.png";
 import "./Fooddonate.css";
 
 const Fooddonate = () => {
@@ -15,16 +19,18 @@ const Fooddonate = () => {
               <div className="Food-Menu-Wrap">
                 <div className="Food-Menu-Wrap-row row">
                   <div className="col">
-                    <div className="Food-menu-btn">
-                      <button className="btn food-menu-btn-one btn-danger">
-                        btn one
-                      </button>
+                    <div className="Food-menu-btn-one">
+                      <a href="/fooddonor">
+                        <h1 className="text-white"><img src={Foodimgone} width="100" /></h1>
+                        <h4 className="mt-3">Food Donor</h4>
+                      </a>
                     </div>
                   </div>
                   <div className="col">
                     <div className="Food-menu-btn">
-                      <button className="btn food-menu-btn-two btn-warning">
-                        btn two
+                      <button className="btn food-menu-btn-two">
+                        <h1 className="text-white"><img src={Foodimgtwo} width="100" /></h1>
+                        <h4 className="mt-3">Food Receiver</h4>
                       </button>
                     </div>
                   </div>
@@ -32,15 +38,17 @@ const Fooddonate = () => {
                 <div className="Food-Menu-Wrap-row-two row">
                   <div className="col">
                     <div className="Food-menu-btn">
-                      <button className="btn food-menu-btn-three btn-info">
-                        btn three
+                      <button className="btn food-menu-btn-three">
+                        <h1 className="text-white"><img src={Foodimgthree} width="100" /></h1>
+                        <h4 className="mt-3">Restaurant</h4>
                       </button>
                     </div>
                   </div>
                   <div className="col">
                     <div className="Food-menu-btn">
-                      <button className="btn food-menu-btn-four btn-primary">
-                        btn four
+                      <button className="btn food-menu-btn-four">
+                        <h1 className="text-white"><img src={Foodimgfour} width="100" /></h1>
+                        <h4 className="mt-3">Volunteer</h4>
                       </button>
                     </div>
                   </div>
