@@ -51,22 +51,29 @@ function Mission() {
               </a>
             </div>
             <div className="mission-box-col col-6">
-              <div className="mission-box-two card">
-                <div className="mission-box-img card-body">
-                  <img src={Food} alt="Food" width="120" />
+              <a href="/fooddonate">
+                <div className="mission-box-two card">
+                  <div className="mission-box-img card-body">
+                    <img src={Food} alt="Food" width="120" />
+                  </div>
+                  <div className="mission-box-footer card-footer">
+                    <h5>Food Donation</h5>
+                    <h6>Learn More</h6>
+                  </div>
                 </div>
-                <div className="mission-box-footer card-footer">
-                  <h5>Food Donation</h5>
-                  <h6>Learn More</h6>
-                </div>
-              </div>
+              </a>
             </div>
           </div>
           <div className="mission-box-row-two row">
             <div className="mission-box-col col-6">
               <div className="mission-box-three card">
                 <div className="mission-box-img card-body">
-                  <img className="svg-color" src={Clothes} alt="Clothes" width="120" />
+                  <img
+                    className="svg-color"
+                    src={Clothes}
+                    alt="Clothes"
+                    width="120"
+                  />
                 </div>
                 <div className="mission-box-footer card-footer">
                   <h5>Clothes Donation</h5>

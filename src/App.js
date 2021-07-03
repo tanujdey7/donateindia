@@ -13,6 +13,7 @@ import Blooddonate from "./Pages/Blood/BloodDonate";
 import Iamdonor from "./Pages/Blood/Donor";
 import Receiver from "./Pages/Blood/Receiver";
 import Bloodcamp from "./Pages/Blood/Bloodcamp";
+import Fooddonate from "./Pages/Food/Fooddonate";
 function App() {
   return (
     <div className="App">
@@ -25,6 +26,7 @@ function App() {
           <Route exact path="/iamdonor" component={Iamdonor} />
           <Route exact path="/receiver" component={Receiver} />
           <Route exact path="/bloodcamp" component={Bloodcamp} />
+          <Route exact path="/fooddonate" component={Fooddonate} />
         </Switch>
         <Footer />
       </Router>
