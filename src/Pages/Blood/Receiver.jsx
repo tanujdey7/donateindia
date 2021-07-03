@@ -2,8 +2,8 @@ import React from 'react';
 import "./Receiver.css";
 import "bootstrap/js/dist/dropdown";
 // import ReceiverData from "./Receiver";
-import Dropdown from 'react-dropdown';
-import 'react-dropdown/style.css';
+// import Dropdown from 'react-dropdown';
+// import 'react-dropdown/style.css';
 import Rdata from "./Rdata";
 import Blooddonor from "../Images/Blooddonor.png";
 

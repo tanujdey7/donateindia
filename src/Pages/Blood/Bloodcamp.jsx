@@ -2,8 +2,8 @@ import React from 'react';
 import "./Bloodcamp.css";
 import "bootstrap/js/dist/dropdown";
 // import ReceiverData from "./Receiver";
-import Dropdown from 'react-dropdown';
-import 'react-dropdown/style.css';
+// import Dropdown from 'react-dropdown';
+// import 'react-dropdown/style.css';
 import Rdata from "./Rdata";
 import Bloodcampimg from "../Images/bloodcamp.png";
 
@@ -66,13 +66,13 @@ const Bloodcamp = () => {
                     <div className="col">
                         <div className="Bloodcamp-dropdown-wrapper ml-auto mr-auto">
                             <div className="drop-div">
-                                <Dropdown options={options} onChange={this._onSelect} value={defaultOption} placeholder="Select an option" />
+                                {/* <Dropdown options={options} onChange={this._onSelect} value={defaultOption} placeholder="Select an option" /> */}
                             </div>
                             <div className="drop-div">
-                                <Dropdown options={optionstwo} onChange={this._onSelect} value={twoOption} placeholder="Select an option" />
+                                {/* <Dropdown options={optionstwo} onChange={this._onSelect} value={twoOption} placeholder="Select an option" /> */}
                             </div>
                             <div className="drop-div">
-                                <Dropdown options={optionstwo} onChange={this._onSelect} value={twoOption} placeholder="Select an option" />
+                                {/* <Dropdown options={optionstwo} onChange={this._onSelect} value={twoOption} placeholder="Select an option" /> */}
                             </div>
                             <div className="drop-div">
                                 <button className="btn bank-search-btn text-white">Search</button>
