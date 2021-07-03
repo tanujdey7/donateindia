@@ -9,8 +9,8 @@ import { BsCommand } from "react-icons/bs";
 import { BiDonateBlood } from "react-icons/bi";
 import { GiCampingTent, GiReceiveMoney } from "react-icons/gi";
 import "./Donor.css";
-import Dropdown from 'react-dropdown';
-import 'react-dropdown/style.css';
+// import Dropdown from 'react-dropdown';
+// import 'react-dropdown/style.css';
 // import 'react-dropdown/style.css';
 import Rdata from "./Rdata";
 
