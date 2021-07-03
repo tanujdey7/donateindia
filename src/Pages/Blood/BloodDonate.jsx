@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./BloodDonate.css";
 import "./Bloodcamp.css";
 import "./Receiver.css";
+import Jdata from "./State.json";
 import "bootstrap/js/dist/dropdown";
 import Bloodbankdetails from "./Data";
 import { AiFillBank } from "react-icons/ai";
@@ -9,9 +10,13 @@ import { BsCommand } from "react-icons/bs";
 import { BiDonateBlood } from "react-icons/bi";
 import { GiCampingTent, GiReceiveMoney } from "react-icons/gi";
 import "./Donor.css";
+<<<<<<< Updated upstream
 // import Dropdown from 'react-dropdown';
 // import 'react-dropdown/style.css';
 // import 'react-dropdown/style.css';
+=======
+import 'react-dropdown/style.css';
+>>>>>>> Stashed changes
 import Rdata from "./Rdata";
 
 const BloodDonate = () => {
@@ -261,7 +266,7 @@ const BloodDonate = () => {
                             <div className="dropdown-wrapper ml-auto mr-auto">
                                 <form name="myform" id="myForm">
                                     <select id="countySel" size="1">
-                                        <option value="" selected="selected">-- Select Country --</option>
+                                        {Jdata.DStates.map(function (role, i) { <option value="" Key={i} selected="selected">{role.DStates}</option> })}
                                     </select>
 
 
