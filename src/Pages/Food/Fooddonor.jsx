@@ -7,7 +7,7 @@ const Fooddonor = () => {
     return (
         <div className="Food-donor-wrapper container-fluid">
             <div className="Food-donor-main-wrapper">
-                <div className="row">
+                <div className="row w-100">
                     <div className="col">
                         
                     </div>
