@@ -45,7 +45,7 @@ function Mission() {
                   </div>
                   <div className="mission-box-footer card-footer">
                     <h5>Blood Donation</h5>
-                    <h6>Learn More</h6>
+                    <h6>Donate Now</h6>
                   </div>
                 </div>
               </a>
@@ -58,7 +58,7 @@ function Mission() {
                   </div>
                   <div className="mission-box-footer card-footer">
                     <h5>Food Donation</h5>
-                    <h6>Learn More</h6>
+                    <h6>Donate Now</h6>
                   </div>
                 </div>
               </a>
@@ -77,7 +77,7 @@ function Mission() {
                 </div>
                 <div className="mission-box-footer card-footer">
                   <h5>Clothes Donation</h5>
-                  <h6>Learn More</h6>
+                  <h6>Donate Now</h6>
                 </div>
               </div>
             </div>
@@ -88,7 +88,7 @@ function Mission() {
                 </div>
                 <div className="mission-box-footer card-footer">
                   <h5>Books Donation</h5>
-                  <h6>Learn More</h6>
+                  <h6>Donate Now</h6>
                 </div>
               </div>
             </div>

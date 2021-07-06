@@ -109,6 +109,50 @@
   border: 2px solid rgb(179, 179, 179);
 }
 
+.food-donor-register {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid rgb(179, 179, 179);
+}
+
+.food-receiver-register {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid rgb(179, 179, 179);
+}
+
+.food-restaurant-register {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid rgb(179, 179, 179);
+}
+
+
+/*  */
+.food-donor-register-wrap{
+  margin: 10px;
+  text-align: left;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.food-receiver-register-wrap {
+  margin: 10px;
+  text-align: left;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.food-restaurant-register-wrap {
+  margin: 10px;
+  text-align: left;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
 .volunteer-register-wrap {
   margin: 10px;
   text-align: left;
@@ -128,6 +172,30 @@
   float: right;
   margin-left: 33%;
   background-color: #f1faee;
+}
+
+.food-donor-register-card-header {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.food-receiver-register-card-header {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.food-restaurant-register-card-header {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
 }
 .volunteer-register-card-header {
   display: flex;

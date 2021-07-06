@@ -14,6 +14,8 @@ const Fooddonate = () => {
   const [restaurant, setRestaurant] = useState(false);
   const [volunteer, setVolunteer] = useState(false);
   const [foodmenu, setfoodmenu] = useState(true);
+  const [receiverlogin, setReceiverlogin] = useState(false);
+  const [showreceiver, setShowreceiver] = useState(true);
 
 
   const showDonor = () => {
@@ -28,9 +30,21 @@ const Fooddonate = () => {
   const regiReceiver = () => {
     setVolunteer(false);
     setReceive(true);
+    setShowreceiver(true);
     setDonor(false);
     setRestaurant(false);
     setfoodmenu(false);
+  }
+
+  const viewReceiverlogin = () => {
+    setReceiverlogin(true);
+    setShowreceiver(false);
+
+  }
+
+  const receiverRegister = () => {
+    setShowreceiver(true);
+    setReceiverlogin(false);
   }
   const regiRest = () => {
     setVolunteer(false);
@@ -105,38 +119,47 @@ const Fooddonate = () => {
                 </div>
               </div>) : null}
               {donor ? (
-                <div className="food-volunteer-register card">
-                  <div className="volunteer-register-card-header card-header"><h4 className="food-btn-tagline">Register as Donor</h4>
+                <div className="food-donor-register card">
+                  <div className="food-donor-register-card-header card-header"><h4 className="food-btn-tagline">Register Your Food</h4>
                     <button onClick={hidemenu} className="btn back-menu-btn">Back to Menu</button></div>
-                  <div className="volunteer-register-wrap card-body">
-                    <form className="">
-                      <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Full Name</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                        {/* <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> */}
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Mobile Num</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                        {/* <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> */}
-                      </div>
+                  <div className="food-donor-register-wrap card-body">
+                    <form>
                       <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email address</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                        {/* <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> */}
                       </div>
                       <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Address</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                        {/* <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> */}
                       </div>
                       <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">For how many persons</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                        {/* <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> */}
+                        <input type="num" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                       </div>
                       <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Type of food</label>
+                        <label for="exampleInputEmail1" class="form-label">Time and date of Food Preparation</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Time and date of Food Expiry</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" />
+                      </div>
+                      <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                  </div>
+                </div>) : null}
+              {receive ? (<div className="food-receiver-register card">
+                {receive && showreceiver ==true? (<div>
+                  <div className="food-receiver-register-card-header card-header"><h4 className="food-btn-tagline">Register as Receiver</h4>
+                    <button onClick={hidemenu} className="btn back-menu-btn">Back to Menu</button></div>
+                  <div className="food-receiver-register-wrap card-body">
+                    <form className="">
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                       </div>
@@ -151,33 +174,36 @@ const Fooddonate = () => {
                       <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                   </div>
+                  <button onClick={viewReceiverlogin} className="btn btn-primary btn-md">Login</button>
                 </div>) : null}
-              {receive ? (<div className="food-volunteer-register card">
-                <div className="volunteer-register-card-header card-header"><h4 className="food-btn-tagline">Register as Receiver</h4>
-                  <button onClick={hidemenu} className="btn back-menu-btn">Back to Menu</button></div>
-                <div className="volunteer-register-wrap card-body">
-                  <form className="">
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                    </div>
-                    <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" />
-                    </div>
-                    <div class="mb-3 form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </form>
-                </div>
+                {receive && receiverlogin ==true? (<div>
+                  <div className="food-receiver-register-card-header card-header"><h4 className="food-btn-tagline">Login as Receiver</h4>
+                    <button onClick={hidemenu} className="btn back-menu-btn">Back to Menu</button></div>
+                  <div className="food-receiver-register-wrap card-body">
+                    <form className="">
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" />
+                      </div>
+                      <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                    <button onClick={receiverRegister} className="btn btn-lg btn-primary">Register</button>
+                  </div>
+                </div>) : null}
               </div>) : null}
-              {restaurant ? (<div className="food-volunteer-register card">
-                <div className="volunteer-register-card-header card-header"><h4 className="food-btn-tagline">Register as Restaurant</h4>
+              {restaurant ? (<div className="food-restaurant-register card">
+                <div className="food-restaurant-register-card-header card-header"><h4 className="food-btn-tagline">Register as Restaurant</h4>
                   <button onClick={hidemenu} className="btn back-menu-btn">Back to Menu</button></div>
-                <div className="volunteer-register-wrap card-body">
+                <div className="food-restaurant-register-wrap card-body">
                   <form className="">
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">Email address</label>
