@@ -137,42 +137,55 @@ const Fooddonate = () => {
               ) : null}
               {donor ? (
                 <div className="food-donor-register card">
-                  <div className="food-donor-register-card-header card-header">
-                    <h4 className="food-btn-tagline">Register Your Food</h4>
+                  <div className="food-restaurant-register-card-header">
                     <button onClick={hidemenu} className="btn back-menu-btn">
-                      Back to Menu
+                      <IoMdArrowRoundBack /> Back
                     </button>
+                    <h3 className="food-btn-tagline mt-3">Food Donor</h3>
                   </div>
-                  <div className="food-donor-register-wrap card-body">
+                  <div className="food-restaurant-register-wrap card-body">
+                    <h5 className="text-center mb-3">[Donate food as Individual]</h5>
                     <form>
-                      <div class="mb-3">
+                      <div class="mb-2">
                         <label for="exampleInputEmail1" class="form-label">
-                          Email Address
+                          <h6>FullName</h6>
                         </label>
                         <input
-                          type="email"
-                          maxLength="10"
+                          type="text"
                           class="form-control"
                           id="exampleInputEmail1"
                           aria-describedby="emailHelp"
+                          required
                         />
                       </div>
-
-                      <div class="mb-3">
+                      <div class="mb-2">
                         <label for="exampleInputEmail1" class="form-label">
-                          Address
+                          <h6>Email Address</h6>
+                        </label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                          required
+                        />
+                      </div>
+                      <div class="mb-2">
+                        <label for="exampleInputEmail1" class="form-label">
+                          <h6>Address</h6>
                         </label>
                         <input
                           type="textarea"
                           class="form-control"
                           id="exampleInputEmail1"
                           aria-describedby="emailHelp"
+                          required
                         />
                       </div>
                       <div className="food-form-input-half">
                         <div class="input-half-div mb-3">
                           <label for="exampleInputEmail1" class="form-label">
-                            State
+                            <h6>State</h6>
                           </label>
                           <select
                             class="form-select form-control"
@@ -184,9 +197,9 @@ const Fooddonate = () => {
                             <option value="3">Three</option>
                           </select>
                         </div>
-                        <div class="input-half-div ml-2 mb-3">
+                        <div class="input-half-div ml-3 mb-2">
                           <label for="exampleInputEmail1" class="form-label">
-                            City
+                            <h6>City</h6>
                           </label>
                           <select
                             class="form-select form-control"
@@ -202,7 +215,7 @@ const Fooddonate = () => {
                       <div className="food-form-input-half">
                         <div class="input-half-div mb-3">
                           <label for="exampleInputEmail1" class="form-label">
-                            Mobile
+                            <h6>Mobile Number</h6>
                           </label>
                           <input
                             type="tel"
@@ -210,48 +223,54 @@ const Fooddonate = () => {
                             class="form-control"
                             id="exampleInputEmail1"
                             aria-describedby="emailHelp"
+                            required
                           />
                         </div>
-                        <div class="input-half-div ml-2 mb-3">
+                        <div class="input-half-div ml-3 mb-2">
                           <label for="exampleInputEmail1" class="form-label">
-                            Fow how many
+                            <h6>Food for how many people?</h6>
                           </label>
                           <input
                             type="number"
                             class="form-control"
                             id="exampleInputEmail1"
                             aria-describedby="emailHelp"
+                            required
                           />
                         </div>
                       </div>
-                      
                       <div className="food-form-input-half">
                         <div class="input-half-div mb-3">
                           <label for="exampleInputEmail1" class="form-label">
-                            Time and date of Food Preparation
+                            <h6>Time and date of Food Preparation</h6>
                           </label>
                           <input
                             type="datetime-local"
                             class="form-control"
                             id="exampleInputEmail1"
                             aria-describedby="emailHelp"
+                            required
                           />
                         </div>
                         <div class="input-half-div ml-2 mb-3">
                           <label for="exampleInputEmail1" class="form-label">
-                            Time and date of Food Preparation
+                            <h6>Time and date of Food Expiry</h6>
                           </label>
                           <input
                             type="datetime-local"
-                            class="form-control"
+                            className="form-control"
                             id="exampleInputEmail1"
                             aria-describedby="emailHelp"
+                            required
                           />
                         </div>
                       </div>
 
-                      <button type="submit" class="btn btn-primary">
-                        Submit
+                      <button type="submit" class="btn food-restaurant-register-submit">
+                        <h6 className="mt-1">Submit</h6>
+                      </button>
+                      <button type="reset" class="btn ml-2 food-restaurant-register-submit">
+                        <h6 className="mt-1">Reset</h6>
                       </button>
                     </form>
                   </div>
@@ -402,7 +421,7 @@ const Fooddonate = () => {
                     <form>
                       <div class="mb-2">
                         <label for="exampleInputEmail1" class="form-label">
-                          Restaurant Name
+                          <h6>Restaurant Name</h6>
                         </label>
                         <input
                           type="text"
@@ -414,7 +433,7 @@ const Fooddonate = () => {
                       </div>
                       <div class="mb-2">
                         <label for="exampleInputEmail1" class="form-label">
-                          Restaurant's Manager Name
+                          <h6>Restaurant's Manager Name</h6>
                         </label>
                         <input
                           type="text"
@@ -426,7 +445,7 @@ const Fooddonate = () => {
                       </div>
                       <div class="mb-2">
                         <label for="exampleInputEmail1" class="form-label">
-                          Restaurant's Address
+                          <h6>Restaurant's Address</h6>
                         </label>
                         <input
                           type="textarea"
@@ -437,9 +456,9 @@ const Fooddonate = () => {
                         />
                       </div>
                       <div className="food-form-input-half">
-                        <div class="input-half-div mb-2">
+                        <div class="input-half-div mb-3">
                           <label for="exampleInputEmail1" class="form-label">
-                            State
+                            <h6>State</h6>
                           </label>
                           <select
                             class="form-select form-control"
@@ -451,9 +470,9 @@ const Fooddonate = () => {
                             <option value="3">Three</option>
                           </select>
                         </div>
-                        <div class="input-half-div ml-2 mb-2">
+                        <div class="input-half-div ml-3 mb-2">
                           <label for="exampleInputEmail1" class="form-label">
-                            City
+                            <h6>City</h6>
                           </label>
                           <select
                             class="form-select form-control"
@@ -467,9 +486,9 @@ const Fooddonate = () => {
                         </div>
                       </div>
                       <div className="food-form-input-half">
-                        <div class="input-half-div mb-2">
+                        <div class="input-half-div mb-3">
                           <label for="exampleInputEmail1" class="form-label">
-                            Mobile Number
+                            <h6>Mobile Number</h6>
                           </label>
                           <input
                             type="tel"
@@ -480,9 +499,9 @@ const Fooddonate = () => {
                             required
                           />
                         </div>
-                        <div class="input-half-div ml-2 mb-2">
+                        <div class="input-half-div ml-3 mb-2">
                           <label for="exampleInputEmail1" class="form-label">
-                            Food for how many people?
+                            <h6>Food for how many people?</h6>
                           </label>
                           <input
                             type="number"
@@ -496,7 +515,7 @@ const Fooddonate = () => {
                       <div className="food-form-input-half">
                         <div class="input-half-div mb-3">
                           <label for="exampleInputEmail1" class="form-label">
-                            Time and date of Food Preparation
+                            <h6>Time and date of Food Preparation</h6>
                           </label>
                           <input
                             type="datetime-local"
@@ -508,7 +527,137 @@ const Fooddonate = () => {
                         </div>
                         <div class="input-half-div ml-2 mb-3">
                           <label for="exampleInputEmail1" class="form-label">
-                            Time and date of Food Expiry
+                            <h6>Time and date of Food Expiry</h6>
+                          </label>
+                          <input
+                            type="datetime-local"
+                            className="form-control"
+                            id="exampleInputEmail1"
+                            aria-describedby="emailHelp"
+                            required
+                          />
+                        </div>
+                      </div>
+
+                      <button type="submit" class="btn food-restaurant-register-submit">
+                        <h6 className="mt-1">Submit</h6>
+                      </button>
+                      <button type="reset" class="btn ml-2 food-restaurant-register-submit">
+                        <h6 className="mt-1">Reset</h6>
+                      </button>
+                    </form>
+                  </div>
+                  <a className="see-vol-btn" href="#"><h6 className="mt-1">See Available Volunteers</h6></a>
+                </div>
+              ) : null}
+              {volunteer ? (
+                <div className="food-volunteer-register card">
+                  <div className="food-restaurant-register-card-header">
+                    <button onClick={hidemenu} className="btn back-menu-btn">
+                      <IoMdArrowRoundBack /> Back
+                    </button>
+                    <h3 className="food-btn-tagline mt-3">Restaurant</h3>
+                  </div>
+                  <div className="food-restaurant-register-wrap card-body">
+                    <h5 className="text-center mb-3">[Donate food as Restaurant]</h5>
+                    <form>
+                      <div class="mb-2">
+                        <label for="exampleInputEmail1" class="form-label">
+                          <h6>Restaurant Name</h6>
+                        </label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                          required
+                        />
+                      </div>
+                      <div class="mb-2">
+                        <label for="exampleInputEmail1" class="form-label">
+                          <h6>Restaurant's Manager Name</h6>
+                        </label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                          required
+                        />
+                      </div>
+                      <div class="mb-2">
+                        <label for="exampleInputEmail1" class="form-label">
+                          <h6>Restaurant's Address</h6>
+                        </label>
+                        <input
+                          type="textarea"
+                          class="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                          required
+                        />
+                      </div>
+                      <div className="food-form-input-half">
+                        <div class="input-half-div mb-3">
+                          <label for="exampleInputEmail1" class="form-label">
+                            <h6>State</h6>
+                          </label>
+                          <select
+                            class="form-select form-control"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="input-half-div ml-3 mb-2">
+                          <label for="exampleInputEmail1" class="form-label">
+                            <h6>City</h6>
+                          </label>
+                          <select
+                            class="form-select form-control"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div className="food-form-input-half">
+                        <div class="input-half-div mb-3">
+                          <label for="exampleInputEmail1" class="form-label">
+                            <h6>Mobile Number</h6>
+                          </label>
+                          <input
+                            type="tel"
+                            maxLength="10"
+                            class="form-control"
+                            id="exampleInputEmail1"
+                            aria-describedby="emailHelp"
+                            required
+                          />
+                        </div>
+                        <div class="input-half-div ml-3 mb-2">
+                          <label for="exampleInputEmail1" class="form-label">
+                            <h6>Food for how many people?</h6>
+                          </label>
+                          <input
+                            type="number"
+                            class="form-control"
+                            id="exampleInputEmail1"
+                            aria-describedby="emailHelp"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div className="food-form-input-half">
+                        <div class="input-half-div mb-3">
+                          <label for="exampleInputEmail1" class="form-label">
+                            <h6>Time and date of Food Preparation</h6>
                           </label>
                           <input
                             type="datetime-local"
@@ -518,62 +667,25 @@ const Fooddonate = () => {
                             required
                           />
                         </div>
-                      </div>
-
-                      <button type="submit" class="btn btn-primary">
-                        Submit
-                      </button>
-                    </form>
-                  </div>
-                  <a href="#">See Available Volunteers</a>
-                </div>
-              ) : null}
-              {volunteer ? (
-                <div className="food-volunteer-register card">
-                  <div className="volunteer-register-card-header card-header">
-                    <h4 className="food-btn-tagline">Register as Volunteer</h4>
-                    <button onClick={hidemenu} className="btn back-menu-btn">
-                      Back to Menu
-                    </button>
-                  </div>
-                  <div className="volunteer-register-wrap card-body">
-                    <form className="">
-                      <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">
-                          Email address
-                        </label>
-                        <input
-                          type="email"
-                          class="form-control"
-                          id="exampleInputEmail1"
-                          aria-describedby="emailHelp"
-                        />
-                        <div id="emailHelp" class="form-text">
-                          We'll never share your email with anyone else.
+                        <div class="input-half-div ml-2 mb-3">
+                          <label for="exampleInputEmail1" class="form-label">
+                            <h6>Time and date of Food Expiry</h6>
+                          </label>
+                          <input
+                            type="datetime-local"
+                            className="form-control"
+                            id="exampleInputEmail1"
+                            aria-describedby="emailHelp"
+                            required
+                          />
                         </div>
                       </div>
-                      <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">
-                          Password
-                        </label>
-                        <input
-                          type="password"
-                          class="form-control"
-                          id="exampleInputPassword1"
-                        />
-                      </div>
-                      <div class="mb-3 form-check">
-                        <input
-                          type="checkbox"
-                          class="form-check-input"
-                          id="exampleCheck1"
-                        />
-                        <label class="form-check-label" for="exampleCheck1">
-                          Check me out
-                        </label>
-                      </div>
-                      <button type="submit" class="btn btn-primary">
-                        Submit
+
+                      <button type="submit" class="btn food-restaurant-register-submit">
+                        <h6 className="mt-1">Submit</h6>
+                      </button>
+                      <button type="reset" class="btn ml-2 food-restaurant-register-submit">
+                        <h6 className="mt-1">Reset</h6>
                       </button>
                     </form>
                   </div>

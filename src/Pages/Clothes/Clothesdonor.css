@@ -21,64 +21,80 @@
   width: 220px;
   border: none;
   border-radius: 5px;
-  background-color: #edf6f9;
+  background-color: #ffffff;
   font-family: "Poppins", sans-serif;
   height: 220px;
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   float: right;
-  padding-top: 7%;
+  padding-top: 3%;
   color: #140101;
 }
 
-.Food-menu-btn-one>a {
+.Food-menu-btn-one > a {
   text-decoration: none;
   list-style-type: none;
   color: #131313;
 }
 
 .Food-menu-btn-one:hover {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .food-menu-btn-two {
   width: 220px;
-  background-color: #edf6f9;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
   height: 220px;
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   float: left;
-  color: #010101;
+  padding-top: 3%;
+  color: #140101;
 }
 
 .food-menu-btn-two:hover {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
   color: #010101;
 }
 
 .food-menu-btn-three {
   width: 220px;
-  background-color: #edf6f9;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
   height: 220px;
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   float: right;
-  color: #010101;
+  padding-top: 3%;
+  color: #140101;
 }
 
 .food-menu-btn-three:hover {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
   color: #010101;
 }
 
 .food-menu-btn-four {
   width: 220px;
-  background-color: #edf6f9;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
   height: 220px;
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   float: left;
-  color: #010101;
+  padding-top: 3%;
+  color: #140101;
 }
 
 .food-menu-btn-four:hover {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
   color: #010101;
 }
 
@@ -128,8 +144,6 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-
-
 /*  */
 
 .food-donor-register-wrap {
@@ -178,7 +192,7 @@
   width: 80px;
   height: 40px;
   color: #edf6f9;
-  background-color:#26363b;
+  background-color: #26363b;
 }
 
 .food-donor-register-card-header {
@@ -223,7 +237,7 @@
   width: 49%;
 }
 
-.see-vol-btn{
+.see-vol-btn {
   width: 89%;
   margin-left: auto;
   margin-right: auto;
@@ -233,23 +247,28 @@
   text-decoration: none;
   color: #ffffff;
   padding: 5px 10px;
-  background-color:#1A2E35;
+  background-color: #1a2e35;
 }
 
-.see-vol-btn:hover{
+.see-vol-btn:hover {
   text-decoration: none;
   color: #ffd2d2;
 }
 
-.food-restaurant-register-submit{
-  background-color:#1A2E35;
+.food-restaurant-register-submit {
+  background-color: #1a2e35;
   width: 49%;
   color: #edf6f9;
   border: none;
 }
 
-.form-control{
+.form-control {
   margin-top: -1%;
-  border: 1px solid #26363B;
+  border: 1px solid #26363b;
   color: #010101;
+}
+
+.food-org-icon {
+  /* color: #363636; */
+  fill: #0a0a0a;
 }
