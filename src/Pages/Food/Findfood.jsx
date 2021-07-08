@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Receiver.css";
+import "./Findfood.css";
 import "bootstrap/js/dist/dropdown";
 // import ReceiverData from "./Receiver";
 // import Dropdown from 'react-dropdown';
@@ -7,21 +7,21 @@ import "bootstrap/js/dist/dropdown";
 import Rdata from "./Rdata";
 import Blooddonor from "../Images/Blooddonor.png";
 
-const Receiver = () => {
+const Findfood = () => {
     return (
         <div className="blood-container container-fluid">
             <div className="blood-wrapper pt-5 mb-5">
-                <div className="Bloodcamp-row-one row">
+                {/* <div className="Bloodcamp-row-one row">
                     <div className="col">
                         <div className="Bloodcamp-img-div">
-                            <img src={Blooddonor} width="600" />
+                            <img src={Blooddonor} width="500" />
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <div className="Bloodcamp-row-two row">
                     <div className="col">
                         <div className="Bloodcamp-title-div">
-                            <h1>Find Blood Donors Near you</h1>
+                            <h1>Find Food Donors Near you</h1>
                         </div>
                     </div>
                 </div>
@@ -86,4 +86,4 @@ const Receiver = () => {
     )
 }
 
-export default Receiver;
+export default Findfood;

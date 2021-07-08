@@ -24,24 +24,24 @@ const Fooddonate = () => {
     setfoodmenu(false);
   };
 
-  const regiReceiver = () => {
-    setVolunteer(false);
-    setReceive(true);
-    setShowreceiver(true);
-    setDonor(false);
-    setRestaurant(false);
-    setfoodmenu(false);
-  };
+  // const regiReceiver = () => {
+  //   setVolunteer(false);
+  //   setReceive(true);
+  //   setShowreceiver(true);
+  //   setDonor(false);
+  //   setRestaurant(false);
+  //   setfoodmenu(false);
+  // };
 
-  const viewReceiverlogin = () => {
-    setReceiverlogin(true);
-    setShowreceiver(false);
-  };
+  // const viewReceiverlogin = () => {
+  //   setReceiverlogin(true);
+  //   setShowreceiver(false);
+  // };
 
-  const receiverRegister = () => {
-    setShowreceiver(true);
-    setReceiverlogin(false);
-  };
+  // const receiverRegister = () => {
+  //   setShowreceiver(true);
+  //   setReceiverlogin(false);
+  // };
   const regiRest = () => {
     setVolunteer(false);
     setReceive(false);
@@ -92,9 +92,10 @@ const Fooddonate = () => {
                       </div>
                     </div>
                     <div className="col">
+                    <a href="/findfood">
                       <div className="Food-menu-btn">
                         <button
-                          onClick={regiReceiver}
+                         
                           className="btn food-menu-btn-two"
                         >
                           <h1 className="text-white">
@@ -103,6 +104,7 @@ const Fooddonate = () => {
                           <h4 className="mt-3">Food Receiver</h4>
                         </button>
                       </div>
+                      </a>
                     </div>
                   </div>
                   <div className="Food-Menu-Wrap-row-two row">
@@ -276,7 +278,7 @@ const Fooddonate = () => {
                   </div>
                 </div>
               ) : null}
-              {receive ? (
+              {/* {receive ? (
                 <div className="food-receiver-register card">
                   {receive && showreceiver == true ? (
                     <div>
@@ -407,7 +409,7 @@ const Fooddonate = () => {
                     </div>
                   ) : null}
                 </div>
-              ) : null}
+              ) : null} */}
               {restaurant ? (
                 <div className="food-restaurant-register card">
                   <div className="food-restaurant-register-card-header">

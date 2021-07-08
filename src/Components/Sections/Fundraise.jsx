@@ -4,9 +4,11 @@ import Bird from "../Images/icons/bird.svg";
 import Volunteer from "../Images/icons/user.svg";
 import Heart from "../Images/icons/heart.svg";
 import Support from "../Images/icons/support.svg";
-import Imgone from "../Images/icons/fathdaught.jpg";
-import Imgtwo from "../Images/icons/girlreading.jpg";
-import Imgthree from "../Images/icons/books.jpg";
+import Bloodcount from "../Images/donation/bloodcount.jpg";
+import Foodcount from "../Images/donation/foodcount.jpg";
+import Clothescount from "../Images/donation/clothescount.jpg";
+import Bookscount from "../Images/donation/bookcount.jpg";
+// import Imgthree from "../Images/icons/books.jpg";
 import { ProgressBar } from "react-bootstrap";
 import { FaRupeeSign } from "react-icons/fa";
 // import Imgfour from "../Images/icons/man.png";
@@ -48,56 +50,60 @@ const Fundraise = () => {
                     <div className="col-3">
                         <div className="fundraise-card card">
                             <div className="fundraise-card-header card-header">
-                                <img src={Imgone} alt="Imgone" className="card-img-top" width="100" />
+                                <h5 className="mt-3 mb-3">Food Donation</h5>
+                                <img src={Bloodcount} alt="Imgone" className="card-img-top" width="auto" height="280" />
                             </div>
                             <div className="fundraise-card-body card-body">
-                                <h6><FaRupeeSign />{received} of {raised}</h6>
-                                <h6><ProgressBar variant="warning" now={now} label={`${now}%`} /></h6>
-                                <h6>Children education donation</h6>
+                                <h6>2000+ donations</h6>
+                                <h6>1000+ Restaurants joined</h6>
+                                <h6>500+ Volunteers</h6>
                             </div>
                             <div className="fundraise-card-footer card-footer">
-                                <button className="btn btn-md fundraise-btn">Donate now</button>
+                                <a href="/blooddonate"><button className="btn btn-md fundraise-btn">Donate now</button></a>
                             </div>
                         </div>
                     </div>
                     <div className="col-3"><div className="fundraise-card card">
                         <div className="fundraise-card-header card-header">
-                            <img src={Imgtwo} alt="Imgtwo" className="card-img-top" width="100" />
+                            <h5 className="mt-3 mb-3">Food Donation</h5>
+                            <img src={Foodcount} alt="Imgtwo" className="card-img-top" width="auto" height="280"/>
                         </div>
                         <div className="fundraise-card-body card-body">
-                            <h6><FaRupeeSign />{received} of {raised}</h6>
-                            <h6><ProgressBar variant="warning" now={now} label={`${now}%`} /></h6>
-                            <h6>Give a donation, make a life!</h6>
+                            <h6>2000+ donations</h6>
+                            <h6>1000+ Restaurants joined</h6>
+                            <h6>500+ Volunteers</h6>
                         </div>
                         <div className="fundraise-card-footer card-footer">
-                            <button className="btn btn-md fundraise-btn">Donate now</button>
+                            <a href="fooddonate"><button className="btn btn-md fundraise-btn">Donate now</button></a>
                         </div>
                     </div></div>
                     <div className="col-3"><div className="fundraise-card card">
                         <div className="fundraise-card-header card-header">
-                            <img src={Imgthree} alt="Imgthree" className="card-img-top" width="100" />
+                            <h5 className="mt-3 mb-3">Food Donation</h5>
+                            <img src={Clothescount} alt="Imgthree" className="card-img-top" width="auto" height="280"/>
                         </div>
                         <div className="fundraise-card-body card-body">
-                            <h6><FaRupeeSign />{received} of {raised}</h6>
-                            <h6><ProgressBar variant="warning" now={now} label={`${now}%`} /></h6>
-                            <h6>Donate for olage homes..</h6>
+                            <h6>2000+ donations</h6>
+                            <h6>1000+ Restaurants joined</h6>
+                            <h6>500+ Volunteers</h6>
                         </div>
                         <div className="fundraise-card-footer card-footer">
-                            <button className="btn btn-md fundraise-btn">Donate now</button>
+                            <a href="clothesdonate"><button className="btn btn-md fundraise-btn">Donate now</button></a>
                         </div>
                     </div></div>
                     <div className="col-3">
                         <div className="fundraise-card card">
                             <div className="fundraise-card-header card-header">
-                                <img src={Imgtwo} alt="Imgtwo" className="card-img-top" width="100" />
+                                <h5 className="mt-3 mb-3">Food Donation</h5>
+                                <img src={Bookscount} alt="Imgtwo" className="card-img-top" width="auto" height="280"/>
                             </div>
                             <div className="fundraise-card-body card-body">
-                                <h6><FaRupeeSign />{received} of {raised}</h6>
-                                <h6><ProgressBar variant="warning" now={now} label={`${now}%`} /></h6>
-                                <h6>Emergency and food supply</h6>
+                                <h6>2000+ donations</h6>
+                                <h6>1000+ Restaurants joined</h6>
+                                <h6>500+ Volunteers</h6>
                             </div>
                             <div className="fundraise-card-footer card-footer">
-                                <button className="btn btn-md fundraise-btn">Donate now</button>
+                                <a href="/booksdonate"><button className="btn btn-md fundraise-btn">Donate now</button></a>
                             </div>
                         </div></div>
                 </div>

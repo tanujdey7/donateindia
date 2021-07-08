@@ -94,9 +94,10 @@ const Clothesdonor = () => {
                                             </div>
                                         </div>
                                         <div className="col">
+                                        <a href="/findclothes">
                                             <div className="Food-menu-btn">
                                                 <button
-                                                    onClick={regiReceiver}
+                                                    // onClick={regiReceiver}
                                                     className="btn food-menu-btn-two"
                                                 >
                                                     <h1 className="text-white">
@@ -105,6 +106,7 @@ const Clothesdonor = () => {
                                                     <h4 className="mt-3">I'm Receiver</h4>
                                                 </button>
                                             </div>
+                                            </a>
                                         </div>
                                     </div>
                                     <div className="Food-Menu-Wrap-row-two row">
@@ -231,7 +233,7 @@ const Clothesdonor = () => {
                                                 </div>
                                                 <div class="input-half-div ml-3 mb-2">
                                                     <label for="exampleInputEmail1" class="form-label">
-                                                        <h6>Food for how many people?</h6>
+                                                        <h6>How many Clothes ?</h6>
                                                     </label>
                                                     <input
                                                         type="number"
@@ -279,7 +281,7 @@ const Clothesdonor = () => {
                                     </div>
                                 </div>
                             ) : null}
-                            {receive ? (
+                            {/* {receive ? (
                                 <div className="food-receiver-register card">
                                     {receive && showreceiver == true ? (
                                         <div>
@@ -410,21 +412,21 @@ const Clothesdonor = () => {
                                         </div>
                                     ) : null}
                                 </div>
-                            ) : null}
+                            ) : null} */}
                             {restaurant ? (
                                 <div className="food-restaurant-register card">
                                     <div className="food-restaurant-register-card-header">
                                         <button onClick={hidemenu} className="btn back-menu-btn">
                                             <IoMdArrowRoundBack /> Back
                                         </button>
-                                        <h3 className="food-btn-tagline mt-3">Restaurant</h3>
+                                        <h3 className="food-btn-tagline mt-3">Organization</h3>
                                     </div>
                                     <div className="food-restaurant-register-wrap card-body">
-                                        <h5 className="text-center mb-3">[Donate food as Restaurant]</h5>
+                                        <h5 className="text-center mb-3">[Donate Clothes as Organization]</h5>
                                         <form>
                                             <div class="mb-2">
                                                 <label for="exampleInputEmail1" class="form-label">
-                                                    <h6>Restaurant Name</h6>
+                                                    <h6>Organization Name</h6>
                                                 </label>
                                                 <input
                                                     type="text"
@@ -436,7 +438,7 @@ const Clothesdonor = () => {
                                             </div>
                                             <div class="mb-2">
                                                 <label for="exampleInputEmail1" class="form-label">
-                                                    <h6>Restaurant's Manager Name</h6>
+                                                    <h6>Organization's Manager Name</h6>
                                                 </label>
                                                 <input
                                                     type="text"
@@ -448,7 +450,7 @@ const Clothesdonor = () => {
                                             </div>
                                             <div class="mb-2">
                                                 <label for="exampleInputEmail1" class="form-label">
-                                                    <h6>Restaurant's Address</h6>
+                                                    <h6>Organization's Address</h6>
                                                 </label>
                                                 <input
                                                     type="textarea"
@@ -504,7 +506,7 @@ const Clothesdonor = () => {
                                                 </div>
                                                 <div class="input-half-div ml-3 mb-2">
                                                     <label for="exampleInputEmail1" class="form-label">
-                                                        <h6>Food for how many people?</h6>
+                                                        <h6>Clothes for how many people?</h6>
                                                     </label>
                                                     <input
                                                         type="number"
@@ -515,32 +517,7 @@ const Clothesdonor = () => {
                                                     />
                                                 </div>
                                             </div>
-                                            <div className="food-form-input-half">
-                                                <div class="input-half-div mb-3">
-                                                    <label for="exampleInputEmail1" class="form-label">
-                                                        <h6>Time and date of Food Preparation</h6>
-                                                    </label>
-                                                    <input
-                                                        type="datetime-local"
-                                                        class="form-control"
-                                                        id="exampleInputEmail1"
-                                                        aria-describedby="emailHelp"
-                                                        required
-                                                    />
-                                                </div>
-                                                <div class="input-half-div ml-2 mb-3">
-                                                    <label for="exampleInputEmail1" class="form-label">
-                                                        <h6>Time and date of Food Expiry</h6>
-                                                    </label>
-                                                    <input
-                                                        type="datetime-local"
-                                                        className="form-control"
-                                                        id="exampleInputEmail1"
-                                                        aria-describedby="emailHelp"
-                                                        required
-                                                    />
-                                                </div>
-                                            </div>
+                                            
 
                                             <button type="submit" class="btn food-restaurant-register-submit">
                                                 <h6 className="mt-1">Submit</h6>

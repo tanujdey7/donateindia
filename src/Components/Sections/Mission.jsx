@@ -66,7 +66,7 @@ function Mission() {
           </div>
           <div className="mission-box-row-two row">
             <div className="mission-box-col col-6">
-            <a href="/clothesdonor">
+              <a href="/clothesdonate">
               <div className="mission-box-three card">
                 <div className="mission-box-img card-body">
                   <img
@@ -84,7 +84,7 @@ function Mission() {
               </a>
             </div>
             <div className="mission-box-col  col-6">
-            <a href="/booksdonor">
+              <a href="/booksdonate">
               <div className="mission-box-four card">
                 <div className="mission-box-img card-body">
                   <img src={Books} alt="Books" width="110" />

@@ -93,17 +93,19 @@ const Booksdonor = () => {
                                             </div>
                                         </div>
                                         <div className="col">
-                                            <div className="Food-menu-btn">
-                                                <button
-                                                    onClick={regiReceiver}
-                                                    className="btn food-menu-btn-two"
-                                                >
-                                                    <h1 className="text-white">
-                                                        <img src={Clothesreceiver} width="110" />
-                                                    </h1>
-                                                    <h4 className="mt-3">I'm Receiver</h4>
-                                                </button>
-                                            </div>
+                                            <a href="/findbooks">
+                                                <div className="Food-menu-btn">
+                                                    <button
+                                                        // onClick={regiReceiver}
+                                                        className="btn food-menu-btn-two"
+                                                    >
+                                                        <h1 className="text-white">
+                                                            <img src={Clothesreceiver} width="110" />
+                                                        </h1>
+                                                        <h4 className="mt-3">I'm Receiver</h4>
+                                                    </button>
+                                                </div>
+                                            </a>
                                         </div>
                                     </div>
                                     <div className="Food-Menu-Wrap-row-two row">
@@ -278,7 +280,7 @@ const Booksdonor = () => {
                                     </div>
                                 </div>
                             ) : null}
-                            {receive ? (
+                            {/* {receive ? (
                                 <div className="food-receiver-register card">
                                     {receive && showreceiver == true ? (
                                         <div>
@@ -409,7 +411,7 @@ const Booksdonor = () => {
                                         </div>
                                     ) : null}
                                 </div>
-                            ) : null}
+                            ) : null} */}
                             {restaurant ? (
                                 <div className="food-restaurant-register card">
                                     <div className="food-restaurant-register-card-header">
