@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Booksimg from "../Images/books.jpg";
+import Booksimg from "../Images/donation/bookdonation.png";
 import Clothesreceiver from "../Images/clothesreceiver.png";
 import Clothes from "../Images/clothes.png";
 import Foodimgfour from "../Images/volunteer.png";
@@ -68,22 +68,22 @@ const Booksdonor = () => {
     };
 
     return (
-        <div className="FoodDonate-wrapper">
+        <div className="BooksDonate-wrapper">
             <div className="container-fluid">
-                <div className="Food-Main-wrapper">
-                    <div className="Food-menu-row row">
-                        <div className="Food-img-col col">
-                            <img src={Booksimg} width="900" />
+                <div className="Books-Main-wrapper">
+                    <div className="Books-menu-row row">
+                        <div className="Books-img-col col">
+                            <img src={Booksimg} width="850" />
                         </div>
-                        <div className="Food-menu-col col">
+                        <div className="Books-menu-col col">
                             {foodmenu ? (
-                                <div className="Food-Menu-Wrap">
-                                    <div className="Food-Menu-Wrap-row row">
+                                <div className="Books-Menu-Wrap">
+                                    <div className="Books-Menu-Wrap-row row">
                                         <div className="col">
-                                            <div className="Food-menu-btn-one-div">
+                                            <div className="Books-menu-btn-one-div">
                                                 <button
                                                     onClick={showDonor}
-                                                    className="Food-menu-btn-one"
+                                                    className="Books-menu-btn-one"
                                                 >
                                                     <h1 className="">
                                                         <img src={Clothes} width="100" />
@@ -94,10 +94,10 @@ const Booksdonor = () => {
                                         </div>
                                         <div className="col">
                                             <a href="/findbooks">
-                                                <div className="Food-menu-btn">
+                                                <div className="Books-menu-btn">
                                                     <button
                                                         // onClick={regiReceiver}
-                                                        className="btn food-menu-btn-two"
+                                                        className="btn Books-menu-btn-two"
                                                     >
                                                         <h1 className="text-white">
                                                             <img src={Clothesreceiver} width="110" />
@@ -108,26 +108,26 @@ const Booksdonor = () => {
                                             </a>
                                         </div>
                                     </div>
-                                    <div className="Food-Menu-Wrap-row-two row">
+                                    <div className="Books-Menu-Wrap-row-two row">
                                         <div className="col">
-                                            <div className="Food-menu-btn">
+                                            <div className="Books-menu-btn">
                                                 <button
                                                     onClick={regiRest}
-                                                    className="btn food-menu-btn-three"
+                                                    className="btn Books-menu-btn-three"
                                                 >
                                                     <h1 className="text-white">
-                                                        {/* <img src={Foodimgthree} width="100" /> */}
-                                                        <VscOrganization className="food-org-icon" size="100" />
+                                                        {/* <img src={Booksimgthree} width="100" /> */}
+                                                        <VscOrganization className="Books-org-icon" size="100" />
                                                     </h1>
                                                     <h4 className="mt-3">Organization</h4>
                                                 </button>
                                             </div>
                                         </div>
                                         <div className="col">
-                                            <div className="Food-menu-btn">
+                                            <div className="Books-menu-btn">
                                                 <button
                                                     onClick={regiVolunteer}
-                                                    className="btn food-menu-btn-four"
+                                                    className="btn Books-menu-btn-four"
                                                 >
                                                     <h1 className="text-white">
                                                         <img src={Foodimgfour} width="100" />
@@ -140,15 +140,15 @@ const Booksdonor = () => {
                                 </div>
                             ) : null}
                             {donor ? (
-                                <div className="food-donor-register card">
-                                    <div className="food-restaurant-register-card-header">
+                                <div className="Books-donor-register card">
+                                    <div className="Books-restaurant-register-card-header">
                                         <button onClick={hidemenu} className="btn back-menu-btn">
                                             <IoMdArrowRoundBack /> Back
                                         </button>
-                                        <h3 className="food-btn-tagline mt-3">Clothes Donor</h3>
+                                        <h3 className="Books-btn-tagline mt-3">Books Donor</h3>
                                     </div>
-                                    <div className="food-restaurant-register-wrap card-body">
-                                        <h5 className="text-center mb-3">[Donate Clothes as Individual]</h5>
+                                    <div className="Books-restaurant-register-wrap card-body">
+                                        <h5 className="text-center mb-3">[Donate Books as Individual]</h5>
                                         <form>
                                             <div class="mb-2">
                                                 <label for="exampleInputEmail1" class="form-label">
@@ -186,7 +186,7 @@ const Booksdonor = () => {
                                                     required
                                                 />
                                             </div>
-                                            <div className="food-form-input-half">
+                                            <div className="Books-form-input-half">
                                                 <div class="input-half-div mb-3">
                                                     <label for="exampleInputEmail1" class="form-label">
                                                         <h6>State</h6>
@@ -216,7 +216,7 @@ const Booksdonor = () => {
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div className="food-form-input-half">
+                                            <div className="Books-form-input-half">
                                                 <div class="input-half-div mb-3">
                                                     <label for="exampleInputEmail1" class="form-label">
                                                         <h6>Mobile Number</h6>
@@ -232,7 +232,7 @@ const Booksdonor = () => {
                                                 </div>
                                                 <div class="input-half-div ml-3 mb-2">
                                                     <label for="exampleInputEmail1" class="form-label">
-                                                        <h6>Food for how many people?</h6>
+                                                        <h6>Books for how many people?</h6>
                                                     </label>
                                                     <input
                                                         type="number"
@@ -243,10 +243,10 @@ const Booksdonor = () => {
                                                     />
                                                 </div>
                                             </div>
-                                            <div className="food-form-input-half">
+                                            <div className="Books-form-input-half">
                                                 <div class="input-half-div mb-3">
                                                     <label for="exampleInputEmail1" class="form-label">
-                                                        <h6>Time and date of Food Preparation</h6>
+                                                        <h6>Time and date of Books Preparation</h6>
                                                     </label>
                                                     <input
                                                         type="datetime-local"
@@ -258,7 +258,7 @@ const Booksdonor = () => {
                                                 </div>
                                                 <div class="input-half-div ml-2 mb-3">
                                                     <label for="exampleInputEmail1" class="form-label">
-                                                        <h6>Time and date of Food Expiry</h6>
+                                                        <h6>Time and date of Books Expiry</h6>
                                                     </label>
                                                     <input
                                                         type="datetime-local"
@@ -270,10 +270,10 @@ const Booksdonor = () => {
                                                 </div>
                                             </div>
 
-                                            <button type="submit" class="btn food-restaurant-register-submit">
+                                            <button type="submit" class="btn Books-restaurant-register-submit">
                                                 <h6 className="mt-1">Submit</h6>
                                             </button>
-                                            <button type="reset" class="btn ml-2 food-restaurant-register-submit">
+                                            <button type="reset" class="btn ml-2 Books-restaurant-register-submit">
                                                 <h6 className="mt-1">Reset</h6>
                                             </button>
                                         </form>
@@ -281,11 +281,11 @@ const Booksdonor = () => {
                                 </div>
                             ) : null}
                             {/* {receive ? (
-                                <div className="food-receiver-register card">
+                                <div className="Books-receiver-register card">
                                     {receive && showreceiver == true ? (
                                         <div>
-                                            <div className="food-receiver-register-card-header card-header">
-                                                <h4 className="food-btn-tagline">
+                                            <div className="Books-receiver-register-card-header card-header">
+                                                <h4 className="Books-btn-tagline">
                                                     Register as Receiver
                                                 </h4>
                                                 <button
@@ -295,7 +295,7 @@ const Booksdonor = () => {
                                                     Back to Menu
                                                 </button>
                                             </div>
-                                            <div className="food-receiver-register-wrap card-body">
+                                            <div className="Books-receiver-register-wrap card-body">
                                                 <form className="">
                                                     <div class="mb-3">
                                                         <label for="exampleInputEmail1" class="form-label">
@@ -349,8 +349,8 @@ const Booksdonor = () => {
                                     ) : null}
                                     {receive && receiverlogin == true ? (
                                         <div>
-                                            <div className="food-receiver-register-card-header card-header">
-                                                <h4 className="food-btn-tagline">Login as Receiver</h4>
+                                            <div className="Books-receiver-register-card-header card-header">
+                                                <h4 className="Books-btn-tagline">Login as Receiver</h4>
                                                 <button
                                                     onClick={hidemenu}
                                                     className="btn back-menu-btn"
@@ -358,7 +358,7 @@ const Booksdonor = () => {
                                                     Back to Menu
                                                 </button>
                                             </div>
-                                            <div className="food-receiver-register-wrap card-body">
+                                            <div className="Books-receiver-register-wrap card-body">
                                                 <form className="">
                                                     <div class="mb-3">
                                                         <label for="exampleInputEmail1" class="form-label">
@@ -413,15 +413,15 @@ const Booksdonor = () => {
                                 </div>
                             ) : null} */}
                             {restaurant ? (
-                                <div className="food-restaurant-register card">
-                                    <div className="food-restaurant-register-card-header">
+                                <div className="Books-restaurant-register card">
+                                    <div className="Books-restaurant-register-card-header">
                                         <button onClick={hidemenu} className="btn back-menu-btn">
                                             <IoMdArrowRoundBack /> Back
                                         </button>
-                                        <h3 className="food-btn-tagline mt-3">Restaurant</h3>
+                                        <h3 className="Books-btn-tagline mt-3">Restaurant</h3>
                                     </div>
-                                    <div className="food-restaurant-register-wrap card-body">
-                                        <h5 className="text-center mb-3">[Donate food as Restaurant]</h5>
+                                    <div className="Books-restaurant-register-wrap card-body">
+                                        <h5 className="text-center mb-3">[Donate Books as Restaurant]</h5>
                                         <form>
                                             <div class="mb-2">
                                                 <label for="exampleInputEmail1" class="form-label">
@@ -459,7 +459,7 @@ const Booksdonor = () => {
                                                     required
                                                 />
                                             </div>
-                                            <div className="food-form-input-half">
+                                            <div className="Books-form-input-half">
                                                 <div class="input-half-div mb-3">
                                                     <label for="exampleInputEmail1" class="form-label">
                                                         <h6>State</h6>
@@ -489,7 +489,7 @@ const Booksdonor = () => {
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div className="food-form-input-half">
+                                            <div className="Books-form-input-half">
                                                 <div class="input-half-div mb-3">
                                                     <label for="exampleInputEmail1" class="form-label">
                                                         <h6>Mobile Number</h6>
@@ -505,7 +505,7 @@ const Booksdonor = () => {
                                                 </div>
                                                 <div class="input-half-div ml-3 mb-2">
                                                     <label for="exampleInputEmail1" class="form-label">
-                                                        <h6>Food for how many people?</h6>
+                                                        <h6>Books for how many people?</h6>
                                                     </label>
                                                     <input
                                                         type="number"
@@ -516,10 +516,10 @@ const Booksdonor = () => {
                                                     />
                                                 </div>
                                             </div>
-                                            <div className="food-form-input-half">
+                                            <div className="Books-form-input-half">
                                                 <div class="input-half-div mb-3">
                                                     <label for="exampleInputEmail1" class="form-label">
-                                                        <h6>Time and date of Food Preparation</h6>
+                                                        <h6>Time and date of Books Preparation</h6>
                                                     </label>
                                                     <input
                                                         type="datetime-local"
@@ -531,7 +531,7 @@ const Booksdonor = () => {
                                                 </div>
                                                 <div class="input-half-div ml-2 mb-3">
                                                     <label for="exampleInputEmail1" class="form-label">
-                                                        <h6>Time and date of Food Expiry</h6>
+                                                        <h6>Time and date of Books Expiry</h6>
                                                     </label>
                                                     <input
                                                         type="datetime-local"
@@ -543,10 +543,10 @@ const Booksdonor = () => {
                                                 </div>
                                             </div>
 
-                                            <button type="submit" class="btn food-restaurant-register-submit">
+                                            <button type="submit" class="btn Books-restaurant-register-submit">
                                                 <h6 className="mt-1">Submit</h6>
                                             </button>
-                                            <button type="reset" class="btn ml-2 food-restaurant-register-submit">
+                                            <button type="reset" class="btn ml-2 Books-restaurant-register-submit">
                                                 <h6 className="mt-1">Reset</h6>
                                             </button>
                                         </form>
@@ -555,15 +555,15 @@ const Booksdonor = () => {
                                 </div>
                             ) : null}
                             {volunteer ? (
-                                <div className="food-volunteer-register card">
-                                    <div className="food-restaurant-register-card-header">
+                                <div className="Books-volunteer-register card">
+                                    <div className="Books-restaurant-register-card-header">
                                         <button onClick={hidemenu} className="btn back-menu-btn">
                                             <IoMdArrowRoundBack /> Back
                                         </button>
-                                        <h3 className="food-btn-tagline mt-3">Restaurant</h3>
+                                        <h3 className="Books-btn-tagline mt-3">Restaurant</h3>
                                     </div>
-                                    <div className="food-restaurant-register-wrap card-body">
-                                        <h5 className="text-center mb-3">[Donate food as Restaurant]</h5>
+                                    <div className="Books-restaurant-register-wrap card-body">
+                                        <h5 className="text-center mb-3">[Donate Books as Restaurant]</h5>
                                         <form>
                                             <div class="mb-2">
                                                 <label for="exampleInputEmail1" class="form-label">
@@ -601,7 +601,7 @@ const Booksdonor = () => {
                                                     required
                                                 />
                                             </div>
-                                            <div className="food-form-input-half">
+                                            <div className="Books-form-input-half">
                                                 <div class="input-half-div mb-3">
                                                     <label for="exampleInputEmail1" class="form-label">
                                                         <h6>State</h6>
@@ -631,7 +631,7 @@ const Booksdonor = () => {
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div className="food-form-input-half">
+                                            <div className="Books-form-input-half">
                                                 <div class="input-half-div mb-3">
                                                     <label for="exampleInputEmail1" class="form-label">
                                                         <h6>Mobile Number</h6>
@@ -647,7 +647,7 @@ const Booksdonor = () => {
                                                 </div>
                                                 <div class="input-half-div ml-3 mb-2">
                                                     <label for="exampleInputEmail1" class="form-label">
-                                                        <h6>Food for how many people?</h6>
+                                                        <h6>Books for how many people?</h6>
                                                     </label>
                                                     <input
                                                         type="number"
@@ -658,10 +658,10 @@ const Booksdonor = () => {
                                                     />
                                                 </div>
                                             </div>
-                                            <div className="food-form-input-half">
+                                            <div className="Books-form-input-half">
                                                 <div class="input-half-div mb-3">
                                                     <label for="exampleInputEmail1" class="form-label">
-                                                        <h6>Time and date of Food Preparation</h6>
+                                                        <h6>Time and date of Books Preparation</h6>
                                                     </label>
                                                     <input
                                                         type="datetime-local"
@@ -673,7 +673,7 @@ const Booksdonor = () => {
                                                 </div>
                                                 <div class="input-half-div ml-2 mb-3">
                                                     <label for="exampleInputEmail1" class="form-label">
-                                                        <h6>Time and date of Food Expiry</h6>
+                                                        <h6>Time and date of Books Expiry</h6>
                                                     </label>
                                                     <input
                                                         type="datetime-local"
@@ -685,10 +685,10 @@ const Booksdonor = () => {
                                                 </div>
                                             </div>
 
-                                            <button type="submit" class="btn food-restaurant-register-submit">
+                                            <button type="submit" class="btn Books-restaurant-register-submit">
                                                 <h6 className="mt-1">Submit</h6>
                                             </button>
-                                            <button type="reset" class="btn ml-2 food-restaurant-register-submit">
+                                            <button type="reset" class="btn ml-2 Books-restaurant-register-submit">
                                                 <h6 className="mt-1">Reset</h6>
                                             </button>
                                         </form>

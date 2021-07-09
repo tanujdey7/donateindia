@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Foodimg from "../Images/food.png";
+import Foodimg from "../Images/donation/fooddonation.png";
 import Foodimgone from "../Images/dish.png";
 import Foodimgtwo from "../Images/fastfood.png";
 import Foodimgthree from "../Images/tray.png";

@@ -3,21 +3,21 @@
   padding: 0px;
 }
 
-.Food-menu-row {
+.Books-menu-row {
   background: #ffffff;
   width: 100%;
   margin: 0px;
-  padding-top: 4%;
-  padding-bottom: 6%;
+  padding-top: 6%;
+  padding-bottom: 10%;
 }
 
-.Food-menu-col {
+.Books-menu-col {
   border-left: 2px solid #09a05c;
 }
 
 /* btn */
 
-.Food-menu-btn-one {
+.Books-menu-btn-one {
   width: 220px;
   border: none;
   border-radius: 5px;
@@ -30,18 +30,18 @@
   color: #140101;
 }
 
-.Food-menu-btn-one > a {
+.Books-menu-btn-one > a {
   text-decoration: none;
   list-style-type: none;
   color: #131313;
 }
 
-.Food-menu-btn-one:hover {
+.Books-menu-btn-one:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-.food-menu-btn-two {
+.Books-menu-btn-two {
   width: 220px;
   border: none;
   border-radius: 5px;
@@ -54,13 +54,13 @@
   color: #140101;
 }
 
-.food-menu-btn-two:hover {
+.Books-menu-btn-two:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   color: #010101;
 }
 
-.food-menu-btn-three {
+.Books-menu-btn-three {
   width: 220px;
   border: none;
   border-radius: 5px;
@@ -73,13 +73,13 @@
   color: #140101;
 }
 
-.food-menu-btn-three:hover {
+.Books-menu-btn-three:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   color: #010101;
 }
 
-.food-menu-btn-four {
+.Books-menu-btn-four {
   width: 220px;
   border: none;
   border-radius: 5px;
@@ -92,23 +92,23 @@
   color: #140101;
 }
 
-.food-menu-btn-four:hover {
+.Books-menu-btn-four:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   color: #010101;
 }
 
-.Food-Menu-Wrap-row {
+.Books-Menu-Wrap-row {
   margin-top: 7%;
 }
 
-.Food-Menu-Wrap-row-two {
+.Books-Menu-Wrap-row-two {
   margin-top: 3%;
 }
 
-/* food volunteers register */
+/* Books volunteers register */
 
-.food-volunteer-register {
+.Books-volunteer-register {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
@@ -117,7 +117,7 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.food-donor-register {
+.Books-donor-register {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
@@ -126,7 +126,7 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.food-receiver-register {
+.Books-receiver-register {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
@@ -135,7 +135,7 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.food-restaurant-register {
+.Books-restaurant-register {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
@@ -146,7 +146,7 @@
 
 /*  */
 
-.food-donor-register-wrap {
+.Books-donor-register-wrap {
   margin: 10px;
   text-align: left;
   width: 95%;
@@ -154,7 +154,7 @@
   margin-right: auto;
 }
 
-.food-receiver-register-wrap {
+.Books-receiver-register-wrap {
   margin: 0px 10px 10px 10px;
   text-align: left;
   width: 95%;
@@ -162,7 +162,7 @@
   margin-right: auto;
 }
 
-.food-restaurant-register-wrap {
+.Books-restaurant-register-wrap {
   margin: 0px 10px 10px 10px;
   text-align: left;
   width: 95%;
@@ -180,7 +180,7 @@
 
 /* btn */
 
-.food-btn-tagline {
+.Books-btn-tagline {
   width: auto;
   margin-left: 27%;
   /* margin-top: 2%; */
@@ -195,7 +195,7 @@
   background-color: #26363b;
 }
 
-.food-donor-register-card-header {
+.Books-donor-register-card-header {
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -203,7 +203,7 @@
   text-align: center;
 }
 
-.food-receiver-register-card-header {
+.Books-receiver-register-card-header {
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -211,7 +211,7 @@
   text-align: center;
 }
 
-.food-restaurant-register-card-header {
+.Books-restaurant-register-card-header {
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -228,7 +228,7 @@
   /* background-color: red; */
 }
 
-.food-form-input-half {
+.Books-form-input-half {
   display: flex;
   width: 100%;
 }
@@ -239,13 +239,11 @@
 
 .see-vol-btn {
   width: 89%;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 10px;
   align-items: center;
   border-radius: 5px;
   text-decoration: none;
-  color: #ffffff;
+  color: #010101;
   padding: 5px 10px;
   background-color: #1a2e35;
 }
@@ -255,7 +253,7 @@
   color: #ffd2d2;
 }
 
-.food-restaurant-register-submit {
+.Books-restaurant-register-submit {
   background-color: #1a2e35;
   width: 49%;
   color: #edf6f9;
@@ -268,12 +266,13 @@
   color: #010101;
 }
 
-.food-org-icon {
+.Books-org-icon {
   /* color: #363636; */
   fill: #0a0a0a;
 }
 
 
-.Food-img-col{
-    margin-top: 4%;
+.Books-img-col{
+    margin-top: 5%;
+    height: 100%;
 }

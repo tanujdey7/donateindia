@@ -3,21 +3,21 @@
   padding: 0px;
 }
 
-.Food-menu-row {
+.Blood-menu-row {
   background: #ffffff;
   width: 100%;
   margin: 0px;
   padding-top: 4%;
-  padding-bottom: 6%;
+  padding-bottom: 5%;
 }
 
-.Food-menu-col {
+.Blood-menu-col {
   border-left: 2px solid #09a05c;
 }
 
 /* btn */
 
-.Food-menu-btn-one {
+.Blood-menu-btn-one {
   width: 220px;
   border: none;
   border-radius: 5px;
@@ -30,18 +30,18 @@
   color: #140101;
 }
 
-.Food-menu-btn-one > a {
+.Blood-menu-btn-one > a {
   text-decoration: none;
   list-style-type: none;
   color: #131313;
 }
 
-.Food-menu-btn-one:hover {
+.Blood-menu-btn-one:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-.food-menu-btn-two {
+.Blood-menu-btn-two {
   width: 220px;
   border: none;
   border-radius: 5px;
@@ -54,13 +54,13 @@
   color: #140101;
 }
 
-.food-menu-btn-two:hover {
+.Blood-menu-btn-two:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   color: #010101;
 }
 
-.food-menu-btn-three {
+.Blood-menu-btn-three {
   width: 220px;
   border: none;
   border-radius: 5px;
@@ -73,13 +73,13 @@
   color: #140101;
 }
 
-.food-menu-btn-three:hover {
+.Blood-menu-btn-three:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   color: #010101;
 }
 
-.food-menu-btn-four {
+.Blood-menu-btn-four {
   width: 220px;
   border: none;
   border-radius: 5px;
@@ -92,23 +92,23 @@
   color: #140101;
 }
 
-.food-menu-btn-four:hover {
+.Blood-menu-btn-four:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   color: #010101;
 }
 
-.Food-Menu-Wrap-row {
+.Blood-Menu-Wrap-row {
   margin-top: 7%;
 }
 
-.Food-Menu-Wrap-row-two {
+.Blood-Menu-Wrap-row-two {
   margin-top: 3%;
 }
 
-/* food volunteers register */
+/* Blood volunteers register */
 
-.food-volunteer-register {
+.Blood-volunteer-register {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
@@ -117,7 +117,7 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.food-donor-register {
+.Blood-donor-register {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
@@ -126,7 +126,7 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.food-receiver-register {
+.Blood-receiver-register {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
@@ -135,7 +135,7 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.food-restaurant-register {
+.Blood-restaurant-register {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
@@ -146,7 +146,7 @@
 
 /*  */
 
-.food-donor-register-wrap {
+.Blood-donor-register-wrap {
   margin: 10px;
   text-align: left;
   width: 95%;
@@ -154,7 +154,7 @@
   margin-right: auto;
 }
 
-.food-receiver-register-wrap {
+.Blood-receiver-register-wrap {
   margin: 0px 10px 10px 10px;
   text-align: left;
   width: 95%;
@@ -162,7 +162,7 @@
   margin-right: auto;
 }
 
-.food-restaurant-register-wrap {
+.Blood-restaurant-register-wrap {
   margin: 0px 10px 10px 10px;
   text-align: left;
   width: 95%;
@@ -180,7 +180,7 @@
 
 /* btn */
 
-.food-btn-tagline {
+.Blood-btn-tagline {
   width: auto;
   margin-left: 27%;
   /* margin-top: 2%; */
@@ -195,7 +195,7 @@
   background-color: #26363b;
 }
 
-.food-donor-register-card-header {
+.Blood-donor-register-card-header {
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -203,7 +203,7 @@
   text-align: center;
 }
 
-.food-receiver-register-card-header {
+.Blood-receiver-register-card-header {
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -211,7 +211,7 @@
   text-align: center;
 }
 
-.food-restaurant-register-card-header {
+.Blood-restaurant-register-card-header {
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -228,7 +228,7 @@
   /* background-color: red; */
 }
 
-.food-form-input-half {
+.Blood-form-input-half {
   display: flex;
   width: 100%;
 }
@@ -253,7 +253,7 @@
   color: #ffd2d2;
 }
 
-.food-restaurant-register-submit {
+.Blood-restaurant-register-submit {
   background-color: #1a2e35;
   width: 49%;
   color: #edf6f9;
@@ -266,12 +266,13 @@
   color: #010101;
 }
 
-.food-org-icon {
+.Blood-org-icon {
   /* color: #363636; */
   fill: #0a0a0a;
 }
 
 
-.Food-img-col{
-    margin-top: 4%;
+.Blood-img-col{
+    margin-top: 0%;
+    height: 100%;
 }

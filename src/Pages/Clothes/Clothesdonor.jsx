@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Clothesimg from "../Images/clothesimg.png";
+import Clothesimg from "../Images/donation/clothesdonation.png";
 import Clothesreceiver from "../Images/clothesreceiver.png";
 import Clothes from "../Images/clothes.png";
 import Foodimgthree from "../Images/tray.png";
@@ -74,7 +74,7 @@ const Clothesdonor = () => {
                 <div className="Food-Main-wrapper">
                     <div className="Food-menu-row row">
                         <div className="col">
-                            <img src={Clothesimg} width="850" />
+                            <img src={Clothesimg} width="750" />
                         </div>
                         <div className="Food-menu-col col">
                             {foodmenu ? (
