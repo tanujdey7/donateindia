@@ -148,10 +148,10 @@ const Blooddonate = () => {
                                         <button onClick={hidemenu} className="btn back-menu-btn">
                                             <IoMdArrowRoundBack /> Back
                                         </button>
-                                        <h3 className="food-btn-tagline mt-3">Clothes Donor</h3>
+                                        <h3 className="food-btn-tagline mt-3">Blood Donor</h3>
                                     </div>
                                     <div className="food-restaurant-register-wrap card-body">
-                                        <h5 className="text-center mb-3">[Donate Clothes as Individual]</h5>
+                                        <h5 className="text-center mb-3">[Register as Blood Donor]</h5>
                                         <form>
                                             <div class="mb-2">
                                                 <label for="exampleInputEmail1" class="form-label">

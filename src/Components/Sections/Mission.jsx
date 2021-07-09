@@ -38,7 +38,7 @@ function Mission() {
         <div className="mission-box-wrap">
           <div className="mission-box-row row">
             <div className="mission-box-col col-6">
-              <a href="/blooddonate">
+              <a href="/blood/blooddonate">
                 <div className="mission-box-one card">
                   <div className="mission-box-img card-body">
                     <img src={Blooddrop} alt="Blooddrop" width="120" />

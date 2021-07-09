@@ -30,7 +30,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/Login" component={Login} />
-          <Route exact path="/blooddonate" component={Blooddonate} />
+          <Route exact path="/blood/blooddonate" component={Blooddonate} />
           <Route exact path="/iamdonor" component={Iamdonor} />
           <Route exact path="/receiver" component={Receiver} />
           <Route exact path="/bloodcamp" component={Bloodcamp} />
