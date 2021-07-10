@@ -33,16 +33,16 @@ function App() {
           <Route exact path="/blood/blooddonate" component={Blooddonate} />
           <Route exact path="/iamdonor" component={Iamdonor} />
           <Route exact path="/receiver" component={Receiver} />
-          <Route exact path="/bloodcamp" component={Bloodcamp} />
-          <Route exact path="/fooddonate" component={Fooddonate} />
-          <Route exact path="/clothesdonate" component={Clothesdonor} />
-          <Route exact path="/booksdonate" component={Booksdonor} />
+          <Route exact path="/blood/bloodcamp" component={Bloodcamp} />
+          <Route exact path="/food/fooddonate" component={Fooddonate} />
+          <Route exact path="/clothes/clothesdonate" component={Clothesdonor} />
+          <Route exact path="/books/booksdonate" component={Booksdonor} />
           <Route exact path="/blood/findblood" component={Findblood} />
-          <Route exact path="/findfood" component={Findfood} />
-          <Route exact path="/findclothes" component={Findclothes} />
-          <Route exact path="/findbooks" component={Findbooks} />
-          <Route exact path="/findbloodbank" component={FindBloodbank} />
-          <Route exact path="/findbloodcamp" component={FindBloodcamp} />
+          <Route exact path="/blood/findbloodbank" component={FindBloodbank} />
+          <Route exact path="/blood/findbloodcamp" component={FindBloodcamp} />
+          <Route exact path="/food/findfood" component={Findfood} />
+          <Route exact path="/clothes/findclothes" component={Findclothes} />
+          <Route exact path="/books/findbooks" component={Findbooks} />
         </Switch>
         <Footer />
       </Router>

@@ -94,7 +94,7 @@ const Clothesdonor = () => {
                                             </div>
                                         </div>
                                         <div className="col">
-                                        <a href="/findclothes">
+                                        <a href="/clothes/findclothes">
                                             <div className="Food-menu-btn">
                                                 <button
                                                     // onClick={regiReceiver}
@@ -418,12 +418,12 @@ const Clothesdonor = () => {
                                 <div className="food-restaurant-register card">
                                     <div className="food-restaurant-register-card-header">
                                         <button onClick={hidemenu} className="btn back-menu-btn">
-                                            <IoMdArrowRoundBack /> Back
+                                            <IoMdArrowRoundBack />Back
                                         </button>
                                         <h3 className="food-btn-tagline mt-3">Organization</h3>
                                     </div>
                                     <div className="Blood-restaurant-register-card-header mt-3">
-                                        <a className="see-vol-btn w-100" href="/findbloodbank/"><h6 className="mt-1 text-white">See Nearby Clothes Banks</h6></a>
+                                        <a className="see-vol-btn w-100" href="/blood/findbloodbank/"><h6 className="mt-1 text-white">See Nearby Clothes Banks</h6></a>
                                     </div>
                                     <h5 className="text-center mb-3">OR</h5>
                                     <div className="food-restaurant-register-wrap">

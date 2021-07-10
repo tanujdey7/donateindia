@@ -181,6 +181,12 @@
   background-color:#26363b;
 }
 
+.back-menu-btn:hover{
+  color: #000000;
+  border: 1px solid #010101;
+  background:transparent;
+}
+
 .food-donor-register-card-header {
   display: flex;
   margin-left: auto;
@@ -224,7 +230,7 @@
 }
 
 .see-vol-btn{
-  width: 89%;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;

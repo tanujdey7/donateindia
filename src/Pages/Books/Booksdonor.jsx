@@ -93,7 +93,7 @@ const Booksdonor = () => {
                                             </div>
                                         </div>
                                         <div className="col">
-                                            <a href="/findbooks">
+                                            <a href="/books/findbooks">
                                                 <div className="Books-menu-btn">
                                                     <button
                                                         // onClick={regiReceiver}
@@ -421,7 +421,7 @@ const Booksdonor = () => {
                                         <h3 className="Books-btn-tagline mt-3">Restaurant</h3>
                                     </div>
                                     <div className="Blood-restaurant-register-card-header mt-3">
-                                        <a className="see-vol-btn" href="/findbloodbank/"><h6 className="mt-1 text-white">See Nearby Book Donation</h6></a>
+                                        <a className="see-vol-btn" href="/blood/findbloodbank/"><h6 className="mt-1 text-white">See Nearby Book Donation</h6></a>
                                     </div>
                                     <h5 className="text-center mb-3">OR</h5>
                                     <div className="Books-restaurant-register-wrap">

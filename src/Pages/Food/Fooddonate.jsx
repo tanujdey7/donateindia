@@ -73,7 +73,7 @@ const Fooddonate = () => {
                       </div>
                     </div>
                     <div className="col">
-                      <a href="/findfood">
+                      <a href="/food/findfood">
                         <div className="Food-menu-btn">
                           <button className="btn food-menu-btn-two">
                             <h1 className="text-white">
@@ -119,7 +119,7 @@ const Fooddonate = () => {
                 <div className="food-donor-register card">
                   <div className="food-restaurant-register-card-header">
                     <button onClick={hidemenu} className="btn back-menu-btn">
-                      <IoMdArrowRoundBack /> Back
+                      <IoMdArrowRoundBack />Back
                     </button>
                     <h3 className="food-btn-tagline mt-3">Food Donor</h3>
                   </div>
@@ -406,7 +406,7 @@ const Fooddonate = () => {
                   </div>
                   <div className="Blood-restaurant-register-card-header mt-3">
                     {/* <a className="see-vol-btn w-100" href="/findbloodbank/"><h6 className="mt-1 text-white">See Nearby Blood Banks</h6></a> */}
-                    <a className="see-vol-btn w-100" href="/findbloodbank/">
+                    <a className="see-vol-btn" href="/findbloodbank/">
                       <h6 className="mt-1 text-white">See Nearby Food Banks</h6>
                     </a>
                   </div>

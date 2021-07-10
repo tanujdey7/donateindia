@@ -108,7 +108,7 @@ const Home = () => {
                   </a>
                 </div>
                 <div className="mission-box-col col-6">
-                  <a href="/fooddonate">
+                  <a href="/food/fooddonate">
                     <div className="mission-box-two card">
                       <div className="mission-box-img card-body">
                         <img src={Food} alt="Food" width="120" />
@@ -123,7 +123,7 @@ const Home = () => {
               </div>
               <div className="mission-box-row-two row">
                 <div className="mission-box-col col-6">
-                  <a href="/clothesdonate">
+                  <a href="/clothes/clothesdonate">
                     <div className="mission-box-three card">
                       <div className="mission-box-img card-body">
                         <img
@@ -141,7 +141,7 @@ const Home = () => {
                   </a>
                 </div>
                 <div className="mission-box-col  col-6">
-                  <a href="/booksdonate">
+                  <a href="/books/booksdonate">
                     <div className="mission-box-four card">
                       <div className="mission-box-img card-body">
                         <img src={Books} alt="Books" width="110" />
