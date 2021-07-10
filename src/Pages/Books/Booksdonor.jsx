@@ -420,7 +420,11 @@ const Booksdonor = () => {
                                         </button>
                                         <h3 className="Books-btn-tagline mt-3">Restaurant</h3>
                                     </div>
-                                    <div className="Books-restaurant-register-wrap card-body">
+                                    <div className="Blood-restaurant-register-card-header mt-3">
+                                        <a className="see-vol-btn" href="/findbloodbank/"><h6 className="mt-1 text-white">See Nearby Book Donation</h6></a>
+                                    </div>
+                                    <h5 className="text-center mb-3">OR</h5>
+                                    <div className="Books-restaurant-register-wrap">
                                         <h5 className="text-center mb-3">[Donate Books as Restaurant]</h5>
                                         <form>
                                             <div class="mb-2">
@@ -551,7 +555,6 @@ const Booksdonor = () => {
                                             </button>
                                         </form>
                                     </div>
-                                    <a className="see-vol-btn" href="#"><h6 className="mt-1">See Available Volunteers</h6></a>
                                 </div>
                             ) : null}
                             {volunteer ? (

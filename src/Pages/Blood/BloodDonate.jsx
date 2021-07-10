@@ -461,7 +461,7 @@ const Blooddonate = () => {
                                         <h3 className="Blood-btn-tagline mt-3">Blood Bank</h3>
                                     </div>
                                     <div className="Blood-restaurant-register-card-header mt-3">
-                                        <a className="see-vol-btn w-100" href="/findbloodbank/"><h6 className="mt-1 text-white">See Nearby Blood Banks</h6></a>
+                                        <a className="see-vol-btn" href="/findbloodbank/"><h6 className="mt-1 text-white">See Nearby Blood Banks</h6></a>
                                         
                                     </div>
                                     <h5 className="text-center mb-3">OR</h5>

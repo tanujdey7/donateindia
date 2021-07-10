@@ -7,8 +7,8 @@
   background: #ffffff;
   width: 100%;
   margin: 0px;
-  padding-top: 6%;
-  padding-bottom: 10%;
+  padding-top: 4%;
+  padding-bottom: 7%;
 }
 
 .Books-menu-col {
@@ -238,7 +238,7 @@
 }
 
 .see-vol-btn {
-  width: 89%;
+  width:   95%;
   margin-bottom: 10px;
   align-items: center;
   border-radius: 5px;
