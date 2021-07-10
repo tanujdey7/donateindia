@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Booksimg from "../Images/donation/bookdonation.png";
-import Clothesreceiver from "../Images/clothesreceiver.png";
-import Clothes from "../Images/clothes.png";
+import Learning from "../Images/icons/learning.png";
+import Books from "../Images/icons/books.png";
 import Foodimgfour from "../Images/volunteer.png";
 import { IoMdArrowRoundBack } from "react-icons/io";
 import { GiClothes } from "react-icons/gi";
@@ -86,7 +86,7 @@ const Booksdonor = () => {
                                                     className="Books-menu-btn-one"
                                                 >
                                                     <h1 className="">
-                                                        <img src={Clothes} width="100" />
+                                                        <img src={Books} width="100" />
                                                     </h1>
                                                     <h4 className="mt-3">I'm Donor</h4>
                                                 </button>
@@ -100,7 +100,7 @@ const Booksdonor = () => {
                                                         className="btn Books-menu-btn-two"
                                                     >
                                                         <h1 className="text-white">
-                                                            <img src={Clothesreceiver} width="110" />
+                                                            <img src={Learning} width="100" />
                                                         </h1>
                                                         <h4 className="mt-3">I'm Receiver</h4>
                                                     </button>
