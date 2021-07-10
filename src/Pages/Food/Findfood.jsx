@@ -5,9 +5,10 @@ import "bootstrap/js/dist/dropdown";
 // import Dropdown from 'react-dropdown';
 // import 'react-dropdown/style.css';
 import Rdata from "./Rdata";
+import mockData from "./Statecitydata";
 import Blooddonor from "../Images/Blooddonor.png";
 
-const Findfood = () => {
+const Findfood =()=>{
     return (
         <div className="blood-container container-fluid">
             <div className="blood-wrapper pt-5 mb-5">
@@ -28,18 +29,7 @@ const Findfood = () => {
                 <div className="blood-wrapper-row-two row w-100">
                     <div className="col">
                         <div className="dropdown-wrapper ml-auto mr-auto">
-                            <div className="drop-div">
-                                {/* <Dropdown options={options} onChange={this._onSelect} value={defaultOption} placeholder="Select an option" /> */}
-                            </div>
-                            <div className="drop-div">
-                                {/* <Dropdown options={optionstwo} onChange={this._onSelect} value={twoOption} placeholder="Select an option" /> */}
-                            </div>
-                            <div className="drop-div">
-                                {/* <Dropdown options={optionstwo} onChange={this._onSelect} value={twoOption} placeholder="Select an option" /> */}
-                            </div>
-                            <div className="drop-div">
-                                <button className="btn bank-search-btn text-white">Search</button>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -84,6 +74,7 @@ const Findfood = () => {
 
         </div>
     )
+
 }
 
 export default Findfood;

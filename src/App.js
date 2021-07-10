@@ -37,7 +37,7 @@ function App() {
           <Route exact path="/fooddonate" component={Fooddonate} />
           <Route exact path="/clothesdonate" component={Clothesdonor} />
           <Route exact path="/booksdonate" component={Booksdonor} />
-          <Route exact path="/findblood" component={Findblood} />
+          <Route exact path="/blood/findblood" component={Findblood} />
           <Route exact path="/findfood" component={Findfood} />
           <Route exact path="/findclothes" component={Findclothes} />
           <Route exact path="/findbooks" component={Findbooks} />

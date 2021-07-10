@@ -99,7 +99,7 @@ const Blooddonate = () => {
                                             </div>
                                         </div>
                                         <div className="col">
-                                            <a href="/findblood">
+                                            <a href="/blood/findblood">
                                                 <div className="Blood-menu-btn">
                                                     <button
                                                         // onClick={regiReceiver}
@@ -461,11 +461,12 @@ const Blooddonate = () => {
                                         <h3 className="Blood-btn-tagline mt-3">Blood Bank</h3>
                                     </div>
                                     <div className="Blood-restaurant-register-card-header mt-3">
-                                        <a className="see-vol-btn w-100" href="/findbloodbank/"><h6 className="mt-1 text-white">See Available Volunteers</h6></a>
+                                        <a className="see-vol-btn w-100" href="/findbloodbank/"><h6 className="mt-1 text-white">See Nearby Blood Banks</h6></a>
+                                        
                                     </div>
-                                    <h4 className="text-center">OR</h4>
-                                    <div className="Blood-restaurant-register-wrap card-body">
-                                        <h5 className="text-center mb-3">[Register Blood Bank]</h5>
+                                    <h5 className="text-center mb-3">OR</h5>
+                                    <div className="Blood-restaurant-register-wrap">
+                                        <h4 className="text-center mb-3">[Register Blood Bank]</h4>
                                         <form>
                                             <div class="mb-2">
                                                 <label for="exampleInputEmail1" class="form-label">
@@ -612,9 +613,9 @@ const Blooddonate = () => {
                                         <h3 className="Blood-btn-tagline mt-3">Blood Camp</h3>
                                     </div>
                                     <div className="Blood-restaurant-register-card-header mt-3">
-                                        <a className="see-vol-btn w-100" href="/findbloodcamp"><h5 className="mt-1">Find blood Camps</h5></a>
+                                        <a className="see-vol-btn w-100" href="/findbloodcamp"><h6 className="mt-1 text-white">Find blood Camps</h6></a>
                                     </div>
-                                    <h4 className="text-center">OR</h4>
+                                    <h5 className="text-center">OR</h5>
                                     <div className="Blood-restaurant-register-wrap">
                                         <h5 className="text-center mb-3">[Register Upcoming Blood Camp]</h5>
                                         <form>

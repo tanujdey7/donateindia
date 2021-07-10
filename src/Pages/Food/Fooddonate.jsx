@@ -418,7 +418,12 @@ const Fooddonate = () => {
                     </button>
                     <h3 className="food-btn-tagline mt-3">Restaurant</h3>
                   </div>
-                  <div className="food-restaurant-register-wrap card-body">
+                  <div className="Blood-restaurant-register-card-header mt-3">
+                    {/* <a className="see-vol-btn w-100" href="/findbloodbank/"><h6 className="mt-1 text-white">See Nearby Blood Banks</h6></a> */}
+                    <a className="see-vol-btn w-100" href="/findbloodbank/"><h6 className="mt-1 text-white">See Nearby Food Banks</h6></a>
+                  </div>
+                  <h5 className="text-center mb-3">OR</h5>
+                  <div className="food-restaurant-register-wrap">
                   <h5 className="text-center mb-3">[Donate food as Restaurant]</h5>
                     <form>
                       <div class="mb-2">
@@ -549,7 +554,7 @@ const Fooddonate = () => {
                       </button>
                     </form>
                   </div>
-                  <a className="see-vol-btn" href="#"><h6 className="mt-1">See Available Volunteers</h6></a>
+                 
                 </div>
               ) : null}
               {volunteer ? (
