@@ -43,7 +43,6 @@ const Navbar = () => {
                 </li>
               </ul>
             </div>
-
             <div className="login-div">
               <ul className="login-div-ul">
                 <li className="login-div-li">
@@ -58,7 +57,6 @@ const Navbar = () => {
               </ul>
             </div>
           </div>
-
         </div>
       ) : null}
     </div>
