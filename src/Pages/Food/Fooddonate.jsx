@@ -11,7 +11,7 @@ import "./Fooddonate.css";
 const Fooddonate = () => {
 
   // new 
-  const allstates = ["Gujarat", "Maharastra", "Uttarpradesh"];
+  const allstates = ["Gujarat", "Maharastra", "UttarPradesh"];
   const [selected, setSelected] = React.useState("");
   const changeSelectOptionHandler = (event) => {
     setSelected(event.target.value);
@@ -23,11 +23,11 @@ const Fooddonate = () => {
   ];
   const mhState = [
     "Mumbai",
-    "Ab MH",
-    "BC MH"
+    "Pune",
+    "Nashik"
   ];
 
-  const upSate = [
+  const upState = [
     "Lko",
     "GKP",
     "Noida"
@@ -40,7 +40,7 @@ const Fooddonate = () => {
   } else if (selected === "Maharastra") {
     type = mhState;
   } else if (selected === "UttarPradesh") {
-    type = upSate;
+    type = upState;
   }
   if (type) {
     options = type.map((el) => <option className="" key={el}>{el}</option>);
@@ -212,7 +212,7 @@ const Fooddonate = () => {
                             onChange={changeSelectOptionHandler}
                             class="form-select form-control"
                             aria-label="Default select example"
-                          >
+                          ><option>Choose State</option>
                             {allstates.map((st) => <option className="" key={st}>{st}</option>)}
                           </select>
                         </div>
@@ -492,7 +492,7 @@ const Fooddonate = () => {
                           <label for="exampleInputEmail1" class="form-label">
                             <h6>State</h6>
                           </label>
-                          <select
+                          {/* <select
                             class="form-select form-control"
                             aria-label="Default select example"
                           >
@@ -500,20 +500,24 @@ const Fooddonate = () => {
                             <option value="1">One</option>
                             <option value="2">Two</option>
                             <option value="3">Three</option>
+                          </select> */}
+                          <select
+                            onChange={changeSelectOptionHandler}
+                            class="form-select form-control"
+                            aria-label="Default select example"
+                          ><option>Choose State</option>
+                            {allstates.map((st) => <option className="" key={st}>{st}</option>)}
                           </select>
                         </div>
                         <div class="input-half-div ml-3 mb-2">
                           <label for="exampleInputEmail1" class="form-label">
                             <h6>City</h6>
                           </label>
-                          <select
-                            class="form-select form-control"
-                            aria-label="Default select example"
-                          >
-                            <option selected>Open this select menu</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                          <select class="form-select form-control"
+                            aria-label="Default select example">
+                            {
+                              options
+                            }
                           </select>
                         </div>
                       </div>
