@@ -135,7 +135,7 @@ const Blooddonate = () => {
                                             </div>
                                         </div>
                                         <div className="col">
-                                            <a href="/blood/findblood">
+                                            <a href="/blood/blooddonate/findblooddonor">
                                                 <div className="Blood-menu-btn">
                                                     <button
                                                         // onClick={regiReceiver}
@@ -493,7 +493,7 @@ const Blooddonate = () => {
                                         <h3 className="Blood-btn-tagline mt-3">Blood Bank</h3>
                                     </div>
                                     <div className="Blood-restaurant-register-card-header mt-3">
-                                        <a className="see-vol-btn" href="/blood/findbloodbank/"><h6 className="mt-1 text-white">See Nearby Blood Banks</h6></a>
+                                        <a className="see-vol-btn" href="/blood/blooddonate/findbloodbank"><h6 className="mt-1 text-white">See Nearby Blood Banks</h6></a>
                                     </div>
                                     <h5 className="text-center mb-3">OR</h5>
                                     <div className="Blood-restaurant-register-wrap">
@@ -640,7 +640,7 @@ const Blooddonate = () => {
                                         <h3 className="Blood-btn-tagline mt-3">Blood Camp</h3>
                                     </div>
                                     <div className="Blood-restaurant-register-card-header mt-3">
-                                        <a className="see-vol-btn w-100" href="/blood/findbloodcamp"><h6 className="mt-1 text-white">Find blood Camps</h6></a>
+                                        <a className="see-vol-btn w-100" href="/blood/blooddonate/findbloodcamp"><h6 className="mt-1 text-white">Find blood Camps</h6></a>
                                     </div>
                                     <h5 className="text-center">OR</h5>
                                     <div className="Blood-restaurant-register-wrap">

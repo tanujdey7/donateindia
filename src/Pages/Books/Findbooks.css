@@ -1,44 +1,47 @@
-.blood-container {
+.Findbooks-container {
   margin: 0px;
   padding: 0px;
   height: 100%;
   width: 100%;
 }
-.blood-main-wrapper {
+
+.Findbooks-main-wrapper {
   margin: 0px;
   padding: 0px;
   background-color: #391a99;
 }
-.receiver-data-table{
-    font-family: "Raleway", sans-serif;
-    background-color: #f6f6f6;
+
+.receiver-data-table {
+  font-family: "Raleway", sans-serif;
+  background-color: #f6f6f6;
 }
 
-.receiver-data-tr>td{
- border: 2px solid black;
+.receiver-data-tr>td {
+  border: 2px solid black;
 }
-.icon-div-one{
+
+.icon-div-one {
   margin-top: 60%;
 }
+
 .icon-h1 {
   margin-top: 10%;
   color: #f7d200;
 }
 
-
-.drop-div{
+.drop-div {
   width: 30%;
   margin-left: 2%;
 }
+
 .box-row-one {
   display: flex;
-  /* background-color: red; */
   margin: 0px;
   padding: 0px;
 }
+
 .box-row-two {
   display: flex;
-  /* background-color: green; */
   margin: 0px;
   margin-top: 3.5%;
   padding: 0px;
@@ -50,32 +53,52 @@
   width: 100%;
 }
 
-.bank-search-btn{
+.bank-search-btn {
   width: 150px;
   height: 43px;
   background-color: #003566;
 }
 
 /* dropdown */
-.blood-wrapper{
-  width: 70%;
+
+.Findbooks-wrapper {
+  width: 100%;
   background-color: #f0efeb;
-  /* padding-top: 2%;
-  padding-bottom: 5%; */
+}
+
+.dropdown-wrapper-form {
   margin-left: auto;
   margin-right: auto;
+  width: 70%;
+  display: flex;
 }
 
-.dropdown-wrapper{
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
+.input-half-div {
+  width: 50%;
 }
 
-.blood-bank-data-table{
+.Findbooks-bank-data-table {
   border: 2px solid black;
 }
 
-.blood-bank-data-table>tbody>tr>td{
+.Findbooks-bank-data-table>tbody>tr>td {
   border: 1px solid #003566;
+}
+
+.Findbooks-wrapper-row-three {
+  width: 100%;
+}
+
+.Findbooks-wrapper-row-two {
+  width: 100%;
+}
+
+.Findbookscamp-row-two {
+  width: 100%;
+}
+
+.Findbooks-bank-col {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }

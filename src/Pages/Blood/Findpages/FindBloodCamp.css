@@ -1,0 +1,104 @@
+.FindBloodDonor-container {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.FindBloodDonor-main-wrapper {
+  margin: 0px;
+  padding: 0px;
+  background-color: #391a99;
+}
+
+.receiver-data-table {
+  font-family: "Raleway", sans-serif;
+  background-color: #f6f6f6;
+}
+
+.receiver-data-tr>td {
+  border: 2px solid black;
+}
+
+.icon-div-one {
+  margin-top: 60%;
+}
+
+.icon-h1 {
+  margin-top: 10%;
+  color: #f7d200;
+}
+
+.drop-div {
+  width: 30%;
+  margin-left: 2%;
+}
+
+.box-row-one {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+.box-row-two {
+  display: flex;
+  margin: 0px;
+  margin-top: 3.5%;
+  padding: 0px;
+}
+
+.box-col-main {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+.bank-search-btn {
+  width: 150px;
+  height: 43px;
+  background-color: #003566;
+}
+
+/* dropdown */
+
+.FindBloodDonor-wrapper {
+  width: 100%;
+  background-color: #f0efeb;
+}
+
+.dropdown-wrapper-form {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  display: flex;
+}
+
+.input-half-div {
+  width: 50%;
+}
+
+.FindBloodDonor-bank-data-table {
+  border: 2px solid black;
+}
+
+.FindBloodDonor-bank-data-table>tbody>tr>td {
+  border: 1px solid #003566;
+}
+
+.FindBloodDonor-wrapper-row-three {
+  width: 100%;
+}
+
+.FindBloodDonor-wrapper-row-two {
+  width: 100%;
+}
+
+.FindBloodDonorcamp-row-two {
+  width: 100%;
+}
+
+.FindBloodDonor-bank-col {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,48 +1,47 @@
 import React from "react";
-import "./Findbooks.css";
+import "./FindBloodDonor.css";
 import "bootstrap/js/dist/dropdown";
-import Rdata from "./Rdata";
-import Blooddonor from "../Images/Blooddonor.png";
+import Rdata from "../Rdata";
 
-const Findbooks = () => {
-  const allstates = ["Gujarat", "Maharastra", "UttarPradesh"];
-  const [selected, setSelected] = React.useState("");
-  const changeSelectOptionHandler = (event) => {
-    setSelected(event.target.value);
-  };
-  const gujState = ["Ahmedabad", "Rajkot", "Vadodara"];
-  const mhState = ["Mumbai", "Pune", "Nashik"];
+const FindBloodCamp = () => {
 
-  const upState = ["Lko", "GKP", "Noida"];
-
-  let type = null;
-  let options = null;
-  if (selected === "Gujarat") {
-    type = gujState;
-  } else if (selected === "Maharastra") {
-    type = mhState;
-  } else if (selected === "UttarPradesh") {
-    type = upState;
-  }
-  if (type) {
-    options = type.map((el) => (
-      <option className="" key={el}>
-        {el}
-      </option>
-    ));
-  }
-
+    const allstates = ["Gujarat", "Maharastra", "UttarPradesh"];
+    const [selected, setSelected] = React.useState("");
+    const changeSelectOptionHandler = (event) => {
+      setSelected(event.target.value);
+    };
+    const gujState = ["Ahmedabad", "Rajkot", "Vadodara"];
+    const mhState = ["Mumbai", "Pune", "Nashik"];
+  
+    const upState = ["Lko", "GKP", "Noida"];
+  
+    let type = null;
+    let options = null;
+    if (selected === "Gujarat") {
+      type = gujState;
+    } else if (selected === "Maharastra") {
+      type = mhState;
+    } else if (selected === "UttarPradesh") {
+      type = upState;
+    }
+    if (type) {
+      options = type.map((el) => (
+        <option className="" key={el}>
+          {el}
+        </option>
+      ));
+    }
   return (
-    <div className="Findbooks-container container-fluid">
-      <div className="Findbooks-wrapper pt-5 mb-5">
-        <div className="Findbookscamp-row-two row">
+    <div className="FindBloodDonor-container container-fluid">
+      <div className="FindBloodDonor-wrapper pt-5 mb-5">
+        <div className="FindBloodDonorcamp-row-two row">
           <div className="col">
-            <div className="Findbookscamp-title-div">
-              <h1>Find Books Donors Near you</h1>
+            <div className="FindBloodDonorcamp-title-div">
+              <h1>Find Blood Camp Near you</h1>
             </div>
           </div>
         </div>
-        <div className="Findbooks-wrapper-row-two row w-100">
+        <div className="FindBloodDonor-wrapper-row-two row w-100">
           <div className="col">
             <div className="dropdown-wrapper ml-auto mr-auto">
               <form className="dropdown-wrapper-form">
@@ -75,17 +74,21 @@ const Findbooks = () => {
                   </select>
                 </div>
                 <div class="input-half-div ml-3 mb-2">
-                    <label for="exampleInputEmail1" class="form-label"><h6>City</h6></label>
-                  <input type="submit" value="Search" className="form-control">
-                    
-                  </input>
+                  <label for="exampleInputEmail1" class="form-label">
+                    <h6>City</h6>
+                  </label>
+                  <input
+                    type="submit"
+                    value="Search"
+                    className="form-control"
+                  ></input>
                 </div>
               </form>
             </div>
           </div>
         </div>
-        <div className="Findbooks-wrapper-row-three row">
-          <div className="Findbooks-bank-col">
+        <div className="FindBloodDonor-wrapper-row-three row">
+          <div className="FindBloodDonor-bank-col">
             <table class="table receiver-data-table">
               <thead className="thead-dark">
                 <tr>
@@ -125,4 +128,4 @@ const Findbooks = () => {
   );
 };
 
-export default Findbooks;
+export default FindBloodCamp;
