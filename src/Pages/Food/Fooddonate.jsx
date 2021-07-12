@@ -7,7 +7,46 @@ import Foodimgfour from "../Images/volunteer.png";
 import { IoMdArrowRoundBack } from "react-icons/io";
 import "./Fooddonate.css";
 
+
 const Fooddonate = () => {
+
+  // new 
+  const allstates = ["Gujarat", "Maharastra", "Uttarpradesh"];
+  const [selected, setSelected] = React.useState("");
+  const changeSelectOptionHandler = (event) => {
+    setSelected(event.target.value);
+  };
+  const gujState = [
+    "Ahmedabad",
+    "Rajkot",
+    "Vadodara",
+  ];
+  const mhState = [
+    "Mumbai",
+    "Ab MH",
+    "BC MH"
+  ];
+
+  const upSate = [
+    "Lko",
+    "GKP",
+    "Noida"
+  ];
+
+  let type = null;
+  let options = null;
+  if (selected === "Gujarat") {
+    type = gujState;
+  } else if (selected === "Maharastra") {
+    type = mhState;
+  } else if (selected === "UttarPradesh") {
+    type = upSate;
+  }
+  if (type) {
+    options = type.map((el) => <option className="" key={el}>{el}</option>);
+  }
+
+
   const [donor, setDonor] = useState(false);
   const [receive, setReceive] = useState(false);
   const [restaurant, setRestaurant] = useState(false);
@@ -170,27 +209,23 @@ const Fooddonate = () => {
                             <h6>State</h6>
                           </label>
                           <select
+                            onChange={changeSelectOptionHandler}
                             class="form-select form-control"
                             aria-label="Default select example"
                           >
-                            <option selected>Open this select menu</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                            {allstates.map((st) => <option className="" key={st}>{st}</option>)}
                           </select>
                         </div>
                         <div class="input-half-div ml-3 mb-2">
                           <label for="exampleInputEmail1" class="form-label">
                             <h6>City</h6>
                           </label>
-                          <select
-                            class="form-select form-control"
-                            aria-label="Default select example"
-                          >
-                            <option selected>Open this select menu</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+
+                          <select class="form-select form-control"
+                            aria-label="Default select example">
+                            {
+                              options
+                            }
                           </select>
                         </div>
                       </div>
