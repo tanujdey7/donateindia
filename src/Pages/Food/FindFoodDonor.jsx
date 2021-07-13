@@ -1,9 +1,9 @@
 import React from "react";
-import "./FindBloodDonor.css";
+import "./FindFoodDonor.css";
 import "bootstrap/js/dist/dropdown";
-import Rdata from "../Rdata";
+import Rdata from "./Rdata";
 
-const FindBloodCamp = () => {
+const FindBloodDonor = () => {
 
     const allstates = ["Gujarat", "Maharastra", "UttarPradesh"];
     const [selected, setSelected] = React.useState("");
@@ -32,16 +32,16 @@ const FindBloodCamp = () => {
       ));
     }
   return (
-    <div className="FindFoodDonor-container container-fluid">
-      <div className="FindFoodDonor-wrapper pt-5 mb-5">
-        <div className="FindFoodDonorcamp-row-two row">
+    <div className="FindBloodDonor-container container-fluid">
+      <div className="FindBloodDonor-wrapper pt-5 mb-5">
+        <div className="FindBloodDonorcamp-row-two row">
           <div className="col">
-            <div className="FindFoodDonorcamp-title-div">
-              <h1>Find Food Camp Near you</h1>
+            <div className="FindBloodDonorcamp-title-div">
+              <h1>Find Food Donors Near you</h1>
             </div>
           </div>
         </div>
-        <div className="FindFoodDonor-wrapper-row-two row w-100">
+        <div className="FindBloodDonor-wrapper-row-two row w-100">
           <div className="col">
             <div className="dropdown-wrapper ml-auto mr-auto">
               <form className="dropdown-wrapper-form">
@@ -69,7 +69,6 @@ const FindBloodCamp = () => {
                   <select
                     class="form-select form-control"
                     aria-label="Default select example"
-                   
                   >
                     {options}
                   </select>
@@ -88,8 +87,8 @@ const FindBloodCamp = () => {
             </div>
           </div>
         </div>
-        <div className="FindFoodDonor-wrapper-row-three row">
-          <div className="FindFoodDonor-bank-col">
+        <div className="FindBloodDonor-wrapper-row-three row">
+          <div className="FindBloodDonor-bank-col">
             <table class="table receiver-data-table">
               <thead className="thead-dark">
                 <tr>
@@ -129,4 +128,4 @@ const FindBloodCamp = () => {
   );
 };
 
-export default FindBloodCamp;
+export default FindBloodDonor;

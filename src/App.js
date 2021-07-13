@@ -16,11 +16,11 @@ import FindBloodbank from "./Pages/Blood/Findpages/FindBloodBank";
 import FindBloodDonor from "./Pages/Blood/Findpages/FindBloodDonor";
 
 import Fooddonate from "./Pages/Food/Fooddonate";
-import Findfood from "./Pages/Food/Findfood";
-import Clothesdonor from "./Pages/Clothes/Clothesdonor";
+import FindFoodDonor from "./Pages/Food/FindFoodDonor";
+import Clothesdonor from "./Pages/Clothes/ClothesDonate";
 import Findbooks from "./Pages/Books/Findbooks";
 import Booksdonor from "./Pages/Books/Booksdonor";
-import Findclothes from "./Pages/Clothes/Findclothes";
+import Findclothes from "./Pages/Clothes/FindClothesDonor";
 
 
 function App() {
@@ -33,11 +33,11 @@ function App() {
           <Route exact path="/Login" component={Login} />
           
           {/* Food */}
-          <Route exact path="/food/findfood" component={Findfood} />
+          <Route exact path="/food/fooddonate/findfood" component={FindFoodDonor} />
           <Route exact path="/food/fooddonate" component={Fooddonate} />
           {/* Clothes */}
           <Route exact path="/clothes/clothesdonate" component={Clothesdonor} />
-          <Route exact path="/clothes/findclothes" component={Findclothes} />
+          <Route exact path="/clothes/clothesdonate/findclothes" component={Findclothes} />
           {/* blood */}
           <Route exact path="/blood/blooddonate" component={Blooddonate} />
           <Route exact path="/blood/blooddonate/findblooddonor" component={FindBloodDonor} />

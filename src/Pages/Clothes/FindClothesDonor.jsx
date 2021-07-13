@@ -1,7 +1,7 @@
 import React from "react";
-import "./FindBloodDonor.css";
+import "./FindClothesDonor.css";
 import "bootstrap/js/dist/dropdown";
-import Rdata from "../Rdata";
+import Rdata from "./Rdata";
 
 const FindBloodCamp = () => {
 
@@ -32,16 +32,16 @@ const FindBloodCamp = () => {
       ));
     }
   return (
-    <div className="FindFoodDonor-container container-fluid">
-      <div className="FindFoodDonor-wrapper pt-5 mb-5">
-        <div className="FindFoodDonorcamp-row-two row">
+    <div className="FindClothesDonor-container container-fluid">
+      <div className="FindClothesDonor-wrapper pt-5 mb-5">
+        <div className="FindClothesDonorcamp-row-two row">
           <div className="col">
-            <div className="FindFoodDonorcamp-title-div">
-              <h1>Find Food Camp Near you</h1>
+            <div className="FindClothesDonorcamp-title-div">
+              <h1>Find Clothes Donor Near you</h1>
             </div>
           </div>
         </div>
-        <div className="FindFoodDonor-wrapper-row-two row w-100">
+        <div className="FindClothesDonor-wrapper-row-two row w-100">
           <div className="col">
             <div className="dropdown-wrapper ml-auto mr-auto">
               <form className="dropdown-wrapper-form">
@@ -88,8 +88,8 @@ const FindBloodCamp = () => {
             </div>
           </div>
         </div>
-        <div className="FindFoodDonor-wrapper-row-three row">
-          <div className="FindFoodDonor-bank-col">
+        <div className="FindClothesDonor-wrapper-row-three row">
+          <div className="FindClothesDonor-bank-col">
             <table class="table receiver-data-table">
               <thead className="thead-dark">
                 <tr>

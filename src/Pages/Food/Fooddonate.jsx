@@ -112,7 +112,7 @@ const Fooddonate = () => {
                       </div>
                     </div>
                     <div className="col">
-                      <a href="/food/findfood">
+                      <a href="/food/fooddonate/findfood">
                         <div className="Food-menu-btn">
                           <button className="btn food-menu-btn-two">
                             <h1 className="text-white">

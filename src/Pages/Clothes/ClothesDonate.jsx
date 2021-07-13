@@ -7,7 +7,7 @@ import Foodimgfour from "../Images/volunteer.png";
 import { IoMdArrowRoundBack } from "react-icons/io";
 import { GiClothes } from "react-icons/gi";
 import { VscOrganization } from "react-icons/vsc";
-import "./Clothesdonor.css";
+import "./ClothesDonate.css";
 
 const Clothesdonor = () => {
 
@@ -134,7 +134,7 @@ const Clothesdonor = () => {
                                             </div>
                                         </div>
                                         <div className="col">
-                                            <a href="/clothes/findclothes">
+                                            <a href="/clothes/clothesdonate/findclothes">
                                                 <div className="Food-menu-btn">
                                                     <button
                                                         // onClick={regiReceiver}
