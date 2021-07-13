@@ -60,21 +60,25 @@
 }
 
 /* dropdown */
-
+.dropdown-wrapper{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: yellow; */
+}
 .FindBloodDonor-wrapper {
   width: 100%;
   background-color: #f0efeb;
 }
 
 .dropdown-wrapper-form {
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
+  
+  width: 100%;
   display: flex;
 }
 
 .input-half-div {
-  width: 50%;
+  width: 100%;
 }
 
 .FindBloodDonor-bank-data-table {
@@ -91,6 +95,7 @@
 
 .FindBloodDonor-wrapper-row-two {
   width: 100%;
+  
 }
 
 .FindBloodDonorcamp-row-two {
@@ -98,7 +103,13 @@
 }
 
 .FindBloodDonor-bank-col {
-  width: 70%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
+}
+
+td>h6{
+  color: #000000;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
 }
