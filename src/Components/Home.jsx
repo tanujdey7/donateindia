@@ -25,7 +25,7 @@ const Home = () => {
     <div className="home-wrapper">
       <div className="hero-section">
         <div className="hero-section-row row">
-          <div className="hero-section-col col">
+          <div className="hero-section-col col-xl-6 col-lg-6 col-md-6 col-sm-12">
             <div className="img-col-wrapper">
               <div className="hero-sec-img-card card">
                 <div className="hero-img-card-body card-body">
@@ -34,17 +34,17 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="hero-section-col col">
+          <div className="hero-section-col col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
             <div className="wrapper">
-              <div className="hero-sec-card card">
-                <div className="hero-sec-card-body card-body">
+              <div className="hero-sec-card">
+                <div className="hero-sec-card-body">
                   <h1>Help the poor Make big changes and help the World</h1>
                   <h4>
                     Get help to find blood banks and food banks sdbhsd sdhbvhjas
                     svjasgvdasd hasvjds asbuash sahakbs sajkbdkjbdas abhksbkjbsd
                   </h4>
                 </div>
-                <div className="hero-sec-card-foot card-footer">
+                <div className="hero-sec-card-foot">
                   <button className="btn btn-lg get-start-btn">
                     <Link activeClass="active" spy={true} smooth={true} offset={-70} duration={500} to="missionsection">Donate Now</Link>
                   </button>
@@ -66,12 +66,12 @@ const Home = () => {
       {/* mission section */}
       <div className="mission-section" id="missionsection">
         <div className="mission-row row">
-          <div className="mission-col cloud-icon-col-one col-2">
+          <div className="mission-col cloud-icon-col-one  col-xl-2 col-lg-2 col-md-2 col-sm-2 ">
             <h1 className="cloud-icon-one">
-              <BsCloud className="cloud" size={200} />
+              <BsCloud className="cloud" />
             </h1>
           </div>
-          <div className="mission-col col-4">
+          <div className="mission-col col-xl-4 col-lg-4 col-md-6 col-sm-6">
             <div className="mission-card card">
               <div className="mission-card-head card-head">
                 <button className="btn">What we do</button>
@@ -91,14 +91,14 @@ const Home = () => {
               <button className="btn btn-lg donate-now-btn">Donate Now</button>
             </div>
           </div>
-          <div className="mission-col col-4">
+          <div className="mission-col  col-xl-4 col-lg-4 col-md-6 col-sm-6">
             <div className="mission-box-wrap">
               <div className="mission-box-row row">
                 <div className="mission-box-col col-6">
                   <a href="/blood/blooddonate">
                     <div className="mission-box-one card">
                       <div className="mission-box-img card-body">
-                        <img src={Blooddrop} alt="Blooddrop" width="120" />
+                        <img src={Blooddrop} alt="Blooddrop" className="mission-box-one-img" />
                       </div>
                       <div className="mission-box-footer card-footer">
                         <h5>Blood Donation</h5>
@@ -111,7 +111,7 @@ const Home = () => {
                   <a href="/food/fooddonate">
                     <div className="mission-box-two card">
                       <div className="mission-box-img card-body">
-                        <img src={Food} alt="Food" width="120" />
+                        <img src={Food} alt="Food" className="mission-box-one-img" />
                       </div>
                       <div className="mission-box-footer card-footer">
                         <h5>Food Donation</h5>
@@ -130,7 +130,7 @@ const Home = () => {
                           className="svg-color"
                           src={Clothes}
                           alt="Clothes"
-                          width="120"
+                          className="mission-box-one-img"
                         />
                       </div>
                       <div className="mission-box-footer card-footer">
@@ -144,7 +144,7 @@ const Home = () => {
                   <a href="/books/booksdonate">
                     <div className="mission-box-four card">
                       <div className="mission-box-img card-body">
-                        <img src={Books} alt="Books" width="110" />
+                        <img src={Books} alt="Books" className="mission-box-one-img" />
                       </div>
                       <div className="mission-box-footer card-footer">
                         <h5>Books Donation</h5>
@@ -156,7 +156,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="mission-col cloud-icon-col-two col-2">
+          <div className="mission-col cloud-icon-col-two col-xl-2 col-lg-2 col-md-6 col-sm-6">
             <h1 className="cloud-icon ">
               <BsCloud size={200} />
             </h1>

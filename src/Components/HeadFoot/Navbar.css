@@ -126,16 +126,21 @@
 @media only screen and (max-width: 600px) {
   .navbar {
     width: 100%;
-    height: 80px;
-    background-color: rgb(37, 37, 34);
-    margin-top: -8px;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
   }
   .navbar-wrapper {
     width: 100%;
     display: flex;
+    margin: 0px;
+    padding: 0px;
   }
   .logo-div {
-    width: 50%;
+    width: 70%;
+  }
+  .show-btn-div{
+    width: 30%;
   }
   .contact-div {
     display: none;
@@ -145,5 +150,11 @@
   }
   .login-div > button {
     margin-left: 50px;
+  }
+
+  .logo-div > img{
+    float: left;
+    margin-left: 0%;
+    background-color: #e2f6f5;
   }
 }

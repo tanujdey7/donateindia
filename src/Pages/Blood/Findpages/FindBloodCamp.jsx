@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import "./FindBloodDonor.css";
 import "bootstrap/js/dist/dropdown";
 import Rdata from "../Rdata";

@@ -10,10 +10,10 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar-wrapper row">
-        <div className="logo-div col ">
+        <div className="logo-div col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
           <img src={Logo} width="250px" alt="" srcset="" />
         </div>
-        <div className="show-btn-div col">{show === false ? (<GiHamburgerMenu
+        <div className="show-btn-div col-xl-6 col-lg-6 col-md-6 col-sm-12">{show === false ? (<GiHamburgerMenu
           className="hamburger-icon mt-4"
           onClick={() => setShow(true)}
           size={40}

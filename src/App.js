@@ -5,6 +5,9 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+
+
+// import Shodata from "./Showdata";
 import Navbar from "./Components/HeadFoot/Navbar";
 import Home from "./Components/Home";
 import Login from "./Pages/Loginpages/Login";
@@ -31,7 +34,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/Login" component={Login} />
-          
+          {/* <Route exact path="/showdata" component={Shodata} /> */}
           {/* Food */}
           <Route exact path="/food/fooddonate/findfood" component={FindFoodDonor} />
           <Route exact path="/food/fooddonate" component={Fooddonate} />
