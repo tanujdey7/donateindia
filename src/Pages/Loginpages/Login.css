@@ -7,66 +7,71 @@
     height: 700px;
     background-color: #ffffff;
 }
-.login-head{
+
+.login-head {
     text-align: left;
 }
 
-.login-title-text{
+.login-title-text {
     text-align: left;
 }
 
-.signup-into-btn{
+.signup-into-btn {
     border: none;
     width: auto;
     background: transparent;
     height: auto;
     color: #4267B2;
-    
 }
-    /* login form */
-.login-line{
+
+/* login form */
+
+.login-line {
     display: flex;
 }
 
-.login-line>hr{
+.login-line>hr {
     width: 50%;
     border: 1px solid #6c757d;
 }
-.whole-login-sec-wrap{
+
+.whole-login-sec-wrap {
     margin-top: 5%;
 }
+
 .login-form-wrapper-row {
     width: 100%;
     margin: 0px;
-    padding: 0px;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .login-col-wrap {
     display: flex;
     width: 100%;
-    
 }
 
 .login-switch-btns {
     width: 100%;
     display: flex;
-    /* border: 2px solid black; */
+    border: 1px solid rgb(0, 0, 0);
     margin-left: auto;
+    border-radius: 10px;
     margin-right: auto;
 }
 
 .login-form-div {
-    width: 60%;
-    padding:50px;
+    width: 55%;
+    padding: 50px;
     margin-top: 5%;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     border-radius: 20px;
     margin-left: auto;
     background-color: #ffffff;
     margin-right: auto;
 }
 
-.form-controls{
+.form-controls {
     width: 100%;
     height: 40px;
     padding: 15px;
@@ -87,22 +92,22 @@
 .login-switch-donor-btn {
     width: 50%;
     color: #ffffff;
-    border-radius: 0px;
-    background-color:#e63946;
+    border-radius: 10px;
+    background-color: #e63946;
 }
 
-.login-switch-receiver-btn {
+.disabled {
     width: 50%;
-    border-radius: 0px;
-    background-color: #391A99;
-    color: #ffffff;
+    color: #030000;
+    border-radius: 10px;
+    background-color: #dddddd;
 }
 
 .submit-donor {
     width: 40%;
     margin-left: auto;
     margin-right: auto;
-    border-radius:10px;
+    border-radius: 10px;
     background-color: #0466c8;
     color: #ffffff;
 }
@@ -130,14 +135,13 @@
     background-color: #4267B2;
 }
 
-
 /* signup */
-.signup-form-col{
+
+.signup-form-col {
     width: 100%;
     height: 100%;
-    
 }
 
-.social-login-div{
+.social-login-div {
     display: flex;
 }

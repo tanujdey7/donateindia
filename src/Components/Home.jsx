@@ -1,6 +1,7 @@
 import React from "react";
 import Donate from "./Images/AI.png";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/js/dist/tab";
 // Pages import
 import Mission from "./Sections/Mission";
 import Fundraise from "./Sections/Fundraise";

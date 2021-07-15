@@ -4,7 +4,6 @@ import Learning from "../Images/icons/learning.png";
 import Books from "../Images/icons/books.png";
 import Foodimgfour from "../Images/volunteer.png";
 import { IoMdArrowRoundBack } from "react-icons/io";
-import { GiClothes } from "react-icons/gi";
 import { VscOrganization } from "react-icons/vsc";
 import "./Booksdonor.css";
 
@@ -124,7 +123,7 @@ const Booksdonor = () => {
                                                     className="Books-menu-btn-one"
                                                 >
                                                     <h1 className="">
-                                                        <img src={Books} width="100" />
+                                                        <img src={Books} width="100" alt="images" />
                                                     </h1>
                                                     <h4 className="mt-3">I'm Donor</h4>
                                                 </button>
@@ -138,7 +137,7 @@ const Booksdonor = () => {
                                                         className="btn Books-menu-btn-two"
                                                     >
                                                         <h1 className="text-white">
-                                                            <img src={Learning} width="100" />
+                                                            <img src={Learning} width="100" alt="images" />
                                                         </h1>
                                                         <h4 className="mt-3">I'm Receiver</h4>
                                                     </button>
@@ -168,7 +167,7 @@ const Booksdonor = () => {
                                                     className="btn Books-menu-btn-four"
                                                 >
                                                     <h1 className="text-white">
-                                                        <img src={Foodimgfour} width="100" />
+                                                        <img src={Foodimgfour} width="100" alt="images" />
                                                     </h1>
                                                     <h4 className="mt-3">Volunteer</h4>
                                                 </button>
