@@ -1,10 +1,6 @@
-.login-wrapper {
-    padding: 0px 0px;
-}
-
 .login-section {
     width: 100%;
-    height: 700px;
+    height: auto;
     background-color: #ffffff;
 }
 
@@ -36,16 +32,20 @@
 }
 
 .whole-login-sec-wrap {
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
 .login-form-wrapper-row {
-    width: 100%;
-    margin: 0px;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 8%;
 }
 
+.form-wrap{
+    text-align: left;
+}
 .login-col-wrap {
     display: flex;
     width: 100%;
@@ -54,16 +54,18 @@
 .login-switch-btns {
     width: 100%;
     display: flex;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid ;
     margin-left: auto;
-    border-radius: 10px;
+    border-radius: 15px;
+    border:1px solid #391A99;
     margin-right: auto;
+    height: auto;
 }
 
 .login-form-div {
-    width: 55%;
-    padding: 50px;
-    margin-top: 5%;
+    width: 68%;
+    padding: 30px;
+    margin-top: 2%;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     border-radius: 20px;
     margin-left: auto;
@@ -71,14 +73,18 @@
     margin-right: auto;
 }
 
-.form-controls {
+.form-control{
     width: 100%;
     height: 40px;
+    border-radius: 8px;
+    background-color: rgb(228, 228, 228);
     padding: 15px;
+    /* border: 1px solid rgb(228, 228, 228); */
 }
 
 .donor-login-form {
     width: 100%;
+    margin-top: 7%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -87,27 +93,39 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 7%;
 }
 
 .login-switch-donor-btn {
     width: 50%;
+    height: 35px;
+    margin: 0px;
+    padding: 0px;
     color: #ffffff;
-    border-radius: 10px;
-    background-color: #e63946;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Raleway", sans-serif;
+    background-color: #391A99;
 }
 
 .disabled {
     width: 50%;
-    color: #030000;
-    border-radius: 10px;
-    background-color: #dddddd;
+    height: 35px;
+    margin: 0px;
+    padding: 0px;
+    color: #020000;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Raleway", sans-serif;
+    background-color: #d1d1d1;
 }
 
 .submit-donor {
     width: 40%;
-    margin-left: auto;
-    margin-right: auto;
     border-radius: 10px;
+    float: left;
     background-color: #0466c8;
     color: #ffffff;
 }
@@ -137,10 +155,6 @@
 
 /* signup */
 
-.signup-form-col {
-    width: 100%;
-    height: 100%;
-}
 
 .social-login-div {
     display: flex;
