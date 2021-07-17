@@ -43,21 +43,26 @@
     margin-bottom: 8%;
 }
 
-.form-wrap{
+.form-wrap {
     text-align: left;
 }
+
 .login-col-wrap {
     display: flex;
     width: 100%;
 }
 
+.login-form-wrappe-col>img {
+    width: 850px;
+}
+
 .login-switch-btns {
     width: 100%;
     display: flex;
-    border: 1px solid ;
+    border: 1px solid;
     margin-left: auto;
     border-radius: 15px;
-    border:1px solid #391A99;
+    border: 1px solid #391A99;
     margin-right: auto;
     height: auto;
 }
@@ -73,7 +78,7 @@
     margin-right: auto;
 }
 
-.form-control{
+.form-control {
     width: 100%;
     height: 40px;
     border-radius: 8px;
@@ -155,7 +160,128 @@
 
 /* signup */
 
-
 .social-login-div {
     display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+    .login-form-wrappe-col>img {
+        width: 400px;
+    }
+    .login-form-div {
+        width: 100%;
+        padding: 30px;
+        margin-top: 4%;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        border-radius: 20px;
+        margin-left: auto;
+        background-color: #ffffff;
+        margin-right: auto;
+    }
+    .login-title-text {
+        text-align: left;
+        font-size: 2rem;
+    }
+    .switch-page-text {
+        font-size: 18px;
+    }
+    .login-switch-donor-btn {
+        width: 50%;
+        height: 32px;
+        margin: 0px;
+        padding: 0px;
+        color: #ffffff;
+        border-radius: 15px;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: "Raleway", sans-serif;
+        background-color: #391A99;
+    }
+    .disabled {
+        width: 50%;
+        height: 32px;
+        margin: 0px;
+        padding: 0px;
+        color: #020000;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: "Raleway", sans-serif;
+        background-color: #d1d1d1;
+    }
+    .form-control {
+        width: 100%;
+        height: 35px;
+        border-radius: 8px;
+        /* border-bottom: 1px solid #000; */
+        background-color: rgb(216, 216, 216);
+        padding: 15px;
+        /* border: 1px solid rgb(228, 228, 228); */
+    }
+    .submit-donor {
+        width: 40%;
+        border-radius: 13px;
+        float: left;
+        padding: 6px;
+        background-color: #0466c8;
+        color: #ffffff;
+    }
+    .social-login-btn-google {
+        width: 49%;
+        color: #131313;
+        border: 2px solid rgb(163, 163, 163);
+        border-radius: 30px;
+        height: 45px;
+        font-size: 12px;
+        font-family: "Poppins", sans-serif;
+        background-color: #ffffff;
+    }
+    .login-line {
+        display: flex;
+        margin-top: 100px;
+    }
+    .login-line>hr {
+        width: 25%;
+        border: 1px solid #6c757d;
+    }
+    .google-icon{
+        font-size: 16px;
+    }
+    .facebook-icon{
+        font-size: 16px;
+        margin-top: 2px;
+    }
+    .social-login-btn-google {
+        width: 49%;
+        height: 37px;
+    }
+    
+    .social-login-btn-facebook {
+        width: 49%;
+        margin-left: 10px;
+        height: 37px;
+        
+        
+    }
+}
+
+@media (min-width: 200px) and (max-width: 500px) {
+    .login-form-wrappe-col>img {
+        width: 300px;
+    }
+    .login-form-div {
+        width: 100%;
+        padding: 30px;
+        margin: 0px;
+        margin-top: 4%;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        border-radius: 20px;
+        margin-left: auto;
+        background-color: #ffffff;
+        margin-right: auto;
+    }
+    .signup-form-col{
+        margin: 0px;
+        padding: 0px;
+    }
 }

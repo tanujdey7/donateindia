@@ -11,7 +11,7 @@ const Login = () => {
     <div className="login-section">
       <div className="login-form-wrapper-row row">
         <div className="login-form-wrappe-col col">
-          <img src={Donationpic} width="900" alt="donation pic" />
+          <img src={Donationpic} alt="donation pic" />
         </div>
 
         <div className="signup-form-col col">
@@ -19,7 +19,7 @@ const Login = () => {
             <div className="login-form-div">
               <div className="login-head">
                 <h1 className="login-title-text">Sign in</h1>
-                <h5>
+                <h5 className="switch-page-text">
                   New User?
                   <button
                     className="signup-into-btn btn-md"
@@ -57,6 +57,7 @@ const Login = () => {
                         </label>
                         <input
                           type="email"
+                          required
                           class="form-control border-0"
                           id="exampleInputEmail1"
                           aria-describedby="emailHelp"
@@ -68,6 +69,7 @@ const Login = () => {
                         </label>
                         <input
                           type="password"
+                          required
                           class="form-control border-0"
                           id="exampleInputPassword1"
                         />
@@ -89,6 +91,7 @@ const Login = () => {
                         </label>
                         <input
                           type="email"
+                          required
                           class="form-control border-0"
                           id="exampleInputEmail1"
                           aria-describedby="emailHelp"
@@ -100,6 +103,7 @@ const Login = () => {
                         </label>
                         <input
                           type="password"
+                          required
                           class="form-control border-0"
                           id="exampleInputPassword1"
                         />
@@ -112,24 +116,27 @@ const Login = () => {
                     </form>
                   </div>
                 ) : null}
-                <div className="login-line mt-2">
+                <div className="login-line mt-3">
                   <hr></hr>
-                  <h6 className="mt-1 ml-2 mr-2">or</h6>
+                  <h6 className="mt-1 ml-2 mr-2">Or Continue With</h6>
                   <hr></hr>
                 </div>
                 <div className="social-login-div mt-3">
-                  <button className="btn social-login-btn-google">
-                    <FcGoogle className="facebook-icon" size="25" /> Continue
-                    with Google
-                  </button>
-                  <button className="btn social-login-btn-facebook">
-                    <SiFacebook size="25" /> Continue with Facebook
-                  </button>
+                  <a className="btn social-login-btn-google">
+                    <h1 className="google-icon">
+                      <FcGoogle />
+                    </h1>
+                  </a>
+                  <a className="btn social-login-btn-facebook">
+                    <h1 className="facebook-icon">
+                      <SiFacebook />
+                    </h1>
+                  </a>
                 </div>
               </div>
             </div>
           ) : (
-// register section from here
+            // register section from here
             <div className="login-form-div">
               <div className="login-head">
                 <h1 className="login-title-text">SignUp</h1>
@@ -172,6 +179,7 @@ const Login = () => {
                         </label>
                         <input
                           type="email"
+                          required
                           class="form-control border-0"
                           id="exampleInputEmail1"
                           aria-describedby="emailHelp"
@@ -185,6 +193,7 @@ const Login = () => {
                           type="tel"
                           class="form-control border-0"
                           id="exampleInputEmail1"
+                          required
                           aria-describedby="emailHelp"
                         />
                       </div>
@@ -194,6 +203,7 @@ const Login = () => {
                         </label>
                         <input
                           type="password"
+                          required
                           class="form-control border-0"
                           id="exampleInputPassword1"
                         />
@@ -204,6 +214,7 @@ const Login = () => {
                         </label>
                         <input
                           type="password"
+                          required
                           class="form-control border-0"
                           id="exampleInputEmail1"
                           aria-describedby="emailHelp"
@@ -211,7 +222,7 @@ const Login = () => {
                       </div>
                       <div className="row w-100 ml-1">
                         <button type="submit" class="btn submit-donor mt-3">
-                        Register
+                          Register
                         </button>
                       </div>
                     </form>
@@ -226,6 +237,7 @@ const Login = () => {
                         </label>
                         <input
                           type="email"
+                          required
                           class="form-control border-0"
                           id="exampleInputEmail1"
                           aria-describedby="emailHelp"
@@ -237,6 +249,7 @@ const Login = () => {
                         </label>
                         <input
                           type="tel"
+                          required
                           class="form-control border-0"
                           id="exampleInputEmail1"
                           aria-describedby="emailHelp"
@@ -248,6 +261,7 @@ const Login = () => {
                         </label>
                         <input
                           type="password"
+                          required
                           class="form-control border-0"
                           id="exampleInputPassword1"
                         />
@@ -260,6 +274,7 @@ const Login = () => {
                           type="password"
                           class="form-control border-0"
                           id="exampleInputEmail1"
+                          required
                           aria-describedby="emailHelp"
                         />
                       </div>
@@ -271,19 +286,22 @@ const Login = () => {
                     </form>
                   </div>
                 ) : null}
-                <div className="login-line mt-2">
+                <div className="login-line mt-3">
                   <hr></hr>
-                  <h6 className="mt-1 ml-2 mr-2">or</h6>
+                  <h6 className="mt-1 ml-2 mr-2">Or Continue With</h6>
                   <hr></hr>
                 </div>
                 <div className="social-login-div mt-3">
-                  <button className="btn social-login-btn-google">
-                    <FcGoogle className="facebook-icon" size="25" /> Continue
-                    with Google
-                  </button>
-                  <button className="btn social-login-btn-facebook">
-                    <SiFacebook size="25" /> Continue with Facebook
-                  </button>
+                  <a className="btn social-login-btn-google">
+                    <h1 className="google-icon">
+                      <FcGoogle />
+                    </h1>
+                  </a>
+                  <a className="btn social-login-btn-facebook">
+                    <h1 className="facebook-icon">
+                      <SiFacebook />
+                    </h1>
+                  </a>
                 </div>
               </div>
             </div>
