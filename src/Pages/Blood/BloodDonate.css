@@ -1,3 +1,9 @@
+.BloodDonate-wrapper{
+  margin: 0px;
+  width: 100%;
+  padding: 0px;
+}
+
 .Menu-main-btn {
   width: 200px;
   height: 200px;
@@ -145,7 +151,7 @@
   }
   .Blood-menu-col {
     border-left: none;
-    width: 100%;
+    width: 95%;
     margin: 0px;
   }
   /* done */
@@ -155,10 +161,11 @@
     padding: 0px;
   }
   .Menu-Wrap-row {
-    width: 50%;
-    margin-top: 3%;
-    margin-left: auto;
-    margin-right: auto;
+    width:100%;
+    margin: 0px;
+    padding: 0px;
+    /* background-color: red; */
+    padding-top: 5%;
   }
   .Menu-main-btn {
     width: 100px;
@@ -177,8 +184,9 @@
     margin-top: 10px;
   }
   .Register-card {
-    width: 100%;
-    margin-left: auto;
+    width: 95%;
+
+    margin-left: 30px;
     margin-right: auto;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
@@ -209,8 +217,8 @@
   }
   .Blood-menu-col {
     border-left: none;
+    width: 95%;
   }
-  /* done */
   .Menu-Wrap {
     width: 100%;
     margin: 0px;
@@ -218,13 +226,14 @@
   }
   .Menu-Wrap-row {
     width:100%;
-    margin-top: 5%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0px;
+    padding: 0px;
+    /* background-color: red; */
+    padding-top: 5%;
   }
   .Menu-main-btn {
-    width: 130px;
-    height: 130px;
+    width: 100px;
+    height: 100px;
     padding: 10px;
     float: none;
     margin-left: auto;
@@ -238,7 +247,7 @@
     margin-top: 10px;
   }
   .Register-card {
-    width: 100%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
