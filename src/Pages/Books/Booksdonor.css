@@ -1,189 +1,71 @@
-.container-fluid {
-  margin: 0px;
-  padding: 0px;
+.Menu-main-btn {
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffffff;
+  color: #140101;
+  font-family: "Poppins", sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding-top: 3%;
 }
 
-.Books-menu-row {
-  background: #ffffff;
+.Menu-Wrap {
+  padding-top: 5%;
+  width: 100%;
+}
+
+.Blood-menu-row {
   width: 100%;
   margin: 0px;
-  padding-top: 4%;
-  padding-bottom: 7%;
+  padding: 0px;
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
 
-.Books-menu-col {
-  border-left: 2px solid #09a05c;
+.Blood-menu-col {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  border-left: 2px solid #060706;
 }
 
-/* btn */
-
-.Books-menu-btn-one {
-  width: 220px;
-  border: none;
-  border-radius: 5px;
-  background-color: #ffffff;
-  font-family: "Poppins", sans-serif;
-  height: 220px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  float: right;
-  padding-top: 3%;
-  color: #140101;
-}
-
-.Books-menu-btn-one > a {
+.Menu-main-btn>a {
   text-decoration: none;
   list-style-type: none;
   color: #131313;
 }
 
-.Books-menu-btn-one:hover {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+.Menu-main-btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-.Books-menu-btn-two {
-  width: 220px;
-  border: none;
-  border-radius: 5px;
-  background-color: #ffffff;
-  font-family: "Poppins", sans-serif;
-  height: 220px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  float: left;
-  padding-top: 3%;
-  color: #140101;
-}
-
-.Books-menu-btn-two:hover {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  color: #010101;
-}
-
-.Books-menu-btn-three {
-  width: 220px;
-  border: none;
-  border-radius: 5px;
-  background-color: #ffffff;
-  font-family: "Poppins", sans-serif;
-  height: 220px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  float: right;
-  padding-top: 3%;
-  color: #140101;
-}
-
-.Books-menu-btn-three:hover {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  color: #010101;
-}
-
-.Books-menu-btn-four {
-  width: 220px;
-  border: none;
-  border-radius: 5px;
-  background-color: #ffffff;
-  font-family: "Poppins", sans-serif;
-  height: 220px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  float: left;
-  padding-top: 3%;
-  color: #140101;
-}
-
-.Books-menu-btn-four:hover {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  color: #010101;
-}
-
-.Books-Menu-Wrap-row {
-  margin-top: 7%;
-}
-
-.Books-Menu-Wrap-row-two {
+.Menu-Wrap-row {
+  width: 50%;
   margin-top: 3%;
-}
-
-/* Books volunteers register */
-
-.Books-volunteer-register {
-  width: 70%;
   margin-left: auto;
   margin-right: auto;
-  /* border: 1px solid #b6e8ff; */
-  /* border-radius: 20px; */
+}
+
+.Register-card {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.Books-donor-register {
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-  /* border: 1px solid #b6e8ff; */
-  /* border-radius: 20px; */
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.Books-receiver-register {
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-  /* border: 1px solid #b6e8ff; */
-  /* border-radius: 20px; */
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.Books-restaurant-register {
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-  /* border: 1px solid #b6e8ff; */
-  /* border-radius: 20px; */
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-/*  */
-
-.Books-donor-register-wrap {
-  margin: 10px;
+.Register-card-body {
   text-align: left;
-  width: 95%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Books-receiver-register-wrap {
-  margin: 0px 10px 10px 10px;
-  text-align: left;
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.Books-restaurant-register-wrap {
-  margin: 0px 10px 10px 10px;
-  text-align: left;
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.volunteer-register-wrap {
-  margin: 10px;
-  text-align: left;
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* btn */
-
-.Books-btn-tagline {
+.Blood-btn-tagline {
   width: auto;
   margin-left: 27%;
-  /* margin-top: 2%; */
   text-align: center;
 }
 
@@ -195,7 +77,7 @@
   background-color: #26363b;
 }
 
-.Books-donor-register-card-header {
+.Register-card-header {
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -203,32 +85,7 @@
   text-align: center;
 }
 
-.Books-receiver-register-card-header {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  text-align: center;
-}
-
-.Books-restaurant-register-card-header {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  text-align: center;
-}
-
-.volunteer-register-card-header {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  text-align: center;
-  /* background-color: red; */
-}
-
-.Books-form-input-half {
+.Blood-form-input-half {
   display: flex;
   width: 100%;
 }
@@ -238,7 +95,7 @@
 }
 
 .see-vol-btn {
-  width:   95%;
+  width: 95%;
   margin-bottom: 10px;
   align-items: center;
   border-radius: 5px;
@@ -253,7 +110,7 @@
   color: #ffd2d2;
 }
 
-.Books-restaurant-register-submit {
+.Register-submit-btn {
   background-color: #1a2e35;
   width: 49%;
   color: #edf6f9;
@@ -263,16 +120,147 @@
 .form-control {
   margin-top: -1%;
   border: 1px solid #26363b;
-  color: #010101;
+  color: #070000;
 }
 
-.Books-org-icon {
-  /* color: #363636; */
-  fill: #0a0a0a;
+/* done */
+
+.Blood-img-col {
+  margin-top: 0%;
+  height: 100%;
 }
 
+.Blood-img-col>img {
+  width: 700px;
+}
 
-.Books-img-col{
-    margin-top: 5%;
-    height: 100%;
+.blood-all-icons>img {
+  width: 90px;
+}
+
+@media (min-width: 200px) and (max-width: 400px) {
+  .Blood-img-col>img {
+    width: 350px;
+  }
+  .Blood-menu-col {
+    border-left: none;
+  }
+  /* done */
+  .Menu-Wrap {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  .Menu-Wrap-row {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Menu-main-btn {
+    width: 150px;
+    height: 150px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .Menu-main-btn>h4 {
+    font-size: 16px;
+  }
+  .blood-all-icons>img {
+    width: 60px;
+    margin-top: 10px;
+  }
+  .Register-card {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .back-menu-btn {
+    float: left;
+    width: 80px;
+    height: 40px;
+    color: #edf6f9;
+    background-color: #26363b;
+  }
+  .Blood-btn-tagline {
+    width: auto;
+    margin-left: 17%;
+    font-size: 22px;
+    text-align: center;
+  }
+  .Register-submit-btn {
+    background-color: #1a2e35;
+    width: 48%;
+    color: #edf6f9;
+    border: none;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 900px) {
+  .Blood-img-col>img {
+    width: 350px;
+  }
+  .Blood-menu-col {
+    border-left: none;
+  }
+  /* done */
+  .Menu-Wrap {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  .Menu-Wrap-row {
+    width: 90%;
+    margin-top: 8%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Menu-main-btn {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Menu-main-btn>h4 {
+    font-size: 16px;
+  }
+  .blood-all-icons>img {
+    width: 60px;
+    margin-top: 10px;
+  }
+  .Register-card {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .back-menu-btn {
+    float: left;
+    width: 80px;
+    height: 40px;
+    color: #edf6f9;
+    background-color: #26363b;
+  }
+  .Blood-btn-tagline {
+    width: auto;
+    margin-left: 17%;
+    font-size: 22px;
+    text-align: center;
+  }
+  .Register-submit-btn {
+    background-color: #1a2e35;
+    width: 48%;
+    color: #edf6f9;
+    border: none;
+  }
 }
