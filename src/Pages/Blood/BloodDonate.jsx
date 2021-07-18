@@ -106,8 +106,8 @@ const Blooddonate = () => {
       <div className="container-fluid">
         <div className="Blood-Main-wrapper">
           <div className="Blood-menu-row row">
-            <div className="Blood-img-col col">
-              <img src={Bloodimg} />
+            <div className="Blood-img-col col-xl-6 col-sm-12">
+              <img src={Bloodimg} className="blood-image img-fluid" />
             </div>
             <div className="Blood-menu-col col">
               {foodmenu ? (

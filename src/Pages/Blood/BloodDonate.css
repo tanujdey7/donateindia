@@ -130,7 +130,7 @@
   height: 100%;
 }
 
-.Blood-img-col>img {
+.blood-image {
   width: 700px;
 }
 
@@ -139,11 +139,14 @@
 }
 
 @media (min-width: 200px) and (max-width: 400px) {
-  .Blood-img-col>img {
-    width: 350px;
+  .blood-image{
+    width: 200px;
+    height: auto;
   }
   .Blood-menu-col {
     border-left: none;
+    width: 100%;
+    margin: 0px;
   }
   /* done */
   .Menu-Wrap {
@@ -152,18 +155,16 @@
     padding: 0px;
   }
   .Menu-Wrap-row {
-    width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
+    width: 50%;
+    margin-top: 3%;
     margin-left: auto;
     margin-right: auto;
   }
   .Menu-main-btn {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 10px;
-
     margin-left: auto;
     margin-right: auto;
 
@@ -216,16 +217,14 @@
     padding: 0px;
   }
   .Menu-Wrap-row {
-    width: 90%;
-    margin-top: 8%;
-    margin-left: 0px;
-    margin-right: 0px;
+    width:100%;
+    margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
   }
   .Menu-main-btn {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     padding: 10px;
     float: none;
     margin-left: auto;
