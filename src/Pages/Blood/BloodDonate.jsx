@@ -1,18 +1,13 @@
 import React, { useState } from "react";
-import Booksimg from "../Images/books.jpg";
-import Clothesreceiver from "../Images/clothesreceiver.png";
-import Clothes from "../Images/clothes.png";
 import Bloodimg from "../Images/donation/blooddonation.png";
-import Foodimgfour from "../Images/volunteer.png";
 import { IoMdArrowRoundBack } from "react-icons/io";
-import { GiClothes } from "react-icons/gi";
 // icons
 import Bdonor from "../Images/icons/bdonate.png";
 import Breceive from "../Images/icons/breceive.png";
 import Bbank from "../Images/icons/bbank.png";
 import Bcamp from "../Images/icons/camp.png";
-import { VscOrganization } from "react-icons/vsc";
-import "./BloodDonate.css";
+
+import "../AllMainPages.css";
 
 const Blooddonate = () => {
   // new
@@ -316,13 +311,13 @@ const Blooddonate = () => {
                   </div>
                   <button
                     type="submit"
-                    class="btn Blood-restaurant-register-submit"
+                    class="btn Register-submit-btn"
                   >
                     <h6 className="mt-1">Submit</h6>
                   </button>
                   <button
                     type="reset"
-                    class="btn ml-2 Blood-restaurant-register-submit"
+                    class="btn ml-2 Register-submit-btn"
                   >
                     <h6 className="mt-1">Reset</h6>
                   </button>

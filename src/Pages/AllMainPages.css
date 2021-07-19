@@ -1,9 +1,26 @@
-.BooksDonate-wrapper{
+.BooksDonate-wrapper {
   margin: 0px;
   width: 100%;
   padding: 0px;
 }
 
+.BloodDonate-wrapper {
+  margin: 0px;
+  width: 100%;
+  padding: 0px;
+}
+
+.FoodDonate-wrapper {
+  margin: 0px;
+  width: 100%;
+  padding: 0px;
+}
+
+.ClothesDonate-wrapper {
+  margin: 0px;
+  width: 100%;
+  padding: 0px;
+}
 .Menu-main-btn {
   width: 200px;
   height: 200px;
@@ -19,7 +36,10 @@
 }
 
 .Menu-Wrap {
-  padding-top: 5%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
 }
 
@@ -33,19 +53,21 @@
 
 .Blood-menu-col {
   width: 100%;
+  margin-top: 5%;
   margin: 0px;
   padding: 0px;
   border-left: 2px solid #060706;
 }
 
-.Menu-main-btn>a {
+.Menu-main-btn > a {
   text-decoration: none;
   list-style-type: none;
   color: #131313;
 }
 
 .Menu-main-btn:hover {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .Menu-Wrap-row {
@@ -139,13 +161,21 @@
 .blood-image {
   width: 700px;
 }
+.books-image {
+  width: 1200px;
 
-.blood-all-icons>img {
+}
+
+.clothes-image{
+    width: 700px;
+}
+
+.blood-all-icons > img {
   width: 90px;
 }
 
 @media (min-width: 200px) and (max-width: 400px) {
-  .blood-image{
+  .blood-image {
     width: 200px;
     height: auto;
   }
@@ -161,7 +191,7 @@
     padding: 0px;
   }
   .Menu-Wrap-row {
-    width:100%;
+    width: 100%;
     margin: 0px;
     padding: 0px;
     /* background-color: red; */
@@ -174,12 +204,11 @@
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
-
   }
-  .Menu-main-btn>h4 {
+  .Menu-main-btn > h4 {
     font-size: 16px;
   }
-  .blood-all-icons>img {
+  .blood-all-icons > img {
     width: 60px;
     margin-top: 10px;
   }
@@ -212,7 +241,7 @@
 }
 
 @media (min-width: 400px) and (max-width: 900px) {
-  .Blood-img-col>img {
+  .Blood-img-col > img {
     width: 350px;
   }
   .Blood-menu-col {
@@ -225,7 +254,7 @@
     padding: 0px;
   }
   .Menu-Wrap-row {
-    width:100%;
+    width: 100%;
     margin: 0px;
     padding: 0px;
     /* background-color: red; */
@@ -239,10 +268,10 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .Menu-main-btn>h4 {
+  .Menu-main-btn > h4 {
     font-size: 16px;
   }
-  .blood-all-icons>img {
+  .blood-all-icons > img {
     width: 60px;
     margin-top: 10px;
   }
