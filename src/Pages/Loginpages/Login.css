@@ -10,6 +10,7 @@
 
 .login-title-text {
     text-align: left;
+    font-size: 2.3rem;
 }
 
 .signup-into-btn {
@@ -21,7 +22,11 @@
 }
 
 /* login form */
-
+.frgt-pass{
+    text-align: right;
+    float: right;
+    color: #391A99;
+}
 .login-line {
     display: flex;
 }
@@ -68,9 +73,13 @@
 }
 
 .login-form-div {
-    width: 68%;
+    width: 64%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 30px;
-    margin-top: 2%;
+    /* margin-top: 2%; */
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     border-radius: 20px;
     margin-left: auto;
@@ -80,11 +89,11 @@
 
 /* .form-control {
     width: 100%;
-    height: 40px;
+    height: 35px;
     border-radius: 8px;
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(255, 255, 255);
     padding: 15px;
-    border: 1px solid rgb(228, 228, 228);
+    border: 1px solid rgb(43, 43, 43);
 } */
 
 .donor-login-form {
@@ -244,10 +253,10 @@
         width: 25%;
         border: 1px solid #6c757d;
     }
-    .google-icon{
+    .google-icon {
         font-size: 16px;
     }
-    .facebook-icon{
+    .facebook-icon {
         font-size: 16px;
         margin-top: 2px;
     }
@@ -255,13 +264,10 @@
         width: 49%;
         height: 37px;
     }
-    
     .social-login-btn-facebook {
         width: 49%;
         margin-left: 10px;
         height: 37px;
-        
-        
     }
 }
 
@@ -280,7 +286,7 @@
         background-color: #ffffff;
         margin-right: auto;
     }
-    .signup-form-col{
+    .signup-form-col {
         margin: 0px;
         padding: 0px;
     }
