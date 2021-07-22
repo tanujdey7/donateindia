@@ -18,13 +18,13 @@
   width: 65%;
 }
 
-.footer-row-col-one>h1 {
+.footer-row-col-one > h1 {
   float: left;
   /* margin-left: 15%; */
   color: #ffffff;
 }
 
-.footer-row-col-three>h6 {
+.footer-row-col-three > h6 {
   color: #ffffff;
   float: left;
   margin-left: 0%;
@@ -51,23 +51,27 @@
   border-radius: 60%/120px 100px 20px 0;
 }
 
-
-
 @media only screen and (max-width: 600px) {
+  .footer-wrapper {
+    width: 100%;
+    background-color: #000100;
+    padding-top: 3%;
+    padding-bottom: 2%;
+  }
   .footer-row-one {
     display: flex;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   .footer-row-two {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
   }
- 
-  .footer-row-col-one>h1 {
+
+  .footer-row-col-one > h1 {
     float: left;
     margin-left: 0%;
     font-size: 1.3rem;
@@ -93,39 +97,39 @@
   .footer-line {
     width: 100%;
     height: 10px;
-    margin:20px 0px;
+    margin: 20px 0px;
     border: solid 2px rgb(255, 255, 255);
     border-color: rgb(255, 255, 255) transparent transparent transparent;
     border-radius: 60%/120px 100px 20px 0;
   }
-  .footer-row-col-three{
+  .footer-row-col-three {
     margin: 0px;
     padding: 0px;
   }
-  .footer-row-col-three>h6 {
+  .footer-row-col-three > h6 {
     color: #ffffff;
     float: left;
     font-size: 14px;
     width: 100%;
     margin-left: 0px;
   }
-  .footer-row-col-four{
+  .footer-row-col-four {
     width: 100%;
     color: #ffffff;
     margin-left: auto;
     margin-right: auto;
   }
-  .footer-icons-col>a{
+  .footer-icons-col > a {
     color: #ffffff;
     text-decoration: none;
   }
-  .fb-icons:hover{
+  .fb-icons:hover {
     color: rgb(13, 118, 255);
   }
-  .insta-icon:hover{
+  .insta-icon:hover {
     color: red;
   }
-  .twitter-icon:hover{
+  .twitter-icon:hover {
     color: aqua;
   }
 }

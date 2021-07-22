@@ -41,8 +41,7 @@ const Home = () => {
                 <div className="hero-sec-card-body">
                   <h1>Help the poor Make big changes and help the World</h1>
                   <h4>
-                    Get help to find blood banks and food banks sdbhsd sdhbvhjas
-                    svjasgvdasd hasvjds asbuash sahakbs sajkbdkjbdas abhksbkjbsd
+                    Get help to donate Food ,Blood CLothes and Books and also find blood banks, Blood Donors, Food Donors, Clothe Donors
                   </h4>
                 </div>
                 <div className="hero-sec-card-foot">

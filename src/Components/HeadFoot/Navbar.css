@@ -29,7 +29,7 @@
   width: 100%;
 }
 
-.nav-menu-h1{
+.nav-menu-h1 {
   width: 100%;
   font-size: 5rem;
   color: #ffffff;
@@ -43,17 +43,17 @@
 }
 
 .navbar-btns {
-  background:transparent;
+  width: 100%;
+  float: right;
+  text-align: right;
+  font-size: 5rem;
   color: #ffffff;
-  border: 2px solid #e2f6f5;
-  font-family: "Poppins", sans-serif;
-  float: left;
-  margin-left: 5%;
 }
 
 .navbar-btns:hover {
-  background-color: #e2f6f5;
-  color: #000100;
+  /* background-color: #e2f6f5; */
+  border: 2px solid white;
+  color: #ffffff;
 }
 .login-btn {
   background-color: #fdd900;
@@ -61,17 +61,17 @@
   font-family: "Poppins", sans-serif;
 }
 
-.nav-menu-li{
+.nav-menu-li {
   text-align: right;
   list-style: none;
   text-decoration: none;
 }
 
-.login-div-ul{
+.login-div-ul {
   display: flex;
 }
 
-.login-div-li{
+.login-div-li {
   margin-left: 5%;
   list-style: none;
   text-decoration: none;
@@ -82,14 +82,14 @@
   margin-left: 20px;
   font-family: "Poppins", sans-serif;
 }
-.nav-menu-ul{
+.nav-menu-ul {
   width: 100%;
   margin-right: 100px;
 }
 
 /* hamburger menu */
 
-.show-btn-div{
+.show-btn-div {
   float: right;
 }
 .hamburger-icon {
@@ -100,17 +100,21 @@
 
 .ham-menu-div {
   width: 100%;
-  height:960px;
+  height: 960px;
   z-index: 1;
   background-color: #001831;
-  position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
-.navbar-menu-div{
+.navbar-menu-div {
   position: relative;
-  margin-top:10px;
-  margin-right:30px; 
-  bottom: 0; 
+  margin-top: 10px;
+  margin-right: 30px;
+  bottom: 0;
   left: 0;
   width: 1000px;
   height: 90%;
@@ -130,6 +134,58 @@
     margin: 0px;
     padding: 0px;
   }
+  .login-div-ul {
+    display: grid;
+  }
+  .navbar-btns {
+    width: 85%;
+    padding: 10px;
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #e2f6f5;
+    font-family: "Poppins", sans-serif;
+    float: left;
+    margin-left: 0%;
+  }
+
+  .contact-div {
+    margin-top: 10%;
+    /* background-color: red; */
+  }
+  .ham-menu-div {
+    width: 100%;
+    height: 800px;
+    z-index: 1;
+    background-color: #001831;
+    position: static;
+    margin-top: -95px;
+    right: 0;
+    bottom: 100;
+    left: 0;
+  }
+  .navbar-menu-div {
+    position: static;
+    margin-top: 10px;
+    margin-right: 0px;
+    width: 100%;
+    height: 90%;
+    float: left;
+  }
+  .nav-menu-ul {
+    width: 100%;
+    margin-top: 10%;
+    display: grid;
+    margin-right: 0px;
+    /* background-color: red; */
+  }
+  .nav-menu-li {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    /* background-color: green; */
+    text-decoration: none;
+  }
   .navbar-wrapper {
     width: 100%;
     display: flex;
@@ -139,20 +195,23 @@
   .logo-div {
     width: 70%;
   }
-  .show-btn-div{
+  .show-btn-div {
     width: 30%;
   }
   .contact-div {
-    display: none;
+    display: flex;
   }
   .login-div {
-    width: 50%;
+    margin-right: 0px;
+    margin-top: 5%;
+    float: left;
+    width: 100%;
   }
   .login-div > button {
-    margin-left: 50px;
+    margin-left: 0px;
   }
 
-  .logo-div > img{
+  .logo-div > img {
     float: left;
     margin-left: 0%;
     background-color: #e2f6f5;

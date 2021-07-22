@@ -6,10 +6,10 @@ const Login = () => {
   return (
     <div className="login-section">
       <div className="login-form-wrapper-row row">
-        <div className="login-form-wrappe-col col">
+        <div className="login-form-wrappe-col col-xl-6 col-md-6 col-sm-12">
           <img src={Donationpic} alt="donation pic" />
         </div>
-        <div className="signup-form-col col">
+        <div className="signup-form-col col-xl-6 col-md-6 col-sm-12">
           {signup === false ? (
             <div className="login-form-div">
               <div className="login-head">
@@ -27,38 +27,33 @@ const Login = () => {
               <div className="whole-login-sec-wrap">
                 <div className="donor-login-form">
                   <form className="form-wrap">
-                    <div class="input-group mb-2">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon3">
-                          Email
-                        </span>
-                      </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">
+                        Email Address
+                      </label>
                       <input
-                        type="text"
-                        class="form-control"
-                        id="basic-url"
-                        aria-describedby="basic-addon3"
+                        type="email"
+                        required
+                        class="form-control "
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
                       />
                     </div>
-                    <small id="emailHelp" class="form-text text-muted">
-                      We'll never share your email with anyone else.
-                    </small>
-                    <div class="input-group mt-3 mb-3">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon3">
-                          Password
-                        </span>
-                      </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">
+                        Password
+                      </label>
                       <input
-                        type="text"
-                        class="form-control"
-                        id="basic-url"
-                        aria-describedby="basic-addon3"
+                        type="password"
+                        required
+                        class="form-control "
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
                       />
                     </div>
                     <div class="input-group mt-2">
                       <div className="row w-100">
-                        <div className="col-6">
+                        <div className="col-xl-6 col-sm-12">
                           <div class="form-group form-check">
                             <input
                               type="checkbox"
@@ -66,11 +61,11 @@ const Login = () => {
                               id="exampleCheck1"
                             />
                             <label class="form-check-label" for="exampleCheck1">
-                              Check me out
+                              Remember Me
                             </label>
                           </div>
                         </div>
-                        <div className="col-6">
+                        <div className="col-xl-6 col-sm-12">
                           <a href="#" className="frgt-pass">
                             Forget Password?
                           </a>
