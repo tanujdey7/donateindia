@@ -508,8 +508,11 @@
   }
   
   .mission-box-row-two {
-    margin-top: 4%;
-    margin-left: 5%;
+    margin: 6px;
+    padding: 0px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
     background-color: yellow;
   }
 }
