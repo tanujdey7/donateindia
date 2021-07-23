@@ -24,3 +24,30 @@
   font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
+
+
+@media (min-width: 200px) and (max-width: 600px) {
+  .joinmission-div {
+    width: 98%;
+    margin-top: 0%;
+    margin-bottom: 1%;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fdd900;
+  }
+  .joinmission-text {
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 6%;
+    padding-bottom: 6%;
+  }
+  
+  .joinmission-text > h1 {
+    font-size: 1.3rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+  }
+  
+}

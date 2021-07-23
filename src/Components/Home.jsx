@@ -3,7 +3,7 @@ import Donate from "./Images/AI.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/js/dist/tab";
 // Pages import
-import Mission from "./Sections/Mission";
+// import Mission from "./Sections/Mission";
 import Fundraise from "./Sections/Fundraise";
 import Supportus from "./Sections/Supportus";
 import Joinmission from "./Sections/Joinmission";
@@ -12,8 +12,6 @@ import Volunteers from "./Sections/Volunteers";
 import Newsletter from "./Sections/Newsletter";
 import "./Home.css";
 import { Link, animateScroll as scroll } from "react-scroll";
-// import Volunteers from "./Sections/Volunteers";
-// mission
 
 import { BsCloud } from "react-icons/bs";
 // import "./Mission.css";
@@ -91,12 +89,12 @@ const Home = () => {
               <button className="btn btn-lg donate-now-btn">Donate Now</button>
             </div>
           </div>
-          <div className="mission-col  col-xl-4 col-lg-4 col-md-6 col-sm-6">
+          <div className="mission-col  col-xl-4 col-lg-4 col-md-6 col-sm-12">
             <div className="mission-box-wrap">
               <div className="mission-box-row row">
                 <div className="mission-box-col col-6">
                   <a href="/blood/blooddonate">
-                    <div className="mission-box-one card">
+                    <div className="mission-box card">
                       <div className="mission-box-img card-body">
                         <img src={Blooddrop} alt="Blooddrop" className="mission-box-one-img" />
                       </div>
@@ -109,7 +107,7 @@ const Home = () => {
                 </div>
                 <div className="mission-box-col col-6">
                   <a href="/food/fooddonate">
-                    <div className="mission-box-two card">
+                    <div className="mission-box card">
                       <div className="mission-box-img card-body">
                         <img src={Food} alt="Food" className="mission-box-one-img" />
                       </div>
@@ -124,7 +122,7 @@ const Home = () => {
               <div className="mission-box-row-two row">
                 <div className="mission-box-col col-6">
                   <a href="/clothes/clothesdonate">
-                    <div className="mission-box-three card">
+                    <div className="mission-box card">
                       <div className="mission-box-img card-body">
                         <img
                           className="svg-color"
@@ -142,7 +140,7 @@ const Home = () => {
                 </div>
                 <div className="mission-box-col  col-6">
                   <a href="/books/booksdonate">
-                    <div className="mission-box-four card">
+                    <div className="mission-box card">
                       <div className="mission-box-img card-body">
                         <img src={Books} alt="Books" className="mission-box-one-img" />
                       </div>
@@ -157,8 +155,8 @@ const Home = () => {
             </div>
           </div>
           <div className="mission-col cloud-icon-col-two col-xl-2 col-lg-2 col-md-6 col-sm-6">
-            <h1 className="cloud-icon ">
-              <BsCloud size={200} />
+            <h1 className="cloud-icon-two">
+              <BsCloud />
             </h1>
           </div>
         </div>

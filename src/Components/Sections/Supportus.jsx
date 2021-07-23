@@ -15,8 +15,8 @@ const Supportus=()=> {
                 </div>
             </div>
             <div className="supportus-row-two row">
-                <div className="supportus-icons-div">
-                    <div className="col-4">
+                {/* <div className="supportus-icons-div"> */}
+                    <div className="col-xl-4 col-sm-12">
                         <div className="supportus-icons-card card">
                             <div className="supportus-icons-header card-header">
                                 <div className="supportus-icons-heart" ><RiHeartAddLine className="mt-3" size={70} /></div>
@@ -27,7 +27,7 @@ const Supportus=()=> {
                             </div>
                         </div>
                     </div>
-                    <div className="col-4">
+                    <div className="col-xl-4 col-sm-12">
                         <div className="supportus-icons-card card">
                             <div className="supportus-icons-header card-header">
                                 <div className="supportus-icons-hands" ><FaHands className="mt-3" size={70} /></div>
@@ -38,7 +38,7 @@ const Supportus=()=> {
                             </div>
                         </div>
                     </div>
-                    <div className="col-4">
+                    <div className="col-xl-4 col-sm-12">
                         <div className="supportus-icons-card card">
                             <div className="supportus-icons-header card-header">
                                 <div className="supportus-icons-ribbon" ><FaRibbon className="mt-3" size={70} /></div>
@@ -50,7 +50,7 @@ const Supportus=()=> {
                         </div>
                     </div>
                 </div>
-            </div>
+            {/* </div> */}
         </div>
     )
 }
