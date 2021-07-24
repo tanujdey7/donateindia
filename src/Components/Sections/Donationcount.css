@@ -4,24 +4,25 @@
 }
 
 .donation-count-row {
-  width: 100%;
-}
-
-.donation-count-row-wrap {
   width: 90%;
-  margin-top: 13%;
-  margin-bottom: 7.5%;
   display: flex;
   margin-left: auto;
+  padding-top: 13%;
+  padding-bottom: 7.5%;
   margin-right: auto;
 }
-
+.donation-count-cloud>h1{
+  font-size: 8rem;
+  color: white;
+}
 .donation-count-col-one {
   width: 100%;
 }
 
 .donation-count-col-two {
   width: 100%;
+  margin: 0px;
+  padding: 20px;
 }
 .donation-count-col-two-wrap {
   width: 100%;
@@ -34,7 +35,7 @@
 .donation-count-card {
   width: 28%;
   height: 160px;
-  margin-left: 2%;
+  margin-left: 0%;
   background-color: #42299e;
   border-radius: 10px;
 }
@@ -70,7 +71,7 @@
 
 .donation-count-col-two-rowtwo {
   margin-top: 2%;
-  width: 90%;
+  width:100%;
   padding-left: 2%;
 }
 .donation-count-col-two-rowtwo > h6 {
@@ -82,3 +83,86 @@
 .donation-count-col-two-rowthree {
   margin-top: 4%;
 }
+.donation-count-girl>img{
+  width: 370px;
+}
+
+@media (min-width: 200px) and (max-width: 600px) {
+  .donation-count-row{
+    display: grid;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+  .donation-count-cloud>h1{
+    font-size:3rem;
+    text-align: left;
+    color: white;
+  }
+  .donation-count-col-two-rowone > h1 {
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: left;
+    line-height: 20px;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+  }
+  .donation-count-col-two-rowtwo {
+    margin-top: 2%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0%;
+  }
+  .donation-count-col-two-rowtwo > h6 {
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    text-align: left;
+  }
+  .donation-count-card {
+    width: 100%;
+    height: 140px;
+    margin-top:10px;
+    background-color: #42299e;
+    border-radius: 10px;
+  }
+  
+  .donation-count-card > h1 {
+    color: #ffffff;
+    margin-top: 12%;
+    font-size: 2rem;
+  }
+  .donation-count-card > h6 {
+    color: #ffffff;
+    text-align: center;
+    margin-left: 0%;
+  }
+  
+  .donation-count-card {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .donation-count-col-two-rowone {
+    width: 100%;
+    padding-left: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-right: 0px;
+  }
+
+  
+  .donation-count-col-two-rowthree {
+    width: 100%;
+    padding: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: red; */
+  }
+  .donation-count-girl>img{
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+

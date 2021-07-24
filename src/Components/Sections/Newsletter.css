@@ -1,9 +1,11 @@
 /* subscribe */
+
 .newsletter-wrapper {
   width: 100%;
   padding-top: 4%;
   padding-bottom: 5%;
 }
+
 .subscribe-row {
   width: 70%;
   margin-top: 4%;
@@ -16,11 +18,15 @@
   text-align: left;
 }
 
+.subscribe-img-div>img {
+  width: 370px;
+}
+
 .helping-hand-icon {
   margin-left: 60%;
 }
 
-.subscribe-title-text > h1 {
+.subscribe-title-text>h1 {
   font-size: 2.8rem;
   font-family: "Poppins", sans-serif;
 }
@@ -45,4 +51,12 @@
 
 .form-inline {
   margin-top: 5%;
+}
+
+
+@media (min-width: 200px) and (max-width: 600px) {
+  .subscribe-img-div>img {
+    width: 200px;
+  }
+  
 }
