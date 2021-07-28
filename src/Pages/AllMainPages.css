@@ -21,6 +21,7 @@
   width: 100%;
   padding: 0px;
 }
+
 .Menu-main-btn {
   width: 200px;
   height: 200px;
@@ -59,15 +60,14 @@
   border-left: 2px solid #060706;
 }
 
-.Menu-main-btn > a {
+.Menu-main-btn>a {
   text-decoration: none;
   list-style-type: none;
   color: #131313;
 }
 
 .Menu-main-btn:hover {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .Menu-Wrap-row {
@@ -124,12 +124,15 @@
 
 .see-vol-btn {
   width: 95%;
+  margin-top: 10px;
   margin-bottom: 10px;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 5px;
   text-decoration: none;
   color: #010101;
-  padding: 5px 10px;
+  padding: 4px 10px;
   background-color: #1a2e35;
 }
 
@@ -161,20 +164,25 @@
 .blood-image {
   width: 700px;
 }
+
 .books-image {
   width: 1200px;
-
 }
 
-.clothes-image{
-    width: 700px;
+.clothes-image {
+  width: 700px;
 }
 
-.blood-all-icons > img {
+.blood-all-icons>img {
   width: 90px;
 }
 
-@media (min-width: 200px) and (max-width: 400px) {
+.input-half-div-sec{
+ margin-left: 10px; 
+}
+
+
+@media (min-width: 381px) and (max-width: 600px) {
   .blood-image {
     width: 200px;
     height: auto;
@@ -189,33 +197,36 @@
     width: 100%;
     margin: 0px;
     padding: 0px;
+    position: static;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 0%);
   }
   .Menu-Wrap-row {
     width: 100%;
-    margin: 0px;
+    margin-left: 10px;
     padding: 0px;
-    /* background-color: red; */
     padding-top: 5%;
   }
   .Menu-main-btn {
-    width: 100px;
-    height: 100px;
+    width: 160px;
+    height: 160px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
   }
-  .Menu-main-btn > h4 {
+  .Menu-main-btn>h4 {
     font-size: 16px;
   }
-  .blood-all-icons > img {
+  .blood-all-icons>img {
     width: 60px;
     margin-top: 10px;
   }
   .Register-card {
     width: 95%;
 
-    margin-left: 30px;
+    margin-left: auto;
     margin-right: auto;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
@@ -228,20 +239,172 @@
   }
   .Blood-btn-tagline {
     width: auto;
-    margin-left: 17%;
+    margin-left: 14%;
     font-size: 22px;
     text-align: center;
   }
   .Register-submit-btn {
     background-color: #1a2e35;
     width: 48%;
+    margin-top: 3%;
     color: #edf6f9;
     border: none;
   }
+  .Blood-form-input-half {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+  .reg-form-control {
+    width: 99%;
+    font-size: 14px;
+    height: 35px;
+  }
+
+  .input-half-div {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  .input-half-div-sec{
+    margin-left: 0px; 
+   }
+   .Register-card-body>h4{
+     font-size: 22px;
+   }
+   .see-vol-btn {
+    width: 98%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #010101;
+    padding: 3px 10px;
+    background-color: #1a2e35;
+  }
+  
+  .see-vol-btn:hover {
+    text-decoration: none;
+    color: #ffd2d2;
+  }
 }
 
-@media (min-width: 400px) and (max-width: 900px) {
-  .Blood-img-col > img {
+@media (min-width: 200px) and (max-width: 380px) {
+  .blood-image {
+    width: 250px;
+    height: auto;
+  }
+  .Blood-menu-col {
+    border-left: none;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  .Menu-main-btn {
+    width: 140px;
+    height: 140px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Menu-main-btn>h4 {
+    font-size: 16px;
+  }
+  .blood-all-icons>img {
+    width: 60px;
+    margin-top: 10px;
+  }
+  .Register-card {
+    width: 90%;
+    margin-top: 3%;
+    margin-left: 13px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .back-menu-btn {
+    float: left;
+    width: 80px;
+    height: 40px;
+    color: #edf6f9;
+    background-color: #26363b;
+  }
+  .Blood-btn-tagline {
+    width: auto;
+    margin-left: 11%;
+    font-size: 22px;
+    text-align: center;
+  }
+  .Register-submit-btn {
+    background-color: #1a2e35;
+    width: 48%;
+    margin-top: 3%;
+    color: #edf6f9;
+    border: none;
+  }
+  .Menu-Wrap {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: static;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 0%);
+  }
+  .Menu-Wrap-row {
+    width: 100%;
+    margin-left: 10px;
+    padding: 0px;
+    padding-top: 5%;
+  }
+  .Blood-form-input-half {
+    display:block;
+    /* background-color: yellow; */
+    /* background-color: red; */
+    width: 100%;
+  }
+  .reg-form-control {
+    width: 100%;
+    font-size: 14px;
+    height: 35px;
+    /* background-color: red; */
+  }
+  .input-half-div {
+    width: 100%;
+  }
+  .input-half-div-sec{
+    margin-left: 0px; 
+   }
+   .see-vol-btn {
+    width: 98%;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #010101;
+    padding: 2px 10px;
+    background-color: #1a2e35;
+  }
+  
+  .see-vol-btn:hover {
+    text-decoration: none;
+    color: #ffd2d2;
+  }
+  .Register-card-body>h5{
+    margin-top: -20px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .Blood-img-col>img {
     width: 350px;
   }
   .Blood-menu-col {
@@ -268,10 +431,10 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .Menu-main-btn > h4 {
+  .Menu-main-btn>h4 {
     font-size: 16px;
   }
-  .blood-all-icons > img {
+  .blood-all-icons>img {
     width: 60px;
     margin-top: 10px;
   }
@@ -300,4 +463,7 @@
     color: #edf6f9;
     border: none;
   }
+  .input-half-div-sec{
+    margin-left: 0px; 
+   }
 }

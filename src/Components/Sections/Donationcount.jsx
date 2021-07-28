@@ -46,12 +46,13 @@ const Donationcount = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="donation-count-col-three col-xl-3 col-sm-12">
+          <div className="donation-count-col-three col-xl-3 col-sm-12">
           <div className="donation-count-girl">
             <img src={Happygirl} alt="Happygirl" />
           </div>
         </div>
+        </div>
+        
       </div>
     // </div>
   );

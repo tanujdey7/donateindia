@@ -102,9 +102,9 @@ const Blooddonate = () => {
         <div className="Blood-img-col col-xl-6 col-sm-12">
           <img src={Bloodimg} className="blood-image img-fluid" />
         </div>
-        <div className="Blood-menu-col col-xl-6 col-sm-12">
+        <div className="Blood-menu-col  col-xl-6 col-sm-12">
           {foodmenu ? (
-            <div className="Menu-Wrap">
+            <div className="Menu-Wrap ">
               <div className="Menu-Wrap-row row">
                 <div className="Menu-col col">
                   <button onClick={showDonor} className="Menu-main-btn">
@@ -162,7 +162,7 @@ const Blooddonate = () => {
                     </label>
                     <input
                       type="text"
-                      class="form-control"
+                      class="form-control reg-form-control"
                       id="exampleInputEmail1"
                       aria-describedby="emailHelp"
                       required
@@ -174,7 +174,7 @@ const Blooddonate = () => {
                     </label>
                     <input
                       type="email"
-                      class="form-control"
+                      class="form-control reg-form-control"
                       id="exampleInputEmail1"
                       aria-describedby="emailHelp"
                       required
@@ -186,20 +186,20 @@ const Blooddonate = () => {
                     </label>
                     <input
                       type="textarea"
-                      class="form-control"
+                      class="form-control reg-form-control"
                       id="exampleInputEmail1"
                       aria-describedby="emailHelp"
                       required
                     />
                   </div>
                   <div className="Blood-form-input-half">
-                    <div class="input-half-div mb-3">
+                    <div className="input-half-div w-100  mb-3">
                       <label for="exampleInputEmail1" class="form-label">
                         <h6>State</h6>
                       </label>
                       <select
                         onChange={changeSelectOptionHandler}
-                        class="form-select form-control"
+                        class="form-select form-control reg-form-control"
                         aria-label="Default select example"
                       >
                         <option>Choose State</option>
@@ -210,13 +210,13 @@ const Blooddonate = () => {
                         ))}
                       </select>
                     </div>
-                    <div class="input-half-div ml-3 mb-2">
+                    <div class="input-half-div input-half-div-sec w-100 mb-2">
                       <label for="exampleInputEmail1" class="form-label">
                         <h6>City</h6>
                       </label>
 
                       <select
-                        class="form-select form-control"
+                        class="form-select reg-form-control form-control"
                         aria-label="Default select example"
                       >
                         {options}
@@ -224,25 +224,25 @@ const Blooddonate = () => {
                     </div>
                   </div>
                   <div className="Blood-form-input-half">
-                    <div class="input-half-div mb-3">
+                    <div class="input-half-div w-100 mb-3">
                       <label for="exampleInputEmail1" class="form-label">
                         <h6>Mobile Number</h6>
                       </label>
                       <input
                         type="tel"
                         maxLength="10"
-                        class="form-control"
+                        class="form-control reg-form-control"
                         id="exampleInputEmail1"
                         aria-describedby="emailHelp"
                         required
                       />
                     </div>
-                    <div class="input-half-div ml-3 mb-2">
+                    <div class="input-half-div input-half-div-sec w-100 mb-2">
                       <label for="exampleInputEmail1" class="form-label">
                         <h6>Gender</h6>
                       </label>
                       <select
-                        class="form-select form-control"
+                        class="form-select form-control reg-form-control"
                         aria-label="Default select example"
                       >
                         <option selected>Open this select menu</option>
@@ -253,24 +253,24 @@ const Blooddonate = () => {
                     </div>
                   </div>
                   <div className="Blood-form-input-half">
-                    <div class="input-half-div mb-3">
+                    <div class="input-half-div w-100 mb-3">
                       <label for="exampleInputEmail1" class="form-label">
                         <h6>D.O.B</h6>
                       </label>
                       <input
                         type="datetime-local"
-                        class="form-control"
+                        class="form-control reg-form-control"
                         id="exampleInputEmail1"
                         aria-describedby="emailHelp"
                         required
                       />
                     </div>
-                    <div class="input-half-div ml-3 mb-2">
+                    <div class="input-half-div input-half-div-sec w-100 mb-2">
                       <label for="exampleInputEmail1" class="form-label">
                         <h6>Blood Group</h6>
                       </label>
                       <select
-                        class="form-select form-control"
+                        class="form-select form-control reg-form-control"
                         aria-label="Default select example"
                       >
                         <option disabled>Open this select menu</option>
@@ -281,25 +281,25 @@ const Blooddonate = () => {
                     </div>
                   </div>
                   <div className="Blood-form-input-half">
-                    <div class="input-half-div mb-3">
+                    <div class="input-half-div w-100 mb-3">
                       <label for="exampleInputEmail1" class="form-label">
                         <h6>Adhar Number</h6>
                       </label>
                       <input
                         type="tel"
                         maxLength="12"
-                        class="form-control"
+                        class="form-control reg-form-control"
                         id="exampleInputEmail1"
                         aria-describedby="emailHelp"
                         required
                       />
                     </div>
-                    <div class="input-half-div ml-3 mb-2">
+                    <div class="input-half-div input-half-div-sec w-100 mb-2">
                       <label for="exampleInputEmail1" class="form-label">
                         <h6>Preference</h6>
                       </label>
                       <select
-                        class="form-select form-control"
+                        class="form-select form-control reg-form-control"
                         aria-label="Default select example"
                       >
                         <option disabled>Open this select menu</option>
@@ -309,16 +309,10 @@ const Blooddonate = () => {
                       </select>
                     </div>
                   </div>
-                  <button
-                    type="submit"
-                    class="btn Register-submit-btn"
-                  >
+                  <button type="submit" class="btn Register-submit-btn">
                     <h6 className="mt-1">Submit</h6>
                   </button>
-                  <button
-                    type="reset"
-                    class="btn ml-2 Register-submit-btn"
-                  >
+                  <button type="reset" class="btn ml-2 Register-submit-btn">
                     <h6 className="mt-1">Reset</h6>
                   </button>
                 </form>
@@ -333,17 +327,15 @@ const Blooddonate = () => {
                 </button>
                 <h3 className="Blood-btn-tagline mt-3">Blood Bank</h3>
               </div>
-              <div className="mt-3 row w-100">
-                <a
-                  className="see-vol-btn"
-                  href="/blood/blooddonate/findbloodbank"
-                >
-                  <h6 className="mt-1 text-white">See Nearby Blood Banks</h6>
-                </a>
-              </div>
-              <h5 className="text-center mb-3">OR</h5>
+              <a
+                className="see-vol-btn"
+                href="/blood/blooddonate/findbloodbank"
+              >
+                <h6 className="mt-1 text-white">See Nearby Blood Banks</h6>
+              </a>
+              <h5 className="text-center mb-2">OR</h5>
               <div className="Register-card-body card-body">
-                <h4 className="text-center mb-3">[Register Blood Bank]</h4>
+                <h5 className="text-center mb-3">[Register Blood Bank]</h5>
                 <form>
                   <div class="mb-2">
                     <label for="exampleInputEmail1" class="form-label">
@@ -351,7 +343,7 @@ const Blooddonate = () => {
                     </label>
                     <input
                       type="text"
-                      class="form-control"
+                      class="form-control reg-form-control"
                       id="exampleInputEmail1"
                       aria-describedby="emailHelp"
                       required
@@ -363,7 +355,7 @@ const Blooddonate = () => {
                     </label>
                     <input
                       type="email"
-                      class="form-control"
+                      class="form-control reg-form-control"
                       id="exampleInputEmail1"
                       aria-describedby="emailHelp"
                       required
@@ -375,20 +367,20 @@ const Blooddonate = () => {
                     </label>
                     <input
                       type="textarea"
-                      class="form-control"
+                      class="form-control reg-form-control"
                       id="exampleInputEmail1"
                       aria-describedby="emailHelp"
                       required
                     />
                   </div>
                   <div className="Blood-form-input-half">
-                    <div class="input-half-div mb-3">
+                    <div class="input-half-div w-100 mb-3">
                       <label for="exampleInputEmail1" class="form-label">
                         <h6>State</h6>
                       </label>
                       <select
                         onChange={changeSelectOptionHandler}
-                        class="form-select form-control"
+                        class="form-select form-control reg-form-control"
                         aria-label="Default select example"
                       >
                         <option>Choose State</option>
@@ -399,13 +391,13 @@ const Blooddonate = () => {
                         ))}
                       </select>
                     </div>
-                    <div class="input-half-div ml-3 mb-2">
+                    <div class="input-half-div w-100 input-half-div-sec mb-2">
                       <label for="exampleInputEmail1" class="form-label">
                         <h6>City</h6>
                       </label>
 
                       <select
-                        class="form-select form-control"
+                        class="form-select form-control reg-form-control"
                         aria-label="Default select example"
                       >
                         {options}
@@ -413,25 +405,25 @@ const Blooddonate = () => {
                     </div>
                   </div>
                   <div className="Blood-form-input-half">
-                    <div class="input-half-div mb-3">
+                    <div class="input-half-div w-100 mb-3">
                       <label for="exampleInputEmail1" class="form-label">
                         <h6>Mobile Number</h6>
                       </label>
                       <input
                         type="tel"
                         maxLength="10"
-                        class="form-control"
+                        class="form-control reg-form-control"
                         id="exampleInputEmail1"
                         aria-describedby="emailHelp"
                         required
                       />
                     </div>
-                    <div class="input-half-div ml-3 mb-2">
+                    <div class="input-half-div w-100 input-half-div-sec mb-2">
                       <label for="exampleInputEmail1" class="form-label">
                         <h6>Category</h6>
                       </label>
                       <select
-                        class="form-select form-control"
+                        class="form-select form-control reg-form-control"
                         aria-label="Default select example"
                       >
                         <option selected>Open this select menu</option>
@@ -442,12 +434,12 @@ const Blooddonate = () => {
                     </div>
                   </div>
                   <div className="Blood-form-input-half">
-                    <div class="input-half-div mb-3">
+                    <div class="input-half-div w-100 mb-3">
                       <label for="exampleInputEmail1" class="form-label">
                         <h6>Services</h6>
                       </label>
                       <select
-                        class="form-select form-control"
+                        class="form-select form-control reg-form-control"
                         aria-label="Default select example"
                       >
                         <option selected>Open this select menu</option>
@@ -456,12 +448,12 @@ const Blooddonate = () => {
                         {/* <option value="3">Three</option> */}
                       </select>
                     </div>
-                    <div class="input-half-div ml-2 mb-3">
+                    <div class="input-half-div w-100 input-half-div-sec mb-3">
                       <label for="exampleInputEmail1" class="form-label">
                         <h6>Type</h6>
                       </label>
                       <select
-                        class="form-select form-control"
+                        class="form-select form-control reg-form-control"
                         aria-label="Default select example"
                       >
                         <option selected>Open this select menu</option>
@@ -488,16 +480,14 @@ const Blooddonate = () => {
                 <button onClick={hidemenu} className="btn back-menu-btn">
                   <IoMdArrowRoundBack /> Back
                 </button>
-                <h3 className="Blood-btn-tagline mt-3">Blood Camp</h3>
+                <h3 className="Blood-btn-tagline mt-2">Blood Camp</h3>
               </div>
-              <div className="mt-3 row w-100">
                 <a
                   className="see-vol-btn"
                   href="/blood/blooddonate/findbloodcamp"
                 >
                   <h6 className="mt-1 text-white">Find blood Camps</h6>
                 </a>
-              </div>
               <h5 className="text-center">OR</h5>
               <div className="Register-card-body card-body">
                 <h5 className="text-center mb-3">
@@ -510,7 +500,7 @@ const Blooddonate = () => {
                     </label>
                     <input
                       type="text"
-                      class="form-control"
+                      class="form-control reg-form-control"
                       id="exampleInputEmail1"
                       aria-describedby="emailHelp"
                       required
@@ -522,7 +512,7 @@ const Blooddonate = () => {
                     </label>
                     <input
                       type="text"
-                      class="form-control"
+                      class="form-control reg-form-control"
                       id="exampleInputEmail1"
                       aria-describedby="emailHelp"
                       required
@@ -534,7 +524,7 @@ const Blooddonate = () => {
                     </label>
                     <input
                       type="text"
-                      class="form-control"
+                      class="form-control reg-form-control"
                       id="exampleInputEmail1"
                       aria-describedby="emailHelp"
                       required
@@ -546,20 +536,20 @@ const Blooddonate = () => {
                     </label>
                     <input
                       type="textarea"
-                      class="form-control"
+                      class="form-control reg-form-control"
                       id="exampleInputEmail1"
                       aria-describedby="emailHelp"
                       required
                     />
                   </div>
                   <div className="Blood-form-input-half">
-                    <div class="input-half-div mb-3">
+                    <div class="input-half-div w-100 mb-3">
                       <label for="exampleInputEmail1" class="form-label">
                         <h6>State</h6>
                       </label>
                       <select
                         onChange={changeSelectOptionHandler}
-                        class="form-select form-control"
+                        class="form-select form-control reg-form-control"
                         aria-label="Default select example"
                       >
                         <option>Choose State</option>
@@ -570,13 +560,13 @@ const Blooddonate = () => {
                         ))}
                       </select>
                     </div>
-                    <div class="input-half-div ml-3 mb-2">
+                    <div class="input-half-div w-100 input-half-div-sec mb-2">
                       <label for="exampleInputEmail1" class="form-label">
                         <h6>City</h6>
                       </label>
 
                       <select
-                        class="form-select form-control"
+                        class="form-select form-control reg-form-control"
                         aria-label="Default select example"
                       >
                         {options}
@@ -584,20 +574,20 @@ const Blooddonate = () => {
                     </div>
                   </div>
                   <div className="Blood-form-input-half">
-                    <div class="input-half-div mb-3">
+                    <div class="input-half-div w-100 mb-3">
                       <label for="exampleInputEmail1" class="form-label">
                         <h6>Mobile Number</h6>
                       </label>
                       <input
                         type="tel"
                         maxLength="10"
-                        class="form-control"
+                        class="form-control reg-form-control"
                         id="exampleInputEmail1"
                         aria-describedby="emailHelp"
                         required
                       />
                     </div>
-                    <div class="input-half-div ml-3 mb-2">
+                    <div class="input-half-div w-100 input-half-div-sec mb-2">
                       <label for="exampleInputEmail1" class="form-label">
                         <h6>Register ?</h6>
                       </label>
@@ -612,25 +602,25 @@ const Blooddonate = () => {
                     </div>
                   </div>
                   <div className="Blood-form-input-half">
-                    <div class="input-half-div mb-3">
+                    <div class="input-half-div w-100 mb-3">
                       <label for="exampleInputEmail1" class="form-label">
                         <h6>Date</h6>
                       </label>
                       <input
                         type="datetime-local"
-                        class="form-control"
+                        class="form-control reg-form-control"
                         id="exampleInputEmail1"
                         aria-describedby="emailHelp"
                         required
                       />
                     </div>
-                    <div class="input-half-div ml-2 mb-3">
+                    <div class="input-half-div w-100 input-half-div-sec mb-3">
                       <label for="exampleInputEmail1" class="form-label">
                         <h6>Time</h6>
                       </label>
                       <input
                         type="datetime-local"
-                        className="form-control"
+                        className="form-control reg-form-control"
                         id="exampleInputEmail1"
                         aria-describedby="emailHelp"
                         required
