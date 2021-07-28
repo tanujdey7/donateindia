@@ -8,7 +8,7 @@ const Newsletter = () => {
       <div className="subscribe-row row">
         <div className="col-xl-6 col-sm-12">
           <div className="subscribe-img-div">
-            <img src={Man} alt="Man" width="370" />
+            <img src={Man} alt="Man"  />
           </div>
         </div>
         <div className="col-xl-6 col-sm-12">
