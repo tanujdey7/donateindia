@@ -1,13 +1,15 @@
 .volunteers-wrapper {
   width: 100%;
-  height: 950px;
+  height: auto;
   padding-top: 5%;
-  margin-bottom: 0%;
+  margin-bottom: 5%;
 }
-.volunteers-title-div > h1 {
+
+.volunteers-title-div>h1 {
   font-size: 2.5rem;
   font-family: "Poppins", sans-serif;
 }
+
 .volunteers-row {
   width: 64%;
   margin-top: 3%;
@@ -15,11 +17,13 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 .volunteers-col {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 }
+
 .volunteers-col-wrapone {
   margin-top: 12%;
   margin-left: auto;
@@ -28,39 +32,105 @@
 
 .volunteers-card-header {
   border: none;
-  background:transparent;
+  background: transparent;
   display: flex;
 }
-.volunteers-card-header-text{
-    margin-top: 9%;
-    margin-left: 10px;
-    text-align: left;
-    font-family: "Poppins", sans-serif;
+
+.volunteers-card-header-text {
+  margin-top: 9%;
+  margin-left: 10px;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
 }
 
-.volunteers-card-body>h6{
-    text-align: left;
-    margin-left: 10px;
-    font-family: "Poppins", sans-serif;
+.volunteers-card-body>h6 {
+  text-align: left;
+  margin-left: 10px;
+  font-family: "Poppins", sans-serif;
 }
+
 .volunteers-col-wraptwo {
   padding-left: 0px;
 }
 
 .volunteers-card-one {
-    background-color: #b8fffb;
+  background-color: #b8fffb;
 }
 
 .volunteers-card-two {
-    border: 2px solid black;
+  border: 2px solid black;
 }
+
 .volunteers-card-three {
-    background-color: #1cfff4;
+  background-color: #1cfff4;
 }
+
 .volunteers-card-four {
-    background-color: #fdd900;
+  background-color: #fdd900;
 }
+
 .volunteers-card {
   /* border: none; */
   margin: 27px 0px 0px 0px;
+}
+.volunteers-card-header>img {
+  width: 120px;
+  height: 120px;
+ }
+ .vol-img{
+  width: 120px;
+  height: 120px;
+ }
+@media (min-width: 200px) and (max-width: 600px) {
+  .volunteers-wrapper {
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+    margin-bottom: 7%;
+  }
+  
+  .volunteers-row {
+    width: 100%;
+    margin-top: 0%;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .volunteers-col-wrapone {
+    margin-top: 2%;
+    display: flex;
+  }
+  .volunteers-card-header>img {
+   width: 50px;
+   height: 50px;
+  }
+  .volunteers-card-header-text {
+    margin-top: 9%;
+    margin-left: 10px;
+    text-align: left;
+    float: left;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+  }
+  .volunteers-card{
+    margin: 4px;
+  }
+  .vol-img{
+    width: 70px;
+    height: 70px;
+   }
+   .volunteers-card-body>h6 {
+    text-align: left;
+    margin-left: 0px;
+    font-family: "Poppins", sans-serif;
+  }
+  .volunteers-col-wraptwo{
+    display: flex;
+    margin-left: 15px;
+  }
+  .volunteers-title-div>h1 {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+  }
+  
 }

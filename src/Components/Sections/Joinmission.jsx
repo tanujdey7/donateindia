@@ -3,7 +3,7 @@ import "./Joinmission.css";
 
 const Joinmission=()=> {
     return (
-        <div className="joinmission-wrapper">
+        <div className="joinmission-wrapper ">
             <div className="joinmission-row">
                 <div className="joinmission-div">
                     <div className="joinmission-text">

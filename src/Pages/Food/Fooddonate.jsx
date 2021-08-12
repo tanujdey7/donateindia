@@ -162,7 +162,7 @@ const Fooddonate = () => {
                     />
                   </div>
                   <div className="Blood-form-input-half">
-                    <div class="input-half-div mb-3">
+                    <div class="input-half-div w-100 mb-3">
                       <label for="exampleInputEmail1" class="form-label">
                         <h6>State</h6>
                       </label>
@@ -179,7 +179,7 @@ const Fooddonate = () => {
                         ))}
                       </select>
                     </div>
-                    <div class="input-half-div ml-3 mb-2">
+                    <div class="input-half-div input-half-div-sec w-100 mb-2">
                       <label for="exampleInputEmail1" class="form-label">
                         <h6>City</h6>
                       </label>
@@ -193,7 +193,7 @@ const Fooddonate = () => {
                     </div>
                   </div>
                   <div className="Blood-form-input-half">
-                    <div class="input-half-div mb-3">
+                    <div class="input-half-div w-100 mb-3">
                       <label for="exampleInputEmail1" class="form-label">
                         <h6>Mobile Number</h6>
                       </label>
@@ -208,7 +208,7 @@ const Fooddonate = () => {
                     </div>
                   </div>
                   <div className="Blood-form-input-half">
-                    <div class="input-half-div mb-3">
+                    <div class="input-half-div w-100 mb-3">
                       <label for="exampleInputEmail1" class="form-label">
                         <h6>Time of Preparation</h6>
                       </label>
@@ -294,7 +294,7 @@ const Fooddonate = () => {
                     />
                   </div>
                   <div className="Blood-form-input-half">
-                    <div class="input-half-div mb-3">
+                    <div class="input-half-div w-100 mb-3">
                       <label for="exampleInputEmail1" class="form-label">
                         <h6>State</h6>
                       </label>
@@ -311,7 +311,7 @@ const Fooddonate = () => {
                         ))}
                       </select>
                     </div>
-                    <div class="input-half-div ml-3 mb-2">
+                    <div class="input-half-div input-half-div-sec w-100 mb-2">
                       <label for="exampleInputEmail1" class="form-label">
                         <h6>City</h6>
                       </label>
@@ -325,7 +325,7 @@ const Fooddonate = () => {
                     </div>
                   </div>
                   <div className="Blood-form-input-half">
-                    <div class="input-half-div mb-3">
+                    <div class="input-half-div w-100 mb-3">
                       <label for="exampleInputEmail1" class="form-label">
                         <h6>Mobile Number</h6>
                       </label>
@@ -338,7 +338,7 @@ const Fooddonate = () => {
                         required
                       />
                     </div>
-                    <div class="input-half-div ml-3 mb-2">
+                    <div class="input-half-div input-half-div-sec w-100 mb-2">
                       <label for="exampleInputEmail1" class="form-label">
                         <h6>Gender</h6>
                       </label>
@@ -354,7 +354,7 @@ const Fooddonate = () => {
                     </div>
                   </div>
                   <div className="Blood-form-input-half">
-                    <div class="input-half-div mb-3">
+                    <div class="input-half-div w-100 mb-3">
                       <label for="exampleInputEmail1" class="form-label">
                         <h6>D.O.B</h6>
                       </label>
@@ -366,7 +366,7 @@ const Fooddonate = () => {
                         required
                       />
                     </div>
-                    <div class="input-half-div ml-3 mb-2">
+                    <div class="input-half-div input-half-div-sec w-100 mb-2">
                       <label for="exampleInputEmail1" class="form-label">
                         <h6>Blood Group</h6>
                       </label>
@@ -382,7 +382,7 @@ const Fooddonate = () => {
                     </div>
                   </div>
                   <div className="Blood-form-input-half">
-                    <div class="input-half-div mb-3">
+                    <div class="input-half-div w-100 mb-3">
                       <label for="exampleInputEmail1" class="form-label">
                         <h6>Adhar Number</h6>
                       </label>
@@ -395,7 +395,7 @@ const Fooddonate = () => {
                         required
                       />
                     </div>
-                    <div class="input-half-div ml-3 mb-2">
+                    <div class="input-half-div input-half-div-sec w-100 mb-2">
                       <label for="exampleInputEmail1" class="form-label">
                         <h6>Preference</h6>
                       </label>

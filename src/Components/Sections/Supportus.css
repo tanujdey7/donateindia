@@ -3,36 +3,33 @@
   padding-bottom: 2%;
   background-color: #e2f6f5;
 }
+
 .supportus-title-div {
   width: 40%;
   margin-left: auto;
   margin-right: auto;
 }
+
 .supportus-title-row {
   width: 100%;
-}
-.supportus-row-two {
-  margin-top: 2%;
-  width: 100%;
-}
-
-.supportus-icons-div {
   display: flex;
 }
 
-.supportus-icons-div {
+.supportus-row-two {
+  /* margin-top: 2%; */
   width: 70%;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
 }
 
-.supportus-title-text > h1 {
+.supportus-title-text>h1 {
   font-weight: 500;
   font-size: 2.5rem;
   font-family: "Poppins", sans-serif;
 }
 
-.supportus-title-text > h6 {
+.supportus-title-text>h6 {
   font-weight: 500;
   font-size: 16px;
   margin-top: 10px;
@@ -78,4 +75,44 @@
 .supportus-icons-header {
   border: none;
   background: transparent;
+}
+
+@media (min-width: 200px) and (max-width: 600px) {
+  .supportus-title-text>h1 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+  }
+  .supportus-title-text>h6 {
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 20px;
+    font-family: "Poppins", sans-serif;
+  }
+  .supportus-title-div {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .supportus-title-row {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    /* background-color: red; */
+  }
+  .supportus-row-two {
+    margin-top: 2%;
+    width: 100%;
+  }
+  .supportus-icons-body>h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: 'Raleway',sans-serif;
+  }
+  .supportus-icons-body>h6 {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+  }
 }

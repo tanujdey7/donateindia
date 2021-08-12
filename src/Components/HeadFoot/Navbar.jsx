@@ -33,29 +33,35 @@ const Navbar = () => {
             <div className="contact-div">
               <ul className="nav-menu-ul">
                 <li className="nav-menu-li">
-                  <a href="/"><h1 className="nav-menu-h1">Home</h1></a>
+                  <a href="/">
+                    <button className="btn navbar-btns">Home</button></a>
                 </li>
                 <li className="nav-menu-li">
-                  <a href="#"><h1 className="nav-menu-h1">About Us</h1></a>
+                  <a href="#">
+                    <button className="btn navbar-btns">About Us</button></a>
                 </li>
                 <li className="nav-menu-li">
-                  <a href="#"><h1 className="nav-menu-h1">How it Works</h1></a>
+                  <a href="#">
+                    <button className="btn navbar-btns">How it Works</button></a>
+                </li>
+                <li className="nav-menu-li">
+                  <a href="/Login"><button className="btn navbar-btns">Login</button></a>
                 </li>
               </ul>
             </div>
-            <div className="login-div">
+            {/* <div className="login-div">
               <ul className="login-div-ul">
                 <li className="login-div-li">
-                  <button className="btn btn-lg navbar-btns">Donate</button>
+                  <button className="btn navbar-btns">Donate</button>
                 </li>
                 <li className="login-div-li">
-                  <button className="btn btn-lg navbar-btns">Volunteer</button>
+                  <button className="btn navbar-btns">Volunteer</button>
                 </li>
                 <li className="login-div-li">
-                  <a href="/Login"><button className="btn btn-lg navbar-btns">Login</button></a>
+                  <a href="/Login"><button className="btn navbar-btns">Login</button></a>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       ) : null}
