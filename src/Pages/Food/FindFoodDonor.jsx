@@ -1,36 +1,45 @@
 import React from "react";
 import "./FindFoodDonor.css";
 import "bootstrap/js/dist/dropdown";
-import Rdata from "./Rdata";
+import { useState, useEffect } from "react";
+import { getFoodDonor } from "../../Service/api";
 
 const FindBloodDonor = () => {
+  const [foodDonor, setUsers] = useState([]);
+  useEffect(() => {
+    getAllFood();
+  }, []);
+  const getAllFood = async () => {
+    const response = await getFoodDonor();
+    console.log(response.data);
+    setUsers(response.data);
+  };
+  const allstates = ["Gujarat", "Maharastra", "UttarPradesh"];
+  const [selected, setSelected] = React.useState("");
+  const changeSelectOptionHandler = (event) => {
+    setSelected(event.target.value);
+  };
+  const gujState = ["Ahmedabad", "Rajkot", "Vadodara"];
+  const mhState = ["Mumbai", "Pune", "Nashik"];
 
-    const allstates = ["Gujarat", "Maharastra", "UttarPradesh"];
-    const [selected, setSelected] = React.useState("");
-    const changeSelectOptionHandler = (event) => {
-      setSelected(event.target.value);
-    };
-    const gujState = ["Ahmedabad", "Rajkot", "Vadodara"];
-    const mhState = ["Mumbai", "Pune", "Nashik"];
-  
-    const upState = ["Lko", "GKP", "Noida"];
-  
-    let type = null;
-    let options = null;
-    if (selected === "Gujarat") {
-      type = gujState;
-    } else if (selected === "Maharastra") {
-      type = mhState;
-    } else if (selected === "UttarPradesh") {
-      type = upState;
-    }
-    if (type) {
-      options = type.map((el) => (
-        <option className="" key={el}>
-          {el}
-        </option>
-      ));
-    }
+  const upState = ["Lko", "GKP", "Noida"];
+
+  let type = null;
+  let options = null;
+  if (selected === "Gujarat") {
+    type = gujState;
+  } else if (selected === "Maharastra") {
+    type = mhState;
+  } else if (selected === "UttarPradesh") {
+    type = upState;
+  }
+  if (type) {
+    options = type.map((el) => (
+      <option className="" key={el}>
+        {el}
+      </option>
+    ));
+  }
   return (
     <div className="FindBloodDonor-container container-fluid">
       <div className="FindBloodDonor-wrapper pt-5 mb-5">
@@ -94,28 +103,30 @@ const FindBloodDonor = () => {
                 <tr>
                   <th>Sr</th>
                   <th>Name</th>
-                  <th>Gender</th>
-                  <th>Age</th>
-                  <th>Blood Group</th>
+                  <th>Address</th>
+                  <th>City</th>
                   <th>Mobile</th>
                   <th>Email</th>
-                  <th>Address</th>
-                  <th>Preference</th>
+                  <th>Quantity</th>
+                  <th>Preparation Time</th>
+                  <th>Best Before</th>
+                  <th>Type</th>
                 </tr>
               </thead>
               <tbody>
-                {Rdata.map((anydata) => {
+                {foodDonor.map((anydata) => {
                   return (
                     <tr className="receiver-data-tr">
                       <td>{anydata.Srno}</td>
                       <td>{anydata.Name}</td>
                       <td>{anydata.Address}</td>
+                      <td>{anydata.city}</td>
                       <td>{anydata.Phone}</td>
                       <td>{anydata.Email}</td>
-                      <td>{anydata.Age}</td>
-                      <td>{anydata.BloodGroup}</td>
-                      <td>{anydata.Gender}</td>
-                      <td>{anydata.Preference}</td>
+                      <td>{anydata.Quantity}</td>
+                      <td>{anydata.time}</td>
+                      <td>{anydata.expire}</td>
+                      <td>{anydata.type}</td>
                     </tr>
                   );
                 })}

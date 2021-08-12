@@ -1,9 +1,19 @@
 import React from "react";
 import "./FindBloodBank.css";
 import "bootstrap/js/dist/dropdown";
-import Bloodbankdetails from "../Data";
+import { useState, useEffect } from "react";
+import { getBanks } from "../../../Service/api";
 
 const FindBloodBank = () => {
+  const [users, setUsers] = useState([]);
+  useEffect(() => {
+    getAllBanks();
+  }, []);
+  const getAllBanks = async () => {
+    const response = await getBanks();
+    console.log(response.data);
+    setUsers(response.data);
+  };
 
   const allstates = ["Gujarat", "Maharastra", "UttarPradesh"];
   const [selected, setSelected] = React.useState("");
@@ -93,26 +103,41 @@ const FindBloodBank = () => {
                   <th>Sr</th>
                   <th>Name</th>
                   <th>Address</th>
+                  <th>City</th>
+                  <th>State</th>
                   <th>Phone</th>
                   <th>Email</th>
                   <th>Category</th>
-                  <th>Services</th>
-                  <th>Type</th>
-
                 </tr>
               </thead>
               <tbody>
-                {Bloodbankdetails.map((anydata) => {
+                {users.map((anydata) => {
                   return (
                     <tr className="receiver-data-tr">
-                      <td><h6>{anydata.Srno}</h6></td>
-                      <td><h6>{anydata.Name}</h6></td>
-                      <td><h6>{anydata.Address}</h6></td>
-                      <td><h6>{anydata.Phone}</h6></td>
-                      <td><h6>{anydata.Email}</h6></td>
-                      <td><h6>{anydata.Category}</h6></td>
-                      <td><h6>{anydata.Services}</h6></td>
-                      <td><h6>{anydata.Type}</h6></td>
+                      <td>
+                        <h6>{anydata.id}</h6>
+                      </td>
+                      <td>
+                        <h6>{anydata.orgName}</h6>
+                      </td>
+                      <td>
+                        <h6>{anydata.orgCity}</h6>
+                      </td>
+                      <td>
+                        <h6>{anydata.orgState}</h6>
+                      </td>
+                      <td>
+                        <h6>{anydata.orgAddress}</h6>
+                      </td>
+                      <td>
+                        <h6>{anydata.orgPhone}</h6>
+                      </td>
+                      <td>
+                        <h6>{anydata.orgEmail}</h6>
+                      </td>
+                      <td>
+                        <h6>{anydata.orgCategory}</h6>
+                      </td>
                     </tr>
                   );
                 })}

@@ -8,16 +8,152 @@ import Bbank from "../Images/icons/bbank.png";
 import Bcamp from "../Images/icons/camp.png";
 
 import "../AllMainPages.css";
+import { addBloodCamp, addBloodDonor, addBloodOrg } from "../../Service/api";
+import { reset } from "nodemon";
+
+const initialBloodDonorValues = {
+  name: "",
+  address: "",
+  state: "",
+  city: "",
+  gender: "",
+  bloodgroup: "",
+  dob: "",
+  email: "",
+  phone: "",
+  preference: "",
+};
+
+const initialBloodOrgValues = {
+  orgName: "",
+  orgAddress: "",
+  orgEmail: "",
+  orgState: "",
+  orgCity: "",
+  orgEmail: "",
+  orgPhone: "",
+  orgCategory: "",
+};
+const initialBloodCampValues = {
+  campName: "",
+  campOrganizedBy: "",
+  campAddress: "",
+  campState: "",
+  campCity: "",
+  campPhone: "",
+  campDate: "",
+  campTime: "",
+};
 
 const Blooddonate = () => {
   // new
-  const allstates = ["Gujarat", "Maharastra", "UttarPradesh"];
+  const allstates = [
+    "Andhra Pradesh",
+    "Arunachal Pradesh",
+    "Assam",
+    "Bihar",
+    "Chhattisgarh",
+    "Goa",
+    "Gujarat",
+    "Haryana",
+    "Himachal Pradesh",
+    "Jammu and Kashmir",
+    "Jharkhand",
+    "Karnataka",
+    "Kerala",
+    "Madhya Pradesh",
+    "Maharashtra",
+    "Manipur",
+    "Meghalaya",
+    "Mizoram",
+    "Nagaland",
+    "Odisha",
+    "Punjab",
+    "Rajasthan",
+    "Sikkim",
+    "Tamil Nadu",
+    "Telangana",
+    "Tripura",
+    "Uttarakhand",
+    "Uttar Pradesh",
+    "West Bengal",
+    "Andaman and Nicobar Islands",
+    "Chandigarh",
+    "Dadra and Nagar Haveli",
+    "Daman and Diu",
+    "Delhi",
+    "Lakshadweep",
+    "Puducherry",
+  ];
   const [selected, setSelected] = React.useState("");
   const changeSelectOptionHandler = (event) => {
     setSelected(event.target.value);
   };
-  const gujState = ["Ahmedabad", "Rajkot", "Vadodara"];
-  const mhState = ["Mumbai", "Pune", "Nashik"];
+  const gujState = [
+    "Ahmedabad",
+    "Amreli district",
+    "Anand",
+    "Banaskantha",
+    "Bharuch",
+    "Bhavnagar",
+    "Dahod",
+    "The Dangs",
+    "Gandhinagar",
+    "Jamnagar",
+    "Junagadh",
+    "Kutch",
+    "Kheda",
+    "Mehsana",
+    "Narmada",
+    "Navsari",
+    "Patan",
+    "Panchmahal",
+    "Porbandar",
+    "Rajkot",
+    "Sabarkantha",
+    "Surendranagar",
+    "Surat",
+    "Vyara",
+    "Vadodara",
+    "Valsad",
+  ];
+  const mhState = [
+    "Ahmednagar",
+    "Akola",
+    "Amravati",
+    "Aurangabad",
+    "Bhandara",
+    "Beed",
+    "Buldhana",
+    "Chandrapur",
+    "Dhule",
+    "Gadchiroli",
+    "Gondia",
+    "Hingoli",
+    "Jalgaon",
+    "Jalna",
+    "Kolhapur",
+    "Latur",
+    "Mumbai City",
+    "Mumbai suburban",
+    "Nandurbar",
+    "Nanded",
+    "Nagpur",
+    "Nashik",
+    "Osmanabad",
+    "Parbhani",
+    "Pune",
+    "Raigad",
+    "Ratnagiri",
+    "Sindhudurg",
+    "Sangli",
+    "Solapur",
+    "Satara",
+    "Thane",
+    "Wardha",
+    "Washim",
+    "Yavatmal",
+  ];
 
   const upState = ["Lko", "GKP", "Noida"];
 
@@ -25,7 +161,7 @@ const Blooddonate = () => {
   let options = null;
   if (selected === "Gujarat") {
     type = gujState;
-  } else if (selected === "Maharastra") {
+  } else if (selected === "Maharashtra") {
     type = mhState;
   } else if (selected === "UttarPradesh") {
     type = upState;
@@ -95,6 +231,71 @@ const Blooddonate = () => {
     setRestaurant(false);
     setfoodmenu(true);
   };
+  const [donorValue, setBloodDonor] = useState(initialBloodDonorValues);
+  const [orgDonorValue, setOrg] = useState(initialBloodOrgValues);
+  const [campDonorValue, setCamp] = useState(initialBloodCampValues);
+  const {
+    name,
+    address,
+    state,
+    city,
+    bloodgroup,
+    preference,
+    dob,
+    gender,
+    email,
+    phone,
+  } = donorValue;
+
+  const {
+    orgName,
+    orgAddress,
+    orgState,
+    orgCity,
+    orgEmail,
+    orgPhone,
+    orgCategory,
+  } = orgDonorValue;
+
+  const {
+    campName,
+    campAddress,
+    campState,
+    campCity,
+    campPhone,
+    campOrganizedBy,
+    campTime,
+    campDate,
+  } = campDonorValue;
+
+  const onValueChangeDonor = (e) => {
+    console.log(e.target.value);
+    setBloodDonor({ ...donorValue, [e.target.name]: e.target.value });
+    console.log(donorValue);
+  };
+
+  const onValueChangeBank = (e) => {
+    console.log(e.target.value);
+    setOrg({ ...orgDonorValue, [e.target.name]: e.target.value });
+    console.log(orgDonorValue);
+  };
+
+  const onValueChangeCamp = (e) => {
+    console.log(e.target.value);
+    setCamp({ ...campDonorValue, [e.target.name]: e.target.value });
+    console.log(campDonorValue);
+  };
+
+  const addDonorDetails = async () => {
+    await addBloodDonor(donorValue);
+  };
+
+  const addOrgDonorDetails = async () => {
+    await addBloodOrg(orgDonorValue);
+  };
+  const addCampDonorDetails = async () => {
+    await addBloodCamp(campDonorValue);
+  };
 
   return (
     <div className="BloodDonate-wrapper">
@@ -155,16 +356,19 @@ const Blooddonate = () => {
               </div>
               <div className="Register-card-body card-body">
                 <h5 className="text-center mb-3">[Register as Blood Donor]</h5>
-                <form>
+                <form onSubmit={this.handleSubmit}>
                   <div class="mb-2">
                     <label for="exampleInputEmail1" class="form-label">
-                      <h6>FullName</h6>
+                      <h6>Full Name (As per Aadhar Card)</h6>
                     </label>
                     <input
                       type="text"
                       class="form-control"
-                      id="exampleInputEmail1"
                       aria-describedby="emailHelp"
+                      name="FullName"
+                      onChange={(e) => onValueChangeDonor(e)}
+                      name="name"
+                      value={name}
                       required
                     />
                   </div>
@@ -175,8 +379,10 @@ const Blooddonate = () => {
                     <input
                       type="email"
                       class="form-control"
-                      id="exampleInputEmail1"
                       aria-describedby="emailHelp"
+                      onChange={(e) => onValueChangeDonor(e)}
+                      name="email"
+                      value={email}
                       required
                     />
                   </div>
@@ -187,8 +393,10 @@ const Blooddonate = () => {
                     <input
                       type="textarea"
                       class="form-control"
-                      id="exampleInputEmail1"
                       aria-describedby="emailHelp"
+                      onChange={(e) => onValueChangeDonor(e)}
+                      name="address"
+                      value={address}
                       required
                     />
                   </div>
@@ -201,8 +409,14 @@ const Blooddonate = () => {
                         onChange={changeSelectOptionHandler}
                         class="form-select form-control"
                         aria-label="Default select example"
+                        onInputChange={(e) => onValueChangeDonor(e)}
+                        name="state"
+                        value={state}
+                        required
                       >
-                        <option>Choose State</option>
+                        <option value="" selected disabled hidden>
+                          Choose State
+                        </option>
                         {allstates.map((st) => (
                           <option className="" key={st}>
                             {st}
@@ -218,6 +432,10 @@ const Blooddonate = () => {
                       <select
                         class="form-select form-control"
                         aria-label="Default select example"
+                        onChange={(e) => onValueChangeDonor(e)}
+                        name="city"
+                        value={city}
+                        // required
                       >
                         {options}
                       </select>
@@ -232,8 +450,10 @@ const Blooddonate = () => {
                         type="tel"
                         maxLength="10"
                         class="form-control"
-                        id="exampleInputEmail1"
                         aria-describedby="emailHelp"
+                        onChange={(e) => onValueChangeDonor(e)}
+                        name="phone"
+                        value={phone}
                         required
                       />
                     </div>
@@ -244,11 +464,17 @@ const Blooddonate = () => {
                       <select
                         class="form-select form-control"
                         aria-label="Default select example"
+                        onChange={(e) => onValueChangeDonor(e)}
+                        name="gender"
+                        value={gender}
+                        required
                       >
-                        <option selected>Open this select menu</option>
-                        <option value="1">Male</option>
-                        <option value="2">Female</option>
-                        <option value="3">Other</option>
+                        <option value="" selected disabled hidden>
+                          Choose One
+                        </option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
                       </select>
                     </div>
                   </div>
@@ -258,10 +484,12 @@ const Blooddonate = () => {
                         <h6>D.O.B</h6>
                       </label>
                       <input
-                        type="datetime-local"
+                        type="date"
                         class="form-control"
-                        id="exampleInputEmail1"
                         aria-describedby="emailHelp"
+                        onChange={(e) => onValueChangeDonor(e)}
+                        name="dob"
+                        value={dob}
                         required
                       />
                     </div>
@@ -272,28 +500,26 @@ const Blooddonate = () => {
                       <select
                         class="form-select form-control"
                         aria-label="Default select example"
+                        onChange={(e) => onValueChangeDonor(e)}
+                        name="bloodgroup"
+                        value={bloodgroup}
+                        required
                       >
-                        <option disabled>Open this select menu</option>
-                        <option value="1">A+</option>
-                        <option value="2">B+</option>
-                        <option value="3">AB+</option>
+                        <option value="" selected disabled hidden>
+                          Choose One
+                        </option>
+                        <option>A+</option>
+                        <option>A-</option>
+                        <option>B+</option>
+                        <option>B-</option>
+                        <option>AB+</option>
+                        <option>AB-</option>
+                        <option>O+</option>
+                        <option>O-</option>
                       </select>
                     </div>
                   </div>
                   <div className="Blood-form-input-half">
-                    <div class="input-half-div mb-3">
-                      <label for="exampleInputEmail1" class="form-label">
-                        <h6>Adhar Number</h6>
-                      </label>
-                      <input
-                        type="tel"
-                        maxLength="12"
-                        class="form-control"
-                        id="exampleInputEmail1"
-                        aria-describedby="emailHelp"
-                        required
-                      />
-                    </div>
                     <div class="input-half-div ml-3 mb-2">
                       <label for="exampleInputEmail1" class="form-label">
                         <h6>Preference</h6>
@@ -301,10 +527,17 @@ const Blooddonate = () => {
                       <select
                         class="form-select form-control"
                         aria-label="Default select example"
+                        onChange={(e) => onValueChangeDonor(e)}
+                        name="preference"
+                        value={preference}
+                        required
                       >
-                        <option disabled>Open this select menu</option>
-                        <option value="1">Only in Emergency</option>
-                        <option value="2">Only in 3 Months</option>
+                        <option value="" selected disabled hidden>
+                          Choose One
+                        </option>
+                        <option>Only in Emergency</option>
+                        <option>Only in 3 Months</option>
+                        <option>Anytime</option>
                         {/* <option value="3">AB+</option> */}
                       </select>
                     </div>
@@ -312,13 +545,11 @@ const Blooddonate = () => {
                   <button
                     type="submit"
                     class="btn Register-submit-btn"
+                    onClick={() => addDonorDetails()}
                   >
                     <h6 className="mt-1">Submit</h6>
                   </button>
-                  <button
-                    type="reset"
-                    class="btn ml-2 Register-submit-btn"
-                  >
+                  <button type="reset" class="btn ml-2 Register-submit-btn">
                     <h6 className="mt-1">Reset</h6>
                   </button>
                 </form>
@@ -352,8 +583,10 @@ const Blooddonate = () => {
                     <input
                       type="text"
                       class="form-control"
-                      id="exampleInputEmail1"
                       aria-describedby="emailHelp"
+                      onChange={(e) => onValueChangeBank(e)}
+                      name="orgName"
+                      value={orgName}
                       required
                     />
                   </div>
@@ -364,8 +597,10 @@ const Blooddonate = () => {
                     <input
                       type="email"
                       class="form-control"
-                      id="exampleInputEmail1"
                       aria-describedby="emailHelp"
+                      onChange={(e) => onValueChangeBank(e)}
+                      name="orgEmail"
+                      value={orgEmail}
                       required
                     />
                   </div>
@@ -376,8 +611,10 @@ const Blooddonate = () => {
                     <input
                       type="textarea"
                       class="form-control"
-                      id="exampleInputEmail1"
                       aria-describedby="emailHelp"
+                      onChange={(e) => onValueChangeBank(e)}
+                      name="orgAddress"
+                      value={orgAddress}
                       required
                     />
                   </div>
@@ -390,8 +627,14 @@ const Blooddonate = () => {
                         onChange={changeSelectOptionHandler}
                         class="form-select form-control"
                         aria-label="Default select example"
+                        onChange={(e) => onValueChangeBank(e)}
+                        name="orgState"
+                        value={orgState}
+                        required
                       >
-                        <option>Choose State</option>
+                        <option value="" selected disabled hidden>
+                          Choose State
+                        </option>
                         {allstates.map((st) => (
                           <option className="" key={st}>
                             {st}
@@ -407,6 +650,9 @@ const Blooddonate = () => {
                       <select
                         class="form-select form-control"
                         aria-label="Default select example"
+                        onChange={(e) => onValueChangeBank(e)}
+                        name="orgCity"
+                        value={orgCity}
                       >
                         {options}
                       </select>
@@ -421,8 +667,10 @@ const Blooddonate = () => {
                         type="tel"
                         maxLength="10"
                         class="form-control"
-                        id="exampleInputEmail1"
                         aria-describedby="emailHelp"
+                        onChange={(e) => onValueChangeBank(e)}
+                        name="orgPhone"
+                        value={orgPhone}
                         required
                       />
                     </div>
@@ -433,46 +681,26 @@ const Blooddonate = () => {
                       <select
                         class="form-select form-control"
                         aria-label="Default select example"
+                        onChange={(e) => onValueChangeBank(e)}
+                        name="orgCategory"
+                        value={orgCategory}
+                        required
                       >
-                        <option selected>Open this select menu</option>
-                        <option value="1">Private</option>
-                        <option value="2">Charitable</option>
-                        <option value="3">Government</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div className="Blood-form-input-half">
-                    <div class="input-half-div mb-3">
-                      <label for="exampleInputEmail1" class="form-label">
-                        <h6>Services</h6>
-                      </label>
-                      <select
-                        class="form-select form-control"
-                        aria-label="Default select example"
-                      >
-                        <option selected>Open this select menu</option>
-                        <option value="1">Camp Stock</option>
-                        <option value="2">Stock</option>
-                        {/* <option value="3">Three</option> */}
-                      </select>
-                    </div>
-                    <div class="input-half-div ml-2 mb-3">
-                      <label for="exampleInputEmail1" class="form-label">
-                        <h6>Type</h6>
-                      </label>
-                      <select
-                        class="form-select form-control"
-                        aria-label="Default select example"
-                      >
-                        <option selected>Open this select menu</option>
-                        <option value="1">Blood Bank</option>
-                        <option value="2">BSU</option>
-                        {/* <option value="3">Three</option> */}
+                        <option value="" selected disabled hidden>
+                          Choose One
+                        </option>
+                        <option>Private</option>
+                        <option>Charitable</option>
+                        <option>Government</option>
                       </select>
                     </div>
                   </div>
 
-                  <button type="submit" class="btn Register-submit-btn">
+                  <button
+                    type="submit"
+                    class="btn Register-submit-btn"
+                    onClick={() => addOrgDonorDetails()}
+                  >
                     <h6 className="mt-1">Submit</h6>
                   </button>
                   <button type="reset" class="btn ml-2 Register-submit-btn">
@@ -511,23 +739,14 @@ const Blooddonate = () => {
                     <input
                       type="text"
                       class="form-control"
-                      id="exampleInputEmail1"
                       aria-describedby="emailHelp"
+                      onChange={(e) => onValueChangeCamp(e)}
+                      name="campName"
+                      value={campName}
                       required
                     />
                   </div>
-                  <div class="mb-2">
-                    <label for="exampleInputEmail1" class="form-label">
-                      <h6>Conducted By</h6>
-                    </label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="exampleInputEmail1"
-                      aria-describedby="emailHelp"
-                      required
-                    />
-                  </div>
+
                   <div class="mb-2">
                     <label for="exampleInputEmail1" class="form-label">
                       <h6>Organized By</h6>
@@ -535,8 +754,10 @@ const Blooddonate = () => {
                     <input
                       type="text"
                       class="form-control"
-                      id="exampleInputEmail1"
                       aria-describedby="emailHelp"
+                      onChange={(e) => onValueChangeCamp(e)}
+                      name="campOrganizedBy"
+                      value={campOrganizedBy}
                       required
                     />
                   </div>
@@ -547,8 +768,10 @@ const Blooddonate = () => {
                     <input
                       type="textarea"
                       class="form-control"
-                      id="exampleInputEmail1"
                       aria-describedby="emailHelp"
+                      onChange={(e) => onValueChangeCamp(e)}
+                      name="campAddress"
+                      value={campAddress}
                       required
                     />
                   </div>
@@ -561,8 +784,13 @@ const Blooddonate = () => {
                         onChange={changeSelectOptionHandler}
                         class="form-select form-control"
                         aria-label="Default select example"
+                        onChange={(e) => onValueChangeCamp(e)}
+                        name="campState"
+                        value={campState}
                       >
-                        <option>Choose State</option>
+                        <option value="" selected disabled hidden>
+                          Choose State
+                        </option>
                         {allstates.map((st) => (
                           <option className="" key={st}>
                             {st}
@@ -578,6 +806,9 @@ const Blooddonate = () => {
                       <select
                         class="form-select form-control"
                         aria-label="Default select example"
+                        onChange={(e) => onValueChangeCamp(e)}
+                        name="campCity"
+                        value={campCity}
                       >
                         {options}
                       </select>
@@ -592,23 +823,12 @@ const Blooddonate = () => {
                         type="tel"
                         maxLength="10"
                         class="form-control"
-                        id="exampleInputEmail1"
                         aria-describedby="emailHelp"
+                        onChange={(e) => onValueChangeCamp(e)}
+                        name="campPhone"
+                        value={campPhone}
                         required
                       />
-                    </div>
-                    <div class="input-half-div ml-3 mb-2">
-                      <label for="exampleInputEmail1" class="form-label">
-                        <h6>Register ?</h6>
-                      </label>
-                      <select
-                        class="form-select form-control"
-                        aria-label="Default select example"
-                      >
-                        <option selected>Open this select menu</option>
-                        <option value="1">Yes</option>
-                        <option value="2">No</option>
-                      </select>
                     </div>
                   </div>
                   <div className="Blood-form-input-half">
@@ -617,10 +837,12 @@ const Blooddonate = () => {
                         <h6>Date</h6>
                       </label>
                       <input
-                        type="datetime-local"
+                        type="date"
                         class="form-control"
-                        id="exampleInputEmail1"
                         aria-describedby="emailHelp"
+                        onChange={(e) => onValueChangeCamp(e)}
+                        name="campDate"
+                        value={campDate}
                         required
                       />
                     </div>
@@ -629,16 +851,21 @@ const Blooddonate = () => {
                         <h6>Time</h6>
                       </label>
                       <input
-                        type="datetime-local"
+                        type="time"
                         className="form-control"
-                        id="exampleInputEmail1"
                         aria-describedby="emailHelp"
+                        onChange={(e) => onValueChangeCamp(e)}
+                        name="campTime"
+                        value={campTime}
                         required
                       />
                     </div>
                   </div>
-
-                  <button type="submit" class="btn Register-submit-btn">
+                  <button
+                    type="submit"
+                    class="btn Register-submit-btn"
+                    onClick={() => addCampDonorDetails()}
+                  >
                     <h6 className="mt-1">Submit</h6>
                   </button>
                   <button type="reset" class="btn ml-2 Register-submit-btn">

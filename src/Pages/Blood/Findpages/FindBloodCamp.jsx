@@ -1,36 +1,46 @@
-import React from "react"
+import React from "react";
 import "./FindBloodDonor.css";
 import "bootstrap/js/dist/dropdown";
-import Rdata from "../Rdata";
+import { useState, useEffect } from "react";
+import { getCamps } from "../../../Service/api";
 
 const FindBloodCamp = () => {
+  const [camps, setUsers] = useState([]);
+  useEffect(() => {
+    getAllCamps();
+  }, []);
+  const getAllCamps = async () => {
+    const response = await getCamps();
+    console.log(response.data);
+    setUsers(response.data);
+  };
 
-    const allstates = ["Gujarat", "Maharastra", "UttarPradesh"];
-    const [selected, setSelected] = React.useState("");
-    const changeSelectOptionHandler = (event) => {
-      setSelected(event.target.value);
-    };
-    const gujState = ["Ahmedabad", "Rajkot", "Vadodara"];
-    const mhState = ["Mumbai", "Pune", "Nashik"];
-  
-    const upState = ["Lko", "GKP", "Noida"];
-  
-    let type = null;
-    let options = null;
-    if (selected === "Gujarat") {
-      type = gujState;
-    } else if (selected === "Maharastra") {
-      type = mhState;
-    } else if (selected === "UttarPradesh") {
-      type = upState;
-    }
-    if (type) {
-      options = type.map((el) => (
-        <option className="" key={el}>
-          {el}
-        </option>
-      ));
-    }
+  const allstates = ["Gujarat", "Maharastra", "UttarPradesh"];
+  const [selected, setSelected] = React.useState("");
+  const changeSelectOptionHandler = (event) => {
+    setSelected(event.target.value);
+  };
+  const gujState = ["Ahmedabad", "Rajkot", "Vadodara"];
+  const mhState = ["Mumbai", "Pune", "Nashik"];
+
+  const upState = ["Lko", "GKP", "Noida"];
+
+  let type = null;
+  let options = null;
+  if (selected === "Gujarat") {
+    type = gujState;
+  } else if (selected === "Maharastra") {
+    type = mhState;
+  } else if (selected === "UttarPradesh") {
+    type = upState;
+  }
+  if (type) {
+    options = type.map((el) => (
+      <option className="" key={el}>
+        {el}
+      </option>
+    ));
+  }
   return (
     <div className="FindFoodDonor-container container-fluid">
       <div className="FindFoodDonor-wrapper pt-5 mb-5">
@@ -69,7 +79,6 @@ const FindBloodCamp = () => {
                   <select
                     class="form-select form-control"
                     aria-label="Default select example"
-                   
                   >
                     {options}
                   </select>
@@ -94,29 +103,29 @@ const FindBloodCamp = () => {
               <thead className="thead-dark">
                 <tr>
                   <th>Sr</th>
-                  <th>Name</th>
-                  <th>Gender</th>
-                  <th>Age</th>
-                  <th>Blood Group</th>
+                  <th>Camp Name</th>
+                  <th>Organized By</th>
                   <th>Mobile</th>
-                  <th>Email</th>
                   <th>Address</th>
-                  <th>Preference</th>
+                  <th>City</th>
+                  <th>State</th>
+                  <th>Date</th>
+                  <th>Time</th>
                 </tr>
               </thead>
               <tbody>
-                {Rdata.map((anydata) => {
+                {camps.map((anydata) => {
                   return (
                     <tr className="receiver-data-tr">
-                      <td>{anydata.Srno}</td>
-                      <td>{anydata.Name}</td>
-                      <td>{anydata.Address}</td>
-                      <td>{anydata.Phone}</td>
-                      <td>{anydata.Email}</td>
-                      <td>{anydata.Age}</td>
-                      <td>{anydata.BloodGroup}</td>
-                      <td>{anydata.Gender}</td>
-                      <td>{anydata.Preference}</td>
+                      <td>{anydata.id}</td>
+                      <td>{anydata.campName}</td>
+                      <td>{anydata.campOrganizedBy}</td>
+                      <td>{anydata.campPhone}</td>
+                      <td>{anydata.campAddress}</td>
+                      <td>{anydata.campCity}</td>
+                      <td>{anydata.campState}</td>
+                      <td>{anydata.campDate}</td>
+                      <td>{anydata.campTime}</td>
                     </tr>
                   );
                 })}

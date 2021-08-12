@@ -47,7 +47,16 @@ const Home = () => {
                 </div>
                 <div className="hero-sec-card-foot">
                   <button className="btn btn-lg get-start-btn">
-                    <Link activeClass="active" spy={true} smooth={true} offset={-70} duration={500} to="missionsection">Donate Now</Link>
+                    <Link
+                      activeClass="active"
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={500}
+                      to="missionsection"
+                    >
+                      Donate Now
+                    </Link>
                   </button>
                   <button className="btn btn-lg learn-btn">Learn More</button>
                 </div>
@@ -82,9 +91,9 @@ const Home = () => {
                   The mission and goals of our organization
                 </h1>
                 <h6 className="">
-                  Charity is the global movement encouraging the power of people and
-                  organization to transform their communities and the world. What
-                  can we do to make some changes?
+                  Charity is the global movement encouraging the power of people
+                  and organization to transform their communities and the world.
+                  What can we do to make some changes?
                 </h6>
               </div>
             </div>
@@ -99,7 +108,11 @@ const Home = () => {
                   <a href="/blood/blooddonate">
                     <div className="mission-box-one card">
                       <div className="mission-box-img card-body">
-                        <img src={Blooddrop} alt="Blooddrop" className="mission-box-one-img" />
+                        <img
+                          src={Blooddrop}
+                          alt="Blooddrop"
+                          className="mission-box-one-img"
+                        />
                       </div>
                       <div className="mission-box-footer card-footer">
                         <h5>Blood Donation</h5>
@@ -112,7 +125,11 @@ const Home = () => {
                   <a href="/food/fooddonate">
                     <div className="mission-box-two card">
                       <div className="mission-box-img card-body">
-                        <img src={Food} alt="Food" className="mission-box-one-img" />
+                        <img
+                          src={Food}
+                          alt="Food"
+                          className="mission-box-one-img"
+                        />
                       </div>
                       <div className="mission-box-footer card-footer">
                         <h5>Food Donation</h5>
@@ -145,7 +162,11 @@ const Home = () => {
                   <a href="/books/booksdonate">
                     <div className="mission-box-four card">
                       <div className="mission-box-img card-body">
-                        <img src={Books} alt="Books" className="mission-box-one-img" />
+                        <img
+                          src={Books}
+                          alt="Books"
+                          className="mission-box-one-img"
+                        />
                       </div>
                       <div className="mission-box-footer card-footer">
                         <h5>Books Donation</h5>
@@ -176,7 +197,6 @@ const Home = () => {
       </div>
 
       {/* Total count */}
-
 
       <div className="Volunteers-section">
         <Volunteers />
