@@ -1,0 +1,76 @@
+{
+  "name": "donateindia",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@hookform/resolvers": "^2.7.1",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/pickers": "^3.3.10",
+    "@testing-library/jest-dom": "^5.13.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.6.0",
+    "concurrently": "^6.2.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "firebase": "^8.7.1",
+    "formik": "^2.2.9",
+    "json-server": "^0.16.3",
+    "mongoose": "^5.13.6",
+    "nodemon": "^2.0.12",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.6.1",
+    "react-dom": "^17.0.2",
+    "react-dropdown": "^1.9.2",
+    "react-hook-form": "^7.12.2",
+    "react-icons": "^4.2.0",
+    "react-query-selector": "^1.5.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^1.1.5",
+    "react-scroll": "^1.8.2",
+    "styled-components": "^5.3.0",
+    "watchpack": "^2.2.0",
+    "web-vitals": "^1.1.2",
+    "yup": "^0.32.9"
+  },
+  "scripts": {
+    "start": "set PORT=3001 && react-scripts start",
+    "json-server": "json-server --watch src/Database/db.json --host 127.0.0.1 --port 3002",
+    "dev": "concurrently \"npm start\" \"npm run json-server\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "description": "Nowadays, people do not have enough time to evaluate and pick the ideal charity for their donation because of their quickly changing lifestyles and rigid work schedules. Web technology advancements can be leveraged to solve this problem. This project intends to remove the constraints and create an all-in-one solution for donations to various groups without having to worry about their legitimacy. We think that the influence of donations fuels the success of a cause, not the objective. And today's contributors want a donating experience that immerses them in a cause they care about. The system will include facilites where a donor can contribute items such as books, clothing, and blood, and restaurants can donate waste/leftover foodstuffs to nonprofits of their choice without wasting time exploring the internet.\r ## Available Scripts",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanujdey7/donateindia.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tanujdey7/donateindia/issues"
+  },
+  "homepage": "https://github.com/tanujdey7/donateindia#readme"
+}

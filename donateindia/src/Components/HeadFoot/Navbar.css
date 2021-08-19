@@ -46,7 +46,7 @@
   width: 100%;
   float: right;
   text-align: right;
-  font-size: 5rem;
+  font-size: 50px;
   color: #ffffff;
 }
 
@@ -148,7 +148,7 @@
     float: left;
     margin-left: 0%;
   }
-  
+
   .contact-div {
     margin-top: 10%;
     /* background-color: red; */

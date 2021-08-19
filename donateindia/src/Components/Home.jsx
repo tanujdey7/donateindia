@@ -39,7 +39,8 @@ const Home = () => {
                 <div className="hero-sec-card-body">
                   <h1>Help the poor Make big changes and help the World</h1>
                   <h4>
-                    Get help to donate Food ,Blood CLothes and Books and also find blood banks, Blood Donors, Food Donors, Clothe Donors
+                    Get help to donate Food ,Blood CLothes and Books and also
+                    find blood banks, Blood Donors, Food Donors, Clothe Donors
                   </h4>
                 </div>
                 <div className="hero-sec-card-foot">
@@ -95,7 +96,7 @@ const Home = () => {
               </div>
             </div>
             <div className="mission-card-footer card-footer">
-              <button className="btn btn-lg donate-now-btn">Donate Now</button>
+              <button className="btn btn-lg donate-now-btn">Learn More</button>
             </div>
           </div>
           <div className="mission-col  col-xl-4 col-lg-4 col-md-6 col-sm-12">
