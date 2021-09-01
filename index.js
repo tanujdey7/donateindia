@@ -104,7 +104,7 @@ app.post("/register", (req, res) => {
 //     })
 //   );
 //   record.save();
-// });
+// })
 
 app.listen(9000, () => {
   console.log("Started at port 9000");
